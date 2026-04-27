@@ -38,7 +38,8 @@ Ce n'est pas, à ce stade, un besoin d'intégration API métier.
 - Page `/acces-client` avec texte de transition premium.
 - Bouton renvoyant vers l'URL officielle O2S / MoneyPitch.
 - Aucune donnée échangée entre le site et Harvest.
-- URL exacte : **[À FOURNIR]** par Berlioz Conseil.
+- L'URL OIDC dynamique transmise précédemment a été rejetée pour des raisons de sécurité et de stabilité.
+- URL exacte retenue : **https://connect.harvest.fr/accueil**
 
 ---
 
@@ -120,8 +121,8 @@ Toute intégration technique ne peut être envisagée qu'après :
 |---|---|
 | Besoin identifié | ✅ |
 | Scénario V1 défini | ✅ |
-| URL espace client O2S | [À FOURNIR] |
-| URL espace client MoneyPitch | [À FOURNIR] |
+| URL espace client stable retenue | ✅ `https://connect.harvest.fr/accueil` |
+| URL OIDC dynamique (rejetée) | ❌ Non utilisée |
 | Documentation Harvest reçue | ❌ Non reçue |
 | Analyse RGPD / DPA | ❌ Non réalisée |
 | Intégration autorisée | ❌ Hors périmètre V1 |

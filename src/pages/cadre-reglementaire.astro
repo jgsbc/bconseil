@@ -13,27 +13,47 @@ import LegalNoticeBlock from '../components/LegalNoticeBlock.astro';
   <main class="flex-grow">
     <PageHero 
       title="Cadre réglementaire" 
-      description="Berlioz Conseil exerce une activité réglementée. Contenu à valider par le cabinet." 
+      description="Berlioz Conseil exerce une activité réglementée." 
     />
     
     <Section>
       <Container class="max-w-3xl">
-        <div class="space-y-6">
-          <LegalNoticeBlock title="ORIAS">
-            <p>Immatriculation : 19004281 [À VALIDER]</p>
+        <div class="space-y-6 mb-16">
+          <LegalNoticeBlock title="Immatriculation ORIAS">
+            <p><strong>Numéro ORIAS : 19004281</strong> [À VALIDER - attestation exacte à confirmer]</p>
+            <p>SIREN : 850 683 228</p>
+            <p>Téléphone public : 06 03 07 10 11</p>
+            <p>Email public : contact@berliozconseil.fr</p>
           </LegalNoticeBlock>
           
           <LegalNoticeBlock title="Association professionnelle">
-            <p>Membre de la CNCGP [À VALIDER]</p>
+            <p>Membre de la CNCGP [À VALIDER - numéro d'adhérent à fournir]</p>
           </LegalNoticeBlock>
 
           <LegalNoticeBlock title="Autorités de contrôle">
-            <p>ACPR, AMF [À VALIDER]</p>
+            <p>Activité placée sous le contrôle de l'ACPR et de l'AMF [À VALIDER]</p>
           </LegalNoticeBlock>
 
-          <LegalNoticeBlock title="Médiateur">
-            <p>[À FOURNIR]</p>
+          <LegalNoticeBlock title="Statuts réglementaires">
+            <p class="mb-2">Berlioz Conseil est enregistré sous les catégories suivantes [À VALIDER] :</p>
+            <ul class="list-disc pl-5 mt-2 space-y-1 text-sm text-bc-text-secondary">
+              <li>Conseiller en Investissements Financiers (CIF)</li>
+              <li>Courtier en Assurance (COA)</li>
+              <li>Courtier en Opérations de Banque et en Services de Paiement (COBSP)</li>
+              <li>Mandataire en Opérations de Banque et en Services de Paiement (MOBSP)</li>
+            </ul>
+            <p class="text-sm mt-4 italic text-bc-text-muted">Le cabinet ne peut recevoir aucun fonds, effet ou valeur autre que ceux destinés à la rémunération de ses prestations.</p>
           </LegalNoticeBlock>
+
+          <LegalNoticeBlock title="Médiation">
+            <p>Pour les litiges relevant du conseil en investissements financiers, le Médiateur de l'AMF peut être compétent. Pour les autres activités, notamment assurance, IOBSP ou immobilier le cas échéant, les dispositifs applicables doivent être confirmés par Berlioz Conseil. La CNCGP mentionne un dispositif avec le CMAP pour certains adhérents IAS/IOBSP. [À VALIDER]</p>
+          </LegalNoticeBlock>
+        </div>
+
+        <div class="border border-bc-border bg-bc-bg-secondary p-8">
+          <p class="text-bc-text-muted text-sm italic mb-0">
+            Avertissement : Ce site est une présentation du cabinet et ne constitue en aucun cas un conseil personnalisé en investissement ou une recommandation de stratégie patrimoniale. [À VALIDER]
+          </p>
         </div>
       </Container>
     </Section>

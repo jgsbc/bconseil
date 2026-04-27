@@ -4,9 +4,10 @@ interface Props {
   variant?: 'primary' | 'secondary' | 'outline';
   class?: string;
   disabled?: boolean;
+  [key: string]: any;
 }
 
-const { href, variant = 'primary', class: className = '', disabled = false } = Astro.props;
+const { href, variant = 'primary', class: className = '', disabled = false, ...rest } = Astro.props;
 
 const baseStyles = "inline-flex items-center justify-center px-6 py-3 text-sm tracking-wider uppercase transition-colors duration-300";
 
@@ -24,6 +25,7 @@ const Element = href ? 'a' : 'button';
   href={disabled ? undefined : href} 
   class={`${baseStyles} ${variants[variant]} ${disabledStyles} ${className}`}
   disabled={disabled}
+  {...rest}
 >
   <slot />
 </Element>

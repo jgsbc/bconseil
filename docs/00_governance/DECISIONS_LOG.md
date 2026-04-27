@@ -97,3 +97,13 @@ Toute décision structurante doit être enregistrée ici avec sa date, sa justif
 **Justification :** Aligné avec le positionnement cible et les instructions du questionnaire de cadrage.
 
 **Statut :** ✅ Validé pour V1
+
+---
+
+## D010 — 2026-04-27 — URL portail stable Harvest V1
+
+**Décision :** Utilisation d'une URL portail stable Harvest (`https://connect.harvest.fr/accueil`) pour la V1, sans authentification ni manipulation OIDC dynamique.
+
+**Justification :** Évite les risques de sécurité liés à une mauvaise intégration de SSO ou OIDC sans documentation, tout en offrant le service de redirection demandé vers l'espace client.
+
+**Statut :** ✅ Validé pour V1

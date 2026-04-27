@@ -1,7 +1,7 @@
 # Data Protection Boundaries — Berlioz Conseil
 
 **Dernière mise à jour :** 2026-04-27  
-**Lot de référence :** LOT 0
+**Lot de référence :** LOT 4A
 
 ---
 
@@ -33,35 +33,11 @@ Ces données peuvent être collectées via le formulaire public :
 | Téléphone | Texte | Non |
 | Ville | Texte | Non |
 | Situation professionnelle | Liste | Non |
-| Objet de la demande | Liste ou texte | Oui |
+| Objet de la demande | Liste | Oui |
 | Message libre | Textarea | Non |
-| Niveau d'accompagnement recherché (tranche large) | Liste optionnelle | Non |
 | Préférence de contact (email / téléphone) | Radio | Non |
-| Créneau préféré | Texte / Liste | Non |
+| Créneau préféré | Texte | Non |
 | Consentement RGPD | Case à cocher | Oui |
-
----
-
-## Qualification patrimoniale — Règles
-
-Si un champ de qualification patrimoniale est utilisé, il doit respecter les règles suivantes :
-
-- **Optionnel** — jamais obligatoire.
-- **Formulé par tranche large**, pas par montant exact.
-- **Accompagné d'une option** : "Je préfère l'évoquer lors du rendez-vous".
-- **Validé par Berlioz Conseil** avant publication.
-
-Exemple de formulation acceptable :
-
-```
-Patrimoine financier approximatif à accompagner (optionnel) :
-○ Moins de 100 k€
-○ 100 k€ à 250 k€
-○ 250 k€ à 500 k€
-○ 500 k€ à 1 M€
-○ Plus de 1 M€
-○ Je préfère l'évoquer lors du rendez-vous
-```
 
 ---
 
@@ -85,44 +61,30 @@ Le site ne doit jamais collecter :
 
 ---
 
-## Message obligatoire sur le formulaire
-
-Le message suivant doit apparaître de façon visible sur le formulaire de contact :
-
-> Pour votre sécurité, merci de ne pas transmettre d'identifiants, de documents confidentiels ou d'informations patrimoniales détaillées via ce formulaire.
-
----
-
-## Flux des données en V1
+## Flux des données en V1 (Prévu Lot 4B)
 
 ```
-Visiteur → Formulaire → Email vers contact@berliozconseil.fr [À VALIDER]
-                      → Aucun stockage en base de données
-                      → Aucune transmission à Harvest / O2S / MoneyPitch
+Visiteur → Formulaire HTML → Endpoint Formspree sécurisé → Email vers contact@berliozconseil.fr
+                         → Aucun stockage local de base de données
+                         → Aucune transmission à Harvest / O2S / MoneyPitch
 ```
 
 ---
 
-## Informations à définir
+## Durée de conservation
 
-| Point | Statut |
-|---|---|
-| Email de réception des demandes | [À VALIDER] — `.fr` ou `.com` |
-| Durée de conservation des demandes de contact | [À VALIDER] |
-| Outil de traitement du formulaire | [À VALIDER] — Formspree, Basin, Netlify Forms, etc. |
-| Outil analytics retenu (cookies) | [À VALIDER] |
-| Hébergeur | [À FOURNIR] |
+**Recommandation V1 :** Les données des prospects non transformés seront conservées pour une durée de **3 ans maximum** à compter du dernier contact émanant du prospect. [À VALIDER]
 
 ---
 
-## Responsabilités
+## Responsabilités & Sous-traitants
 
 | Rôle | Entité |
 |---|---|
 | Responsable du traitement | Berlioz Conseil (EURL) — Aurélien Picard |
-| Sous-traitant formulaire | [À FOURNIR] selon outil retenu |
-| Sous-traitant hébergement | [À FOURNIR] |
-| Sous-traitant analytics | [À VALIDER] selon outil retenu |
+| Sous-traitant formulaire | Formspree |
+| Hébergement | OVH SAS (offre exacte à fournir) |
+| Sous-traitant analytics | Aucun en V1 |
 
 ---
 

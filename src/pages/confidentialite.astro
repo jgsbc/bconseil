@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import PageHero from '../components/PageHero.astro';
 import Section from '../components/Section.astro';
 import Container from '../components/Container.astro';
+import LegalNoticeBlock from '../components/LegalNoticeBlock.astro';
 ---
 
 <BaseLayout title="Confidentialité">
@@ -12,15 +13,48 @@ import Container from '../components/Container.astro';
   <main class="flex-grow">
     <PageHero 
       title="Politique de confidentialité" 
-      description="Contenu RGPD à fournir et valider." 
+      description="Protection de vos données personnelles." 
     />
     
     <Section>
       <Container class="max-w-3xl">
-        <div class="max-w-none text-bc-text-secondary space-y-4">
-          <p>Le site Berlioz Conseil s'engage à protéger vos données personnelles.</p>
-          <p>En V1, le site agit comme une vitrine et ne collecte aucune donnée patrimoniale détaillée. Les demandes de contact sont traitées avec la plus stricte confidentialité.</p>
-          <p class="italic text-sm text-bc-text-muted mt-8">[Mentions RGPD complètes à fournir]</p>
+        <div class="space-y-8">
+          <div class="max-w-none text-bc-text-secondary space-y-4 mb-12">
+            <p>Le site Berlioz Conseil s'engage à protéger vos données personnelles.</p>
+            <p>Le site agit comme une vitrine et ne collecte aucune donnée patrimoniale détaillée. Les demandes de contact sont traitées avec la plus stricte confidentialité.</p>
+            <p><strong>Aucun outil de suivi (Analytics) n'est actif sur le site, et aucun cookie non essentiel n'est déposé sur votre navigateur.</strong> [À VALIDER]</p>
+          </div>
+
+          <LegalNoticeBlock title="Responsable du traitement">
+            <p>Berlioz Conseil EURL, représentée par Aurélien Picard.</p>
+          </LegalNoticeBlock>
+
+          <LegalNoticeBlock title="Données collectées via le formulaire">
+            <p>Lors d'une demande de contact, nous collectons : votre prénom, nom, adresse email, téléphone (optionnel), ville (optionnelle), situation professionnelle, objet de la demande et message.</p>
+            <p><strong>Absence de collecte sensible :</strong> Le formulaire ne permet pas la collecte de données patrimoniales exactes ni le dépôt de documents confidentiels.</p>
+          </LegalNoticeBlock>
+
+          <LegalNoticeBlock title="Finalité et base légale">
+            <p>Finalité : Traitement exclusif de vos demandes de contact et qualification de votre besoin d'accompagnement.</p>
+            <p>Base légale : Votre consentement explicite (Article 6.1.a du RGPD). [À VALIDER]</p>
+          </LegalNoticeBlock>
+
+          <LegalNoticeBlock title="Destinataires des données">
+            <p>Les données sont destinées uniquement à Aurélien Picard, dirigeant de Berlioz Conseil.</p>
+            <p>Sous-traitants techniques impliqués :</p>
+            <ul class="list-disc pl-5 mt-2">
+              <li><strong>Formspree</strong> : Service de routage sécurisé du formulaire de contact.</li>
+              <li><strong>OVH SAS</strong> : Hébergement du site web.</li>
+            </ul>
+          </LegalNoticeBlock>
+
+          <LegalNoticeBlock title="Durée de conservation">
+            <p>Les données relatives à une demande de contact émanant d'un prospect non client sont conservées pendant une durée maximale de 3 ans à compter de leur collecte ou du dernier contact émanant du prospect. Lorsqu'une relation contractuelle est engagée, les données nécessaires au suivi de la relation sont conservées selon les durées applicables aux obligations professionnelles, contractuelles, comptables, fiscales et réglementaires du cabinet. [À VALIDER]</p>
+          </LegalNoticeBlock>
+
+          <LegalNoticeBlock title="Exercice de vos droits">
+            <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement et de portabilité de vos données. Pour l'exercer, contactez-nous par email à : contact@berliozconseil.fr [À VALIDER]</p>
+          </LegalNoticeBlock>
         </div>
       </Container>
     </Section>

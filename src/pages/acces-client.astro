@@ -13,16 +13,23 @@ import Button from '../components/Button.astro';
   <main class="flex-grow premium-gradient flex flex-col justify-center">
     <Section class="text-center">
       <Container class="max-w-2xl">
-        <h1 class="mb-6">Votre espace client</h1>
-        <p class="mb-12 text-bc-text-secondary">L'accès client sera proposé via une redirection externe vers l'environnement sécurisé O2S / MoneyPitch. URL à fournir.</p>
+        <h1 class="mb-6 font-serif">Votre espace client</h1>
+        <p class="mb-12 text-bc-text-secondary text-lg">L'accès à vos informations patrimoniales.</p>
         
-        <Card class="inline-block p-12 max-w-xl mx-auto">
-          <p class="text-sm text-bc-text-muted mb-8 italic">
-            Vous allez être redirigé vers l'environnement sécurisé réservé aux clients accompagnés par Berlioz Conseil.
+        <Card class="inline-block p-12 max-w-xl mx-auto text-left">
+          <p class="text-bc-text-secondary mb-8">
+            Votre espace client vous permet d'accéder à vos documents, à l'état de votre patrimoine et aux informations de votre accompagnement dans l'environnement sécurisé mis à disposition par Berlioz Conseil. 
+            <br/><br/>
+            Pour garantir la confidentialité de vos données, l'accès est opéré via une solution métier dédiée. [À VALIDER]
           </p>
-          <Button variant="secondary" disabled={true} class="w-full">
-            Accéder à mon espace (Lien à venir)
-          </Button>
+          <div class="border-t border-bc-border pt-8 mt-8">
+            <Button href="https://connect.harvest.fr/accueil" target="_blank" rel="noopener noreferrer" variant="primary" class="w-full">
+              Accéder à mon espace client
+            </Button>
+            <p class="text-xs text-bc-text-muted mt-4 text-center italic">
+              Vous allez être redirigé vers l'environnement sécurisé Harvest, utilisé pour l'accès aux services clients O2S / MoneyPitch. Berlioz Conseil ne vous demandera jamais de transmettre vos identifiants, documents confidentiels ou informations patrimoniales détaillées via ce site public.
+            </p>
+          </div>
         </Card>
       </Container>
     </Section>

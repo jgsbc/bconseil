@@ -6,6 +6,7 @@ import PageHero from '../components/PageHero.astro';
 import Section from '../components/Section.astro';
 import Container from '../components/Container.astro';
 import LegalNoticeBlock from '../components/LegalNoticeBlock.astro';
+import ContactForm from '../components/ContactForm.astro';
 ---
 
 <BaseLayout title="Contact">
@@ -13,29 +14,43 @@ import LegalNoticeBlock from '../components/LegalNoticeBlock.astro';
   <main class="flex-grow">
     <PageHero 
       title="Prendre Contact" 
-      description="Pour toute demande d'accompagnement patrimonial, merci d'utiliser les coordonnées ci-dessous." 
+      description="Pour toute demande d'accompagnement patrimonial, merci d'utiliser le formulaire ou les coordonnées ci-dessous." 
     />
     
     <Section>
-      <Container class="max-w-3xl">
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-          <LegalNoticeBlock title="Coordonnées">
-            <p>Email : contact@berliozconseil.fr [À VALIDER]</p>
-            <p>Téléphone : [À FOURNIR]</p>
-          </LegalNoticeBlock>
-          <LegalNoticeBlock title="Adresse">
-            <p>6 rue de la Pelonnière<br/>69660 Collonges-au-Mont-d'Or</p>
-          </LegalNoticeBlock>
-        </div>
+      <Container class="max-w-5xl">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          
+          <!-- Informations de contact (colonne de gauche) -->
+          <div class="lg:col-span-1 space-y-12">
+            <div>
+              <LegalNoticeBlock title="Coordonnées">
+                <p>Email : contact@berliozconseil.fr [À VALIDER]</p>
+                <p>Téléphone : [À FOURNIR]</p>
+              </LegalNoticeBlock>
+            </div>
+            
+            <div>
+              <LegalNoticeBlock title="Adresse">
+                <p>6 rue de la Pelonnière<br/>69660 Collonges-au-Mont-d'Or</p>
+              </LegalNoticeBlock>
+            </div>
+            
+            <div class="border-l-4 border-bc-accent-bronze bg-bc-bg-secondary p-6">
+              <h3 class="text-bc-text-primary text-base font-serif mb-2">Sécurité et confidentialité</h3>
+              <p class="text-bc-text-muted text-sm mb-0">
+                Pour votre sécurité, merci de ne transmettre aucun identifiant, document confidentiel ou information patrimoniale détaillée via ce formulaire. [À VALIDER]
+              </p>
+            </div>
+          </div>
+          
+          <!-- Formulaire (colonne de droite) -->
+          <div class="lg:col-span-2 bg-bc-bg-secondary border border-bc-border p-8 md:p-12">
+            <h2 class="text-2xl font-serif text-bc-text-primary mb-8">Formulaire de contact</h2>
+            <ContactForm />
+          </div>
 
-        <div class="border border-bc-border bg-bc-bg-secondary p-8 text-center">
-          <p class="text-bc-text-muted text-sm italic mb-0">
-            Note : Le formulaire de contact qualifié sera implémenté lors du Lot 4. 
-            Conformément au cadrage, il ne collectera aucune donnée patrimoniale détaillée.
-          </p>
         </div>
-
       </Container>
     </Section>
   </main>

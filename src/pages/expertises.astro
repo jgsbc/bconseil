@@ -14,17 +14,55 @@ import CTASection from '../components/CTASection.astro';
   <main class="flex-grow">
     <PageHero 
       title="Nos Expertises" 
-      description="Domaines d'accompagnement patrimonial et stratégique. Contenu à fournir." 
+      description="Domaines d'accompagnement patrimonial et stratégique. [À VALIDER]" 
     />
     
     <Section>
       <Container>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <ExpertiseCard title="Conseil Patrimonial" description="[À FOURNIR] Placeholder." />
-          <ExpertiseCard title="Assurance & Prévoyance" description="[À FOURNIR] Placeholder." />
-          <ExpertiseCard title="Retraite" description="[À FOURNIR] Placeholder." />
-          <ExpertiseCard title="Investissements Financiers" description="[À FOURNIR] Placeholder." />
-          <ExpertiseCard title="Transmission" description="[À FOURNIR] Placeholder." />
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- 1. Stratégie patrimoniale -->
+          <div class="bg-bc-bg-primary border border-bc-border p-8 hover:border-bc-accent-champagne transition-colors duration-300">
+            <h3 class="text-bc-accent-champagne text-2xl font-serif mb-6">Stratégie patrimoniale</h3>
+            <ul class="space-y-3 text-bc-text-secondary">
+              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Gestion de patrimoine</li>
+              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Allocation d'actifs</li>
+              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Gestion d'actif</li>
+              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Analyse financière</li>
+              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Économie financière</li>
+            </ul>
+          </div>
+
+          <!-- 2. Protection -->
+          <div class="bg-bc-bg-primary border border-bc-border p-8 hover:border-bc-accent-champagne transition-colors duration-300">
+            <h3 class="text-bc-accent-champagne text-2xl font-serif mb-6">Protection</h3>
+            <ul class="space-y-3 text-bc-text-secondary">
+              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Assurances</li>
+              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Prévoyance</li>
+              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Protection de la famille</li>
+              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Régimes de retraite</li>
+            </ul>
+          </div>
+
+          <!-- 3. Transmission -->
+          <div class="bg-bc-bg-primary border border-bc-border p-8 hover:border-bc-accent-champagne transition-colors duration-300">
+            <h3 class="text-bc-accent-champagne text-2xl font-serif mb-6">Transmission</h3>
+            <ul class="space-y-3 text-bc-text-secondary">
+              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Transmission du patrimoine</li>
+              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Transmission d'entreprise</li>
+              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Droit successoral</li>
+              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Droit de la famille</li>
+              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Régimes matrimoniaux</li>
+            </ul>
+          </div>
+
+          <!-- 4. Fiscalité -->
+          <div class="bg-bc-bg-primary border border-bc-border p-8 hover:border-bc-accent-champagne transition-colors duration-300">
+            <h3 class="text-bc-accent-champagne text-2xl font-serif mb-6">Fiscalité</h3>
+            <ul class="space-y-3 text-bc-text-secondary">
+              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Conseil fiscal</li>
+              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Optimisation fiscale <span class="text-xs opacity-50 ml-1">[À VALIDER]</span></li>
+            </ul>
+          </div>
         </div>
       </Container>
     </Section>

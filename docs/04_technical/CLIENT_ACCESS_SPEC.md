@@ -58,15 +58,13 @@ Créer une page de transition premium entre le site Berlioz Conseil et l'espace 
 
 | Information | Statut |
 |---|---|
-| URL exacte de l'espace client O2S | [À FOURNIR] |
-| URL exacte de l'espace client MoneyPitch | [À FOURNIR] |
-| Un seul outil ou les deux ? | [À VALIDER] |
-| Possibilité de sous-domaine dédié (espace.berliozconseil.fr) | [À VALIDER] |
-| Possibilité de personnalisation logo / couleurs dans O2S | [À VALIDER] |
-| Possibilité de personnalisation dans MoneyPitch | [À VALIDER] |
-| Offre marque blanche disponible | [À VALIDER] |
-| Documentation SSO Harvest | [À FOURNIR] si envisagé |
-| Documentation API Harvest | [À FOURNIR] si envisagé |
+| URL exacte de l'espace client O2S / MoneyPitch | ✅ `https://connect.harvest.fr/accueil` |
+| Possibilité de sous-domaine dédié (espace.berliozconseil.fr) | [À VALIDER] pour un lot ultérieur |
+| Possibilité de personnalisation logo / couleurs dans O2S | [À VALIDER] pour un lot ultérieur |
+| Possibilité de personnalisation dans MoneyPitch | [À VALIDER] pour un lot ultérieur |
+| Offre marque blanche disponible | [À VALIDER] pour un lot ultérieur |
+| Documentation SSO Harvest | [À FOURNIR] si envisagé en V2 |
+| Documentation API Harvest | [À FOURNIR] si envisagé en V2 |
 
 ---
 
@@ -83,20 +81,20 @@ Créer une page de transition premium entre le site Berlioz Conseil et l'espace 
 > Pour garantir la confidentialité de vos données, l'accès est opéré via une solution métier dédiée.
 
 **Bouton :**
-> Accéder à mon espace client
+> Accéder à mon espace client (Lien : `https://connect.harvest.fr/accueil` cible `_blank`)
 
 **Mention sous le bouton :**
-> Vous allez être redirigé vers l'environnement sécurisé réservé aux clients accompagnés par Berlioz Conseil.
+> Vous allez être redirigé vers l'environnement sécurisé Harvest, utilisé pour l'accès aux services clients O2S / MoneyPitch. Berlioz Conseil ne vous demandera jamais de transmettre vos identifiants, documents confidentiels ou informations patrimoniales détaillées via ce site public.
 
 ---
 
 ## Flux V1
 
 ```
-Visiteur → Page /acces-client → Clic bouton → Redirection externe vers URL O2S/MoneyPitch [À FOURNIR]
+Visiteur → Page /acces-client → Clic bouton → Redirection externe vers https://connect.harvest.fr/accueil
 ```
 
-Aucune donnée n'est échangée entre le site Berlioz Conseil et Harvest en V1.
+Aucune donnée n'est échangée entre le site Berlioz Conseil et Harvest en V1. Il s'agit d'une simple redirection HTML sécurisée (`target="_blank" rel="noopener noreferrer"`).
 
 ---
 

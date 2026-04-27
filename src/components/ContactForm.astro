@@ -1,0 +1,111 @@
+---
+import Button from './Button.astro';
+---
+
+<form action="https://formspree.io/f/xgorjwkw" method="POST" class="space-y-6">
+  <!-- Honeypot anti-spam Formspree -->
+  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" />
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <label for="prenom" class="block text-sm font-medium text-bc-text-primary mb-2">Prénom *</label>
+      <input type="text" id="prenom" name="prenom" required class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors" />
+    </div>
+    <div>
+      <label for="nom" class="block text-sm font-medium text-bc-text-primary mb-2">Nom *</label>
+      <input type="text" id="nom" name="nom" required class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors" />
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <label for="email" class="block text-sm font-medium text-bc-text-primary mb-2">Email *</label>
+      <input type="email" id="email" name="email" required class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors" />
+    </div>
+    <div>
+      <label for="telephone" class="block text-sm font-medium text-bc-text-primary mb-2">Téléphone</label>
+      <input type="tel" id="telephone" name="telephone" class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors" />
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <label for="ville" class="block text-sm font-medium text-bc-text-primary mb-2">Ville</label>
+      <input type="text" id="ville" name="ville" class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors" />
+    </div>
+    <div>
+      <label for="situation" class="block text-sm font-medium text-bc-text-primary mb-2">Situation professionnelle</label>
+      <select id="situation" name="situation" class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors appearance-none">
+        <option value="">Sélectionnez...</option>
+        <option value="dirigeant">Dirigeant d'entreprise</option>
+        <option value="independant">Indépendant / Profession libérale</option>
+        <option value="salarie">Salarié / Cadre</option>
+        <option value="retraite">Retraité</option>
+        <option value="autre">Autre</option>
+      </select>
+    </div>
+  </div>
+
+  <div>
+    <label for="objet" class="block text-sm font-medium text-bc-text-primary mb-2">Objet de la demande *</label>
+    <select id="objet" name="objet" required class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors appearance-none">
+      <option value="">Sélectionnez un motif...</option>
+      <option value="conseil">Conseil patrimonial global</option>
+      <option value="assurance">Assurance et prévoyance</option>
+      <option value="retraite">Retraite</option>
+      <option value="epargne">Épargne et investissement</option>
+      <option value="transmission">Transmission</option>
+      <option value="dirigeant">Protection du dirigeant</option>
+      <option value="famille">Protection de la famille</option>
+      <option value="immobilier">Immobilier</option>
+      <option value="autre">Autre</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="message" class="block text-sm font-medium text-bc-text-primary mb-2">Message</label>
+    <textarea id="message" name="message" rows="4" class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors"></textarea>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 border-t border-bc-border pt-6 mt-6">
+    <div>
+      <span class="block text-sm font-medium text-bc-text-primary mb-3">Préférence de contact</span>
+      <div class="flex gap-4">
+        <label class="flex items-center gap-2 text-sm text-bc-text-secondary cursor-pointer">
+          <input type="radio" name="preference_contact" value="email" class="accent-bc-accent-champagne" />
+          Email
+        </label>
+        <label class="flex items-center gap-2 text-sm text-bc-text-secondary cursor-pointer">
+          <input type="radio" name="preference_contact" value="telephone" class="accent-bc-accent-champagne" />
+          Téléphone
+        </label>
+        <label class="flex items-center gap-2 text-sm text-bc-text-secondary cursor-pointer">
+          <input type="radio" name="preference_contact" value="indifferent" class="accent-bc-accent-champagne" checked />
+          Indifférent
+        </label>
+      </div>
+    </div>
+    <div>
+      <label for="creneau" class="block text-sm font-medium text-bc-text-primary mb-2">Créneau préféré (si téléphone)</label>
+      <input type="text" id="creneau" name="creneau" placeholder="Ex: Matin, après-midi..." class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors" />
+    </div>
+  </div>
+
+  <div class="border-t border-bc-border pt-6 mt-6">
+    <label for="rgpd" class="flex items-start gap-3 cursor-pointer">
+      <input type="checkbox" id="rgpd" name="rgpd" required class="mt-1 accent-bc-accent-champagne" />
+      <span class="text-sm text-bc-text-secondary">
+        J'accepte que les informations transmises soient utilisées par Berlioz Conseil afin de répondre à ma demande de contact. J'ai pris connaissance de la politique de confidentialité. [À VALIDER]
+      </span>
+    </label>
+  </div>
+  
+  <!-- Redirection page de confirmation -->
+  <input type="hidden" name="_next" value="/merci" />
+
+  <div class="pt-6">
+    <Button variant="primary" class="w-full md:w-auto" type="submit">
+      Envoyer la demande
+    </Button>
+  </div>
+</form>

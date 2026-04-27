@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Section from '../components/Section.astro';
+import Container from '../components/Container.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout 
+  title="Page introuvable" 
+  description="La page que vous recherchez n'existe pas ou a été déplacée."
+>
+  <Header />
+  <main class="flex-grow flex flex-col justify-center">
+    <Section class="text-center">
+      <Container class="max-w-xl">
+        <h1 class="text-5xl font-serif text-bc-accent-champagne mb-6">404</h1>
+        <h2 class="text-2xl font-serif text-bc-text-primary mb-6">Page introuvable</h2>
+        <p class="text-bc-text-secondary mb-12">
+          La page que vous recherchez semble ne plus exister ou l'URL saisie est incorrecte.
+        </p>
+        <Button href="/" variant="primary">
+          Retour à l'accueil
+        </Button>
+      </Container>
+    </Section>
+  </main>
+  <Footer />
+</BaseLayout>
