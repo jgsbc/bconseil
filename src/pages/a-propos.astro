@@ -2,68 +2,160 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import PageHero from '../components/PageHero.astro';
 import Section from '../components/Section.astro';
 import Container from '../components/Container.astro';
 import CTASection from '../components/CTASection.astro';
+import Eyebrow from '../components/Eyebrow.astro';
 ---
 
 <BaseLayout title="À propos">
   <Header />
   <main class="flex-grow">
-    <PageHero 
-      title="À propos de Berlioz Conseil" 
-      description="Parcours, posture et certifications." 
-    />
+    
+    <Section class="premium-gradient border-b border-bc-border min-h-[50vh] flex items-center">
+      <Container class="max-w-4xl">
+        <Eyebrow>Aurélien Picard</Eyebrow>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl leading-tight mb-8">
+          Un parcours construit au croisement du conseil patrimonial, de l'assurance, de la finance et de la transmission. <span class="text-bc-accent-champagne italic">[À VALIDER]</span>
+        </h1>
+      </Container>
+    </Section>
     
     <Section>
-      <Container class="max-w-3xl">
-        <div class="max-w-none text-bc-text-secondary space-y-8">
-          <p class="text-xl text-bc-text-primary font-light italic border-l-2 border-bc-accent-champagne pl-6 py-2 mb-12">
-            "Berlioz Conseil accompagne les décisions patrimoniales importantes avec méthode, discrétion et exigence." [À VALIDER]
-          </p>
+      <Container class="max-w-4xl">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24">
           
+          <div class="md:col-span-12 lg:col-span-8 space-y-8 text-bc-text-secondary text-lg leading-relaxed">
+            <h2 class="text-bc-text-primary mb-6">Une approche de conseil dans la durée</h2>
+            <p>
+              Depuis plus de quinze ans, Aurélien Picard accompagne des particuliers, familles, dirigeants et entrepreneurs dans la structuration de leurs décisions patrimoniales. Son parcours s'est construit au sein d'acteurs reconnus de l'assurance, de la prévoyance et de la gestion de patrimoine, avant la création de Berlioz Conseil en 2019. [À VALIDER]
+            </p>
+            <p>
+              À travers Berlioz Conseil, il privilégie une approche volontairement confidentielle : prendre le temps de comprendre une situation, relier les enjeux personnels, familiaux, professionnels et fiscaux, puis construire une stratégie lisible, cohérente et suivie dans la durée. [À VALIDER]
+            </p>
+            <p>
+              Le conseil patrimonial ne consiste pas seulement à proposer des solutions. Il consiste d'abord à poser les bonnes questions, à hiérarchiser les priorités, à protéger ce qui doit l'être et à préparer les décisions qui engagent l'avenir. [À VALIDER]
+            </p>
+          </div>
+
+        </div>
+      </Container>
+    </Section>
+
+    <Section bg="secondary" class="border-y border-bc-border">
+      <Container class="max-w-5xl">
+        <h2 class="text-center mb-16">Un parcours patrimonial depuis plus de quinze ans</h2>
+        
+        <div class="space-y-8">
+          <div class="flex flex-col md:flex-row gap-4 md:gap-8 bg-bc-bg-primary p-6 md:p-8 border border-bc-border hover:border-bc-accent-champagne transition-colors">
+            <div class="md:w-1/4 flex-shrink-0 text-bc-accent-champagne font-serif text-xl">Depuis 2019</div>
+            <div>
+              <h3 class="text-bc-text-primary font-medium text-lg mb-2">Berlioz Conseil</h3>
+              <p class="text-bc-text-secondary text-sm mb-0">Conseiller en investissement financier indépendant.</p>
+            </div>
+          </div>
+          
+          <div class="flex flex-col md:flex-row gap-4 md:gap-8 bg-bc-bg-primary p-6 md:p-8 border border-bc-border">
+            <div class="md:w-1/4 flex-shrink-0 text-bc-text-muted font-serif text-xl">2013 &mdash; 2019</div>
+            <div>
+              <h3 class="text-bc-text-primary font-medium text-lg mb-2">Allianz</h3>
+              <p class="text-bc-text-secondary text-sm mb-0">Conseiller en gestion de patrimoine.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-4 md:gap-8 bg-bc-bg-primary p-6 md:p-8 border border-bc-border">
+            <div class="md:w-1/4 flex-shrink-0 text-bc-text-muted font-serif text-xl">2009 &mdash; 2012</div>
+            <div>
+              <h3 class="text-bc-text-primary font-medium text-lg mb-2">GAN</h3>
+              <p class="text-bc-text-secondary text-sm mb-0">Conseil en patrimoine et prévoyance.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-4 md:gap-8 bg-bc-bg-primary p-6 md:p-8 border border-bc-border">
+            <div class="md:w-1/4 flex-shrink-0 text-bc-text-muted font-serif text-xl">2008</div>
+            <div>
+              <h3 class="text-bc-text-primary font-medium text-lg mb-2">CIC</h3>
+              <p class="text-bc-text-secondary text-sm mb-0">Conseiller en gestion de patrimoine (stage de fin d'étude Master 2).</p>
+            </div>
+          </div>
+        </div>
+      </Container>
+    </Section>
+
+    <Section>
+      <Container class="max-w-5xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+          
+          <!-- Formation -->
           <div>
-            <h3 class="text-bc-text-primary text-xl font-serif mb-4">Aurélien Picard</h3>
-            <p class="mb-4">
-              Fort d'une expérience de plus de 15 ans dans le secteur financier et patrimonial, Aurélien Picard a fondé Berlioz Conseil avec la volonté d'offrir un accompagnement indépendant et structuré. [À VALIDER]
-            </p>
-            <ul class="space-y-3 text-bc-text-secondary mt-6 border-l border-bc-border pl-6">
-              <li><strong class="text-bc-text-primary font-medium">Depuis 2019 :</strong> Berlioz Conseil — Conseiller en investissement financier indépendant.</li>
-              <li><strong class="text-bc-text-primary font-medium">2013-2019 :</strong> Allianz — Conseiller en gestion de patrimoine.</li>
-              <li><strong class="text-bc-text-primary font-medium">2009-2012 :</strong> GAN — Conseil en patrimoine et prévoyance.</li>
-              <li><strong class="text-bc-text-primary font-medium">2008 :</strong> CIC — Conseiller en gestion de patrimoine (stage de fin d'étude).</li>
-            </ul>
-          </div>
-
-          <div class="pt-8 border-t border-bc-border">
-            <h3 class="text-bc-text-primary text-xl font-serif mb-6">Formations</h3>
-            <ul class="space-y-4 text-bc-text-secondary">
-              <li>
-                <strong class="text-bc-text-primary block">iaelyon School of Management</strong>
-                Master 2 Finance et services de gestion financière.
+            <h2 class="mb-8">Formation et culture financière</h2>
+            <ul class="space-y-6">
+              <li class="border-b border-bc-border pb-6 last:border-0">
+                <strong class="text-bc-text-primary block text-lg mb-1">iaelyon School of Management</strong>
+                <span class="text-bc-text-secondary">Master 2 Finance et services de gestion financière</span>
               </li>
-              <li>
-                <strong class="text-bc-text-primary block">JurisCampus</strong>
-                AMF Finance Durable, niveau réussite [À VALIDER].
+              <li class="border-b border-bc-border pb-6 last:border-0">
+                <strong class="text-bc-text-primary block text-lg mb-1">JurisCampus</strong>
+                <span class="text-bc-text-secondary">AMF Finance Durable, niveau réussite <span class="opacity-50 text-sm">[À VALIDER]</span></span>
               </li>
-              <li>
-                <strong class="text-bc-text-primary block">IDRAC Business School</strong>
-                Master 1 marketing et management européen, spécialité finance.
+              <li class="border-b border-bc-border pb-6 last:border-0">
+                <strong class="text-bc-text-primary block text-lg mb-1">IDRAC Business School</strong>
+                <span class="text-bc-text-secondary">Master 1 marketing et management européen, spécialité finance</span>
               </li>
-              <li>
-                <strong class="text-bc-text-primary block">University of Huddersfield</strong>
-                BA International Business.
+              <li class="border-b border-bc-border pb-6 last:border-0">
+                <strong class="text-bc-text-primary block text-lg mb-1">University of Huddersfield</strong>
+                <span class="text-bc-text-secondary">BA International Business</span>
               </li>
             </ul>
           </div>
 
-          <div class="pt-8 border-t border-bc-border">
-            <h3 class="text-bc-text-primary text-xl font-serif mb-4">Références</h3>
-            <p class="mb-4 text-bc-text-muted italic">
-              [À FOURNIR] Références affichables si applicable.
-            </p>
+          <!-- Domaines de compétence -->
+          <div>
+            <h2 class="mb-8">Domaines de compétence</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+              <div>
+                <h3 class="text-bc-accent-champagne font-serif text-lg mb-4">Stratégie & Finance</h3>
+                <ul class="space-y-2 text-sm text-bc-text-secondary">
+                  <li>Gestion de patrimoine</li>
+                  <li>Investissements</li>
+                  <li>Allocation d'actifs</li>
+                  <li>Analyse financière</li>
+                  <li>Économie financière</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="text-bc-accent-champagne font-serif text-lg mb-4">Droit & Transmission</h3>
+                <ul class="space-y-2 text-sm text-bc-text-secondary">
+                  <li>Transmission du patrimoine</li>
+                  <li>Transmission d'entreprise</li>
+                  <li>Droit successoral</li>
+                  <li>Droit de la famille</li>
+                  <li>Régimes matrimoniaux</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="text-bc-accent-champagne font-serif text-lg mb-4">Protection & Prévoyance</h3>
+                <ul class="space-y-2 text-sm text-bc-text-secondary">
+                  <li>Assurances</li>
+                  <li>Protection de la famille</li>
+                  <li>Régimes de retraite</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="text-bc-accent-champagne font-serif text-lg mb-4">Fiscalité</h3>
+                <ul class="space-y-2 text-sm text-bc-text-secondary">
+                  <li>Conseil fiscal</li>
+                  <li>Optimisation fiscale <span class="opacity-50">[À VALIDER]</span></li>
+                </ul>
+              </div>
+
+            </div>
           </div>
+
         </div>
       </Container>
     </Section>

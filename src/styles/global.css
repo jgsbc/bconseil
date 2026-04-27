@@ -31,9 +31,9 @@
     color: var(--color-bc-text-primary);
   }
 
-  h1 { @apply text-4xl md:text-5xl font-light tracking-tight mb-8 font-serif; }
+  h1 { @apply text-3xl md:text-5xl font-light tracking-tight mb-8 font-serif; }
   h2 { @apply text-2xl md:text-3xl font-light tracking-tight mb-6 font-serif; }
-  p { @apply text-lg leading-relaxed mb-4; }
+  p { @apply text-base md:text-lg leading-relaxed mb-4; }
 }
 
 @layer utilities {
