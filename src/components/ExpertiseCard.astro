@@ -8,7 +8,7 @@ interface Props {
 
 const { title, description } = Astro.props;
 ---
-<Card class="flex flex-col h-full hover:border-bc-accent-bronze transition-colors duration-500">
+<Card class="flex flex-col h-full">
   <h3 class="text-xl font-light text-bc-text-primary mb-4 font-serif">{title}</h3>
   <p class="text-bc-text-secondary text-sm flex-grow mb-0">{description}</p>
 </Card>

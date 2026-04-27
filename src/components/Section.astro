@@ -8,6 +8,6 @@ interface Props {
 const { class: className = '', id, bg = 'primary' } = Astro.props;
 const bgClass = bg === 'secondary' ? 'bg-bc-bg-secondary' : '';
 ---
-<section id={id} class={`py-24 md:py-32 ${bgClass} ${className}`}>
+<section id={id} class={`py-24 md:py-32 ${bgClass} reveal-soft ${className}`}>
   <slot />
 </section>

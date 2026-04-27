@@ -1,13 +1,13 @@
 # Active Lot — Berlioz Conseil
 
 **Dernière mise à jour :** 2026-04-27  
-**Statut :** LOT 8-bis — Terminé
+**Statut :** LOT 9 — Terminé
 
 ---
 
 ## Lot courant
 
-**LOT 8-bis — Affinage UX mobile, page À propos premium et header responsive (Terminé)**
+**LOT 9 — Micro-interactions premium et mouvement discret (Terminé)**
 
 ---
 

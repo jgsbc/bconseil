@@ -46,15 +46,17 @@
 
 ## 3. Page À propos (`/a-propos`)
 
-**Titre :** À propos de Berlioz Conseil  
-**Sous-titre :** Parcours, posture et certifications.
+**Titre :** Aurélien Picard  
+**Sous-titre :** Un conseiller patrimonial formé par le terrain, les institutions financières et les situations de vie que l'on ne résume pas dans un tableau. [À VALIDER]
 
-**Présentation :**
-> Berlioz Conseil accompagne les décisions patrimoniales importantes avec méthode, discrétion et exigence. [À VALIDER]
+**Sections narratives :**
+- Une trajectoire construite dans la durée
+- Une culture financière et patrimoniale
+- Ce que cela change dans la relation
 
-**Parcours d'Aurélien Picard :** [À FOURNIR] (Texte détaillé de votre parcours professionnel)  
-**Certifications :** [À FOURNIR] (Liste des certifications obtenues, diplômes)  
-**Références :** [À FOURNIR] (Si applicable et publiable)
+**Blocs repères :**
+- Quelques repères (Parcours simplifié et formations)
+- Domaines de compétence (Stratégie, Protection, Transmission, Fiscalité, Allocation)
 
 ---
 
