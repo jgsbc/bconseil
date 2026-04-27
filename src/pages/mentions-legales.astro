@@ -2,21 +2,35 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+import Container from '../components/Container.astro';
+import LegalNoticeBlock from '../components/LegalNoticeBlock.astro';
 ---
 
 <BaseLayout title="Mentions légales">
-	<Header />
-	<main class="flex-grow py-24">
-		<div class="container">
-			<h1>Mentions légales</h1>
-			<p>Contenu à fournir et valider.</p>
-			<div class="space-y-4 text-sm text-zinc-400 mt-8">
-				<p>Berlioz Conseil EURL</p>
-				<p>SIRET : 85068322800025</p>
-				<p>Dirigeant : Aurélien Picard</p>
-				<p>Hébergeur : [À FOURNIR]</p>
-			</div>
-		</div>
-	</main>
-	<Footer />
+  <Header />
+  <main class="flex-grow">
+    <PageHero 
+      title="Mentions légales" 
+      description="Contenu à fournir et valider." 
+    />
+    
+    <Section>
+      <Container class="max-w-3xl">
+        <div class="space-y-8">
+          <LegalNoticeBlock title="Éditeur du site">
+            <p>Berlioz Conseil EURL</p>
+            <p>SIRET : 85068322800025</p>
+            <p>Dirigeant : Aurélien Picard</p>
+          </LegalNoticeBlock>
+
+          <LegalNoticeBlock title="Hébergement">
+            <p>[À FOURNIR]</p>
+          </LegalNoticeBlock>
+        </div>
+      </Container>
+    </Section>
+  </main>
+  <Footer />
 </BaseLayout>

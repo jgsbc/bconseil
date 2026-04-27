@@ -2,18 +2,28 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+import Container from '../components/Container.astro';
 ---
 
 <BaseLayout title="Confidentialité">
-	<Header />
-	<main class="flex-grow py-24">
-		<div class="container">
-			<h1>Politique de confidentialité</h1>
-			<p>Contenu RGPD à fournir et valider.</p>
-			<div class="mt-8 text-zinc-400">
-				<p>Le site ne collecte aucune donnée patrimoniale détaillée.</p>
-			</div>
-		</div>
-	</main>
-	<Footer />
+  <Header />
+  <main class="flex-grow">
+    <PageHero 
+      title="Politique de confidentialité" 
+      description="Contenu RGPD à fournir et valider." 
+    />
+    
+    <Section>
+      <Container class="max-w-3xl">
+        <div class="max-w-none text-bc-text-secondary space-y-4">
+          <p>Le site Berlioz Conseil s'engage à protéger vos données personnelles.</p>
+          <p>En V1, le site agit comme une vitrine et ne collecte aucune donnée patrimoniale détaillée. Les demandes de contact sont traitées avec la plus stricte confidentialité.</p>
+          <p class="italic text-sm text-bc-text-muted mt-8">[Mentions RGPD complètes à fournir]</p>
+        </div>
+      </Container>
+    </Section>
+  </main>
+  <Footer />
 </BaseLayout>

@@ -2,18 +2,34 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+import Container from '../components/Container.astro';
+import CTASection from '../components/CTASection.astro';
 ---
 
 <BaseLayout title="À propos">
-	<Header />
-	<main class="flex-grow py-24">
-		<div class="container">
-			<h1>À propos de Berlioz Conseil</h1>
-			<p>Parcours, certifications et posture d'Aurélien Picard. Contenu à fournir.</p>
-			<div class="mt-12 max-w-3xl">
-				<p class="italic">[Texte de présentation validé à fournir]</p>
-			</div>
-		</div>
-	</main>
-	<Footer />
+  <Header />
+  <main class="flex-grow">
+    <PageHero 
+      title="À propos de Berlioz Conseil" 
+      description="Parcours, certifications et posture d'Aurélien Picard. Contenu à fournir." 
+    />
+    
+    <Section>
+      <Container class="max-w-3xl">
+        <div class="max-w-none text-bc-text-secondary space-y-4">
+          <p class="text-xl text-bc-text-primary font-light italic border-l-2 border-bc-accent-champagne pl-6 py-2 mb-12">
+            [Texte de présentation validé à fournir]
+          </p>
+          <p>
+            Aurélien Picard... [Contenu de parcours à rédiger et valider lors du Lot 2 complet].
+          </p>
+        </div>
+      </Container>
+    </Section>
+
+    <CTASection />
+  </main>
+  <Footer />
 </BaseLayout>

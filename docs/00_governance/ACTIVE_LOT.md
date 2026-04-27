@@ -1,13 +1,13 @@
 # Active Lot — Berlioz Conseil
 
 **Dernière mise à jour :** 2026-04-27  
-**Statut :** LOT 1 — Terminé
+**Statut :** LOT 2 — Terminé
 
 ---
 
 ## Lot courant
 
-**LOT 1 — Bootstrap technique Astro (Terminé)**
+**LOT 2 — Design system premium minimal (Terminé)**
 
 ---
 

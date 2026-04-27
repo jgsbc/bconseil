@@ -2,22 +2,30 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Section from '../components/Section.astro';
+import Container from '../components/Container.astro';
+import Card from '../components/Card.astro';
+import Button from '../components/Button.astro';
 ---
 
 <BaseLayout title="Accès client">
-	<Header />
-	<main class="flex-grow py-24 text-center">
-		<div class="container max-w-2xl">
-			<h1>Votre espace client</h1>
-			<p class="mb-12">L'accès client sera proposé via une redirection externe vers l'environnement sécurisé O2S / MoneyPitch. URL à fournir.</p>
-			
-			<div class="inline-block p-12 border border-zinc-800 bg-zinc-900/30">
-				<p class="text-sm mb-8 italic">Vous allez être redirigé vers l'environnement sécurisé réservé aux clients accompagnés par Berlioz Conseil.</p>
-				<button disabled class="px-8 py-3 bg-zinc-800 text-zinc-500 cursor-not-allowed uppercase tracking-widest text-xs border border-zinc-700">
-					Accéder à mon espace client (Lien à venir)
-				</button>
-			</div>
-		</div>
-	</main>
-	<Footer />
+  <Header />
+  <main class="flex-grow premium-gradient flex flex-col justify-center">
+    <Section class="text-center">
+      <Container class="max-w-2xl">
+        <h1 class="mb-6">Votre espace client</h1>
+        <p class="mb-12 text-bc-text-secondary">L'accès client sera proposé via une redirection externe vers l'environnement sécurisé O2S / MoneyPitch. URL à fournir.</p>
+        
+        <Card class="inline-block p-12 max-w-xl mx-auto">
+          <p class="text-sm text-bc-text-muted mb-8 italic">
+            Vous allez être redirigé vers l'environnement sécurisé réservé aux clients accompagnés par Berlioz Conseil.
+          </p>
+          <Button variant="secondary" disabled={true} class="w-full">
+            Accéder à mon espace (Lien à venir)
+          </Button>
+        </Card>
+      </Container>
+    </Section>
+  </main>
+  <Footer />
 </BaseLayout>

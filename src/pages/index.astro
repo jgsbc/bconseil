@@ -2,19 +2,31 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Section from '../components/Section.astro';
+import Container from '../components/Container.astro';
+import Eyebrow from '../components/Eyebrow.astro';
+import Button from '../components/Button.astro';
 ---
 
 <BaseLayout title="Accueil">
-	<Header />
-	<main class="flex-grow py-24">
-		<div class="container">
-			<span class="text-zinc-500 uppercase tracking-[0.3em] text-xs mb-4 block">Cabinet de Conseil Patrimonial</span>
-			<h1>Berlioz Conseil — accompagnement patrimonial confidentiel [À VALIDER]</h1>
-			<p class="max-w-2xl">
-				Une approche sélective et exigeante pour la protection et la transmission de votre patrimoine. 
-				Placeholder de présentation à valider par Berlioz Conseil.
-			</p>
-		</div>
-	</main>
-	<Footer />
+  <Header />
+  <main class="flex-grow">
+    <Section class="premium-gradient min-h-[70vh] flex items-center">
+      <Container>
+        <Eyebrow>Cabinet de Conseil Patrimonial</Eyebrow>
+        <h1 class="max-w-4xl text-5xl md:text-7xl mb-8">
+          Accompagnement patrimonial <span class="text-bc-accent-champagne italic">confidentiel</span> [À VALIDER]
+        </h1>
+        <p class="max-w-2xl text-xl text-bc-text-secondary mb-12">
+          Une approche sélective et exigeante pour la protection et la transmission de votre patrimoine. 
+          Placeholder de présentation à valider par Berlioz Conseil.
+        </p>
+        <div class="flex flex-wrap gap-6">
+          <Button href="/expertises" variant="primary">Découvrir nos expertises</Button>
+          <Button href="/contact" variant="outline">Prendre contact</Button>
+        </div>
+      </Container>
+    </Section>
+  </main>
+  <Footer />
 </BaseLayout>
