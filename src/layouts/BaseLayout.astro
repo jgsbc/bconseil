@@ -1,0 +1,25 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Berlioz Conseil — Accompagnement patrimonial confidentiel [À VALIDER]" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | Berlioz Conseil</title>
+	</head>
+	<body class="premium-gradient">
+		<slot />
+	</body>
+</html>

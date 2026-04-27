@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Expertises">
+	<Header />
+	<main class="flex-grow py-24">
+		<div class="container">
+			<h1>Nos Expertises</h1>
+			<p>Domaines d'accompagnement patrimonial et stratégique. Contenu à fournir.</p>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+				<div class="p-8 border border-zinc-800 bg-zinc-900/30">
+					<h3 class="text-xl font-light mb-4 text-white tracking-tight uppercase">Conseil Patrimonial</h3>
+					<p class="text-sm">[À FOURNIR]</p>
+				</div>
+				<div class="p-8 border border-zinc-800 bg-zinc-900/30">
+					<h3 class="text-xl font-light mb-4 text-white tracking-tight uppercase">Assurance & Prévoyance</h3>
+					<p class="text-sm">[À FOURNIR]</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<Footer />
+</BaseLayout>

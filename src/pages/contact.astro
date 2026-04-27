@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Contact">
+	<Header />
+	<main class="flex-grow py-24">
+		<div class="container max-w-3xl">
+			<h1>Contact</h1>
+			<p>Pour toute demande d'accompagnement patrimonial, merci d'utiliser les coordonnées ci-dessous.</p>
+			
+			<div class="mt-12 space-y-4">
+				<p><span class="text-white uppercase tracking-widest text-xs block mb-1">Email</span> contact@berliozconseil.fr [À VALIDER]</p>
+				<p><span class="text-white uppercase tracking-widest text-xs block mb-1">Adresse</span> 6 rue de la Pelonnière, 69660 Collonges-au-Mont-d'Or</p>
+			</div>
+
+			<div class="mt-16 p-8 border border-zinc-800 bg-zinc-900/20">
+				<p class="text-xs text-zinc-500 italic">
+					Note : Le formulaire de contact fonctionnel sera implémenté lors du Lot 4. 
+					Conformément au cadrage, il ne collectera aucune donnée patrimoniale détaillée.
+				</p>
+			</div>
+		</div>
+	</main>
+	<Footer />
+</BaseLayout>

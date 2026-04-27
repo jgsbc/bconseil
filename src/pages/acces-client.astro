@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Accès client">
+	<Header />
+	<main class="flex-grow py-24 text-center">
+		<div class="container max-w-2xl">
+			<h1>Votre espace client</h1>
+			<p class="mb-12">L'accès client sera proposé via une redirection externe vers l'environnement sécurisé O2S / MoneyPitch. URL à fournir.</p>
+			
+			<div class="inline-block p-12 border border-zinc-800 bg-zinc-900/30">
+				<p class="text-sm mb-8 italic">Vous allez être redirigé vers l'environnement sécurisé réservé aux clients accompagnés par Berlioz Conseil.</p>
+				<button disabled class="px-8 py-3 bg-zinc-800 text-zinc-500 cursor-not-allowed uppercase tracking-widest text-xs border border-zinc-700">
+					Accéder à mon espace client (Lien à venir)
+				</button>
+			</div>
+		</div>
+	</main>
+	<Footer />
+</BaseLayout>
