@@ -1,13 +1,13 @@
 # Active Lot — Berlioz Conseil
 
 **Dernière mise à jour :** 2026-04-27  
-**Statut :** LOT 9 — Terminé
+**Statut :** LOT 9-bis — Terminé
 
 ---
 
 ## Lot courant
 
-**LOT 9 — Micro-interactions premium et mouvement discret (Terminé)**
+**LOT 9-bis — Motion design premium perceptible (Terminé)**
 
 ---
 
