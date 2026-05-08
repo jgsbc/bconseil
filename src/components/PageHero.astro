@@ -4,11 +4,12 @@ import Container from './Container.astro';
 interface Props {
   title: string;
   description?: string;
+  bgClass?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, bgClass = "" } = Astro.props;
 ---
-<header class="py-24 md:py-32 border-b border-bc-border premium-gradient">
+<header class={`py-24 md:py-32 border-b border-bc-border premium-gradient ${bgClass}`}>
   <Container>
     <h1 class="mb-4 md:mb-6">{title}</h1>
     {description && <p class="max-w-2xl text-xl text-bc-text-secondary m-0">{description}</p>}

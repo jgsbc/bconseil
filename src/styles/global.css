@@ -27,13 +27,26 @@
     flex-direction: column;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: var(--color-bc-text-primary);
   }
 
-  h1 { @apply text-3xl md:text-5xl font-light tracking-tight mb-8 font-serif; }
-  h2 { @apply text-2xl md:text-3xl font-light tracking-tight mb-6 font-serif; }
-  p { @apply text-base md:text-lg leading-relaxed mb-4; }
+  h1 {
+    @apply text-3xl md:text-5xl font-light tracking-tight mb-8 font-serif;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl font-light tracking-tight mb-6 font-serif;
+  }
+
+  p {
+    @apply text-base md:text-lg leading-relaxed mb-4;
+  }
 }
 
 @layer utilities {
@@ -42,12 +55,14 @@
   }
 
   @media (prefers-reduced-motion: no-preference) {
+
     /* Section Reveal Animation */
     .js-enabled .section-reveal {
       opacity: 0;
       transform: translateY(24px);
       transition: opacity 1000ms cubic-bezier(0.16, 1, 0.3, 1), transform 1000ms cubic-bezier(0.16, 1, 0.3, 1);
     }
+
     .js-enabled .section-reveal.is-visible {
       opacity: 1;
       transform: translateY(0);
@@ -60,6 +75,7 @@
         transform: translateY(24px);
         filter: blur(6px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
@@ -71,9 +87,17 @@
       animation: entranceUp 1100ms cubic-bezier(0.16, 1, 0.3, 1) both;
     }
 
-    .entrance-delay-1 { animation-delay: 180ms; }
-    .entrance-delay-2 { animation-delay: 360ms; }
-    .entrance-delay-3 { animation-delay: 540ms; }
+    .entrance-delay-1 {
+      animation-delay: 180ms;
+    }
+
+    .entrance-delay-2 {
+      animation-delay: 360ms;
+    }
+
+    .entrance-delay-3 {
+      animation-delay: 540ms;
+    }
 
     /* Ambient Halo */
     @keyframes ambientDrift {
@@ -81,6 +105,7 @@
         transform: translate3d(-3%, -2%, 0) scale(1);
         opacity: 0.24;
       }
+
       100% {
         transform: translate3d(4%, 3%, 0) scale(1.12);
         opacity: 0.38;
@@ -90,7 +115,7 @@
     .ambient-halo {
       animation: ambientDrift 24s ease-in-out infinite alternate;
     }
-    
+
     /* Card Hover Lift */
     .premium-card-motion {
       transition:
@@ -107,6 +132,7 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
@@ -118,6 +144,173 @@
 
     .ambient-halo {
       animation: none !important;
+    }
+  }
+
+  /* Abstract Background System */
+  .bg-visual {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bg-visual>* {
+    position: relative;
+    z-index: 10;
+  }
+
+  .bg-visual::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .bg-visual::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(8, 10, 15, 0.18), rgba(8, 10, 15, 0.72));
+  }
+
+  /* Specific backgrounds */
+  .bg-hero-landing-a::before {
+    background-image: url('/assets/backgrounds/bg-hero-landing-a.webp');
+    opacity: 0.82;
+  }
+
+  .bg-hero-landing-b::before {
+    background-image: url('/assets/backgrounds/bg-hero-landing-b.webp');
+    opacity: 0.78;
+  }
+
+  .bg-inner-a::before {
+    background-image: url('/assets/backgrounds/bg-inner-a.webp');
+    opacity: 0.56;
+  }
+
+  .bg-inner-b::before {
+    background-image: url('/assets/backgrounds/bg-inner-b.webp');
+    opacity: 0.50;
+  }
+
+  .bg-structured-a::before {
+    background-image: url('/assets/backgrounds/bg-structured-a.webp');
+    opacity: 0.52;
+  }
+
+  .bg-structured-b::before {
+    background-image: url('/assets/backgrounds/bg-structured-b.webp');
+    opacity: 0.44;
+  }
+
+  .bg-about-a::before {
+    background-image: url('/assets/backgrounds/bg-about-a.webp');
+    opacity: 0.62;
+  }
+
+  .bg-about-b::before {
+    background-image: url('/assets/backgrounds/bg-about-b.webp');
+    opacity: 0.56;
+  }
+
+  .bg-legal-a::before {
+    background-image: url('/assets/backgrounds/bg-legal-a.webp');
+    opacity: 0.34;
+  }
+
+  .bg-legal-b::before {
+    background-image: url('/assets/backgrounds/bg-legal-b.webp');
+    opacity: 0.30;
+  }
+
+  /* Overlays Modifiers */
+  .bg-visual-entry::after {
+    background:
+      radial-gradient(circle at 50% 44%, rgba(8, 10, 15, 0.08), rgba(8, 10, 15, 0.42) 58%, rgba(8, 10, 15, 0.84) 100%),
+      linear-gradient(to bottom, rgba(8, 10, 15, 0.12), rgba(8, 10, 15, 0.54));
+  }
+
+  .bg-visual-readable::after {
+    background:
+      linear-gradient(to right, rgba(8, 10, 15, 0.86), rgba(8, 10, 15, 0.54), rgba(8, 10, 15, 0.82)),
+      linear-gradient(to bottom, rgba(8, 10, 15, 0.24), rgba(8, 10, 15, 0.78));
+  }
+
+  .bg-visual-soft::after {
+    background:
+      linear-gradient(to bottom, rgba(8, 10, 15, 0.28), rgba(8, 10, 15, 0.80)),
+      radial-gradient(circle at 78% 20%, rgba(200, 169, 106, 0.08), transparent 38%);
+  }
+
+  .bg-visual-legal::after {
+    background:
+      linear-gradient(to bottom, rgba(8, 10, 15, 0.45), rgba(8, 10, 15, 0.90));
+  }
+
+  /* Testing Note:
+   * Pour tester une variation B d'un background, remplacez simplement la classe dans le fichier .astro.
+   * Exemple : dans src/pages/index.astro, remplacez `bg-hero-landing-a` par `bg-hero-landing-b`.
+   */
+
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    .bg-visual::before {
+      background-position: center;
+    }
+
+    .bg-hero-landing-a::before {
+      opacity: 0.70;
+    }
+
+    .bg-hero-landing-b::before {
+      opacity: 0.65;
+    }
+
+    .bg-inner-a::before {
+      opacity: 0.45;
+    }
+
+    .bg-inner-b::before {
+      opacity: 0.40;
+    }
+
+    .bg-structured-a::before {
+      opacity: 0.42;
+    }
+
+    .bg-structured-b::before {
+      opacity: 0.35;
+    }
+
+    .bg-about-a::before {
+      opacity: 0.52;
+    }
+
+    .bg-about-b::before {
+      opacity: 0.48;
+    }
+
+    .bg-legal-a::before {
+      opacity: 0.28;
+    }
+
+    .bg-legal-b::before {
+      opacity: 0.25;
+    }
+
+    .bg-visual::after,
+    .bg-visual-entry::after,
+    .bg-visual-readable::after,
+    .bg-visual-soft::after,
+    .bg-visual-legal::after {
+      background:
+        linear-gradient(to bottom, rgba(8, 10, 15, 0.42), rgba(8, 10, 15, 0.88)),
+        radial-gradient(circle at 50% 35%, rgba(200, 169, 106, 0.10), transparent 44%);
     }
   }
 }
