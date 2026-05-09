@@ -17,10 +17,10 @@ import CTASection from '../components/CTASection.astro';
       <Container>
         <Eyebrow>Cabinet de Conseil Patrimonial</Eyebrow>
         <h1 class="max-w-4xl text-4xl md:text-6xl lg:text-7xl mb-8 leading-tight">
-          Gestion de patrimoine <span class="text-bc-accent-champagne italic">indépendante</span> 
+          Conseil patrimonial pour les décisions qui engagent l'avenir
         </h1>
         <p class="max-w-2xl text-xl text-bc-text-secondary mb-12">
-          À Collonges-au-Mont-d'Or et dans toute la région Rhône-Alpes, Aurélien Picard vous accompagne sur vos enjeux de retraite, prévoyance, transmission et protection du dirigeant. 
+          À Collonges-au-Mont-d'Or, Lyon et dans toute la région Rhône-Alpes, Aurélien Picard accompagne les décideurs et les familles avec une approche confidentielle, indépendante et inscrite dans la durée.
         </p>
         <div class="flex flex-wrap gap-6">
           <Button href="/expertises" variant="primary">Découvrir nos expertises</Button>
@@ -29,34 +29,68 @@ import CTASection from '../components/CTASection.astro';
       </Container>
     </Section>
 
-    <Section bg="secondary">
+    <Section>
       <Container>
-        <Eyebrow>Notre approche</Eyebrow>
-        <h2 class="mb-12">Une méthode structurée </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <Eyebrow>Situations accompagnées</Eyebrow>
+        <h2 class="mb-12">Structurer, protéger et transmettre</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Card>
-            <h3 class="text-bc-text-primary text-xl font-serif mb-4">1. Analyse globale</h3>
-            <p class="text-bc-text-secondary text-sm">Comprendre l'ensemble de vos enjeux personnels et professionnels. </p>
+            <h3 class="text-bc-text-primary text-xl font-serif mb-4">Préparer une retraite</h3>
+            <p class="text-bc-text-secondary text-sm mb-0">Anticiper la fin d'activité, estimer les besoins futurs et mettre en place des revenus complémentaires réguliers et pérennes.</p>
           </Card>
           <Card>
-            <h3 class="text-bc-text-primary text-xl font-serif mb-4">2. Stratégie sur-mesure</h3>
-            <p class="text-bc-text-secondary text-sm">Élaborer des solutions indépendantes et adaptées à votre situation. </p>
+            <h3 class="text-bc-text-primary text-xl font-serif mb-4">Protéger une famille</h3>
+            <p class="text-bc-text-secondary text-sm mb-0">Sécuriser l'avenir de ses proches face aux aléas de la vie grâce à des solutions de prévoyance et des capitaux garantis.</p>
           </Card>
           <Card>
-            <h3 class="text-bc-text-primary text-xl font-serif mb-4">3. Suivi dans la durée</h3>
-            <p class="text-bc-text-secondary text-sm">Un accompagnement régulier qui évolue avec votre patrimoine. </p>
+            <h3 class="text-bc-text-primary text-xl font-serif mb-4">Organiser une transmission</h3>
+            <p class="text-bc-text-secondary text-sm mb-0">Préparer la transmission de son patrimoine privé ou professionnel avec anticipation, en maîtrisant les impacts civils et fiscaux.</p>
+          </Card>
+          <Card>
+            <h3 class="text-bc-text-primary text-xl font-serif mb-4">Accompagner un dirigeant</h3>
+            <p class="text-bc-text-secondary text-sm mb-0">Protéger le dirigeant, anticiper la cession de l'entreprise et structurer la rémunération ainsi que la trésorerie d'entreprise.</p>
+          </Card>
+          <Card>
+            <h3 class="text-bc-text-primary text-xl font-serif mb-4">Structurer le patrimoine</h3>
+            <p class="text-bc-text-secondary text-sm mb-0">Articuler les dimensions privées et professionnelles, diversifier les actifs et mettre en cohérence l'ensemble des investissements.</p>
           </Card>
         </div>
       </Container>
     </Section>
 
-    <Section class="bg-visual bg-structured-a bg-visual-soft">
+    <Section bg="secondary" class="bg-visual bg-structured-a bg-visual-soft border-y border-bc-border">
+      <Container>
+        <Eyebrow>Notre approche</Eyebrow>
+        <h2 class="mb-12">Une méthode structurée</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="space-y-4">
+            <h3 class="text-bc-accent-champagne text-xl font-serif">1. Comprendre</h3>
+            <p class="text-bc-text-secondary text-sm">Une écoute attentive pour saisir l'ensemble de vos enjeux personnels et professionnels, sans solution préconçue.</p>
+          </div>
+          <div class="space-y-4">
+            <h3 class="text-bc-accent-champagne text-xl font-serif">2. Structurer</h3>
+            <p class="text-bc-text-secondary text-sm">L'élaboration d'une stratégie sur-mesure, indépendante et parfaitement adaptée à vos objectifs et à votre situation.</p>
+          </div>
+          <div class="space-y-4">
+            <h3 class="text-bc-accent-champagne text-xl font-serif">3. Accompagner dans la durée</h3>
+            <p class="text-bc-text-secondary text-sm">Un suivi régulier qui s'ajuste au fil du temps pour faire évoluer votre patrimoine à chaque étape de votre vie.</p>
+          </div>
+        </div>
+      </Container>
+    </Section>
+
+    <Section>
       <Container class="max-w-3xl text-center">
-        <Eyebrow>À qui s'adresse le cabinet ?</Eyebrow>
-        <h2 class="mb-6">Pour les décideurs et les familles </h2>
+        <Eyebrow>Engagement</Eyebrow>
+        <h2 class="mb-6">Un cadre professionnel vérifiable</h2>
         <p class="text-bc-text-secondary mb-8">
-          Dirigeants d'entreprise, entrepreneurs, professions libérales et familles : Berlioz Conseil s'adresse aux personnes recherchant un accompagnement structuré, confidentiel et inscrit dans la durée. 
+          L'activité de Berlioz Conseil s'exerce dans un cadre strictement réglementé, garantissant sérieux, confidentialité et transparence dans l'accompagnement de vos projets.
         </p>
+        <div class="bg-bc-surface border border-bc-border p-8 text-left inline-block w-full text-sm space-y-4">
+          <p><strong>Numéro ORIAS :</strong> 19004281</p>
+          <p><strong>Catégories d'enregistrement :</strong> Conseiller en Investissements Financiers (CIF), Courtier en Assurance (COA), Courtier et Mandataire en Opérations de Banque et en Services de Paiement (COBSP / MOBSP).</p>
+          <p class="italic text-bc-text-muted mb-0">Le cabinet ne peut recevoir aucun fonds, effet ou valeur autre que ceux destinés à la rémunération de ses prestations.</p>
+        </div>
       </Container>
     </Section>
 

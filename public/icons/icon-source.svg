@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Fond bleu-noir -->
+  <rect width="512" height="512" fill="#080A0F"/>
+  <!-- Accent champagne discret au centre -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#C8A96A" stroke-width="4"/>
+  <circle cx="256" cy="256" r="140" fill="none" stroke="#C8A96A" stroke-width="1" opacity="0.3"/>
+  <!-- Monogramme BC -->
+  <text x="256" y="296" font-family="serif" font-size="140" fill="#F7F2E8" text-anchor="middle" font-weight="300" letter-spacing="4">BC</text>
+  <!-- Sous-titre -->
+  <text x="256" y="360" font-family="sans-serif" font-size="20" fill="#8A6A3F" text-anchor="middle" letter-spacing="8" font-weight="400">BERLIOZ</text>
+</svg>

@@ -25,20 +25,20 @@ const navItems = [
     </nav>
     
     <!-- Mobile Menu Button -->
-    <button id="mobile-menu-btn" class="md:hidden text-bc-text-secondary p-2 -mr-2 focus:outline-none focus:ring-2 focus:ring-bc-accent-champagne" aria-label="Menu principal" aria-expanded="false" aria-controls="mobile-menu">
-      <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+    <button id="mobile-menu-btn" class="md:hidden text-bc-text-secondary p-2 -mr-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-bc-accent-champagne rounded-sm transition-colors" aria-label="Menu principal" aria-expanded="false" aria-controls="mobile-menu">
+      <svg id="menu-icon-open" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 transition-transform duration-300">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
-      <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 hidden">
+      <svg id="menu-icon-close" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 hidden transition-transform duration-300">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
       </svg>
     </button>
   </div>
 
   <!-- Mobile Nav Panel -->
-  <nav id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-bc-bg-primary border-b border-bc-border shadow-2xl py-8 px-6 flex flex-col gap-6" aria-label="Navigation mobile">
+  <nav id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-bc-bg-primary/98 backdrop-blur-xl border-b border-bc-border shadow-2xl py-8 px-6 flex-col gap-6 transform transition-all duration-300 origin-top opacity-0 scale-y-95 pointer-events-none data-[state=open]:opacity-100 data-[state=open]:scale-y-100 data-[state=open]:pointer-events-auto" aria-label="Navigation mobile" data-state="closed">
     {navItems.map(item => (
-      <a href={item.href} class="text-base uppercase tracking-widest text-bc-text-primary hover:text-bc-accent-champagne transition-colors block w-full border-b border-bc-border/50 pb-4 last:border-0 last:pb-0">
+      <a href={item.href} class="mobile-nav-link text-base uppercase tracking-widest text-bc-text-primary hover:text-bc-accent-champagne focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bc-accent-champagne focus-visible:ring-offset-2 focus-visible:ring-offset-bc-bg-primary rounded-sm transition-all block w-full border-b border-bc-border/50 pb-4 last:border-0 last:pb-0">
         {item.name}
       </a>
     ))}
@@ -50,14 +50,44 @@ const navItems = [
   const menu = document.getElementById('mobile-menu');
   const iconOpen = document.getElementById('menu-icon-open');
   const iconClose = document.getElementById('menu-icon-close');
+  const navLinks = document.querySelectorAll('.mobile-nav-link');
+
+  const closeMenu = () => {
+    btn?.setAttribute('aria-expanded', 'false');
+    menu?.setAttribute('data-state', 'closed');
+    iconOpen?.classList.remove('hidden');
+    iconClose?.classList.add('hidden');
+    // Wait for transition before hiding element
+    setTimeout(() => {
+      menu?.classList.add('hidden');
+      menu?.classList.remove('flex');
+    }, 300);
+  };
+
+  const openMenu = () => {
+    btn?.setAttribute('aria-expanded', 'true');
+    menu?.classList.remove('hidden');
+    menu?.classList.add('flex');
+    // Using setTimeout to allow the display:flex to apply before changing opacity for transition
+    setTimeout(() => {
+      menu?.setAttribute('data-state', 'open');
+    }, 10);
+    iconOpen?.classList.add('hidden');
+    iconClose?.classList.remove('hidden');
+  };
 
   if (btn && menu && iconOpen && iconClose) {
     btn.addEventListener('click', () => {
       const isExpanded = btn.getAttribute('aria-expanded') === 'true';
-      btn.setAttribute('aria-expanded', String(!isExpanded));
-      menu.classList.toggle('hidden');
-      iconOpen.classList.toggle('hidden');
-      iconClose.classList.toggle('hidden');
+      if (isExpanded) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
     });
   }
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
 </script>
