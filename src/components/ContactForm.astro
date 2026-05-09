@@ -1,8 +1,11 @@
 ---
 import Button from './Button.astro';
 
-const base = import.meta.env.BASE_URL;
-const withBase = (path: string) => `${base}${path.startsWith('/') ? path.slice(1) : path}`;
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+
+const withBase = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
 ---
 
 <form action="https://formspree.io/f/xgorjwkw" method="POST" class="space-y-6">
