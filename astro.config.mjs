@@ -5,9 +5,12 @@ import tailwindcss from '@tailwindcss/vite';
 
 import sitemap from '@astrojs/sitemap';
 
+const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
+
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.berliozconseil.fr',
+  site: isGitHubActions ? 'https://jgsbc.github.io' : 'https://www.berliozconseil.fr',
+  base: isGitHubActions ? '/bconseil' : '/',
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()]

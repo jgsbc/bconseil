@@ -2,6 +2,8 @@
 import Container from './Container.astro';
 
 const currentYear = new Date().getFullYear();
+const base = import.meta.env.BASE_URL;
+const withBase = (path: string) => `${base}${path.startsWith('/') ? path.slice(1) : path}`;
 ---
 
 <footer class="mt-auto border-t border-bc-border py-16 bg-bc-bg-secondary">
@@ -9,28 +11,28 @@ const currentYear = new Date().getFullYear();
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
       <div>
         <h3 class="text-bc-text-primary font-medium mb-6 uppercase tracking-widest text-xs">Berlioz Conseil</h3>
-        <p class="text-sm text-bc-text-muted leading-relaxed">Conseil patrimonial, assurance et stratégie de protection [À VALIDER].</p>
+        <p class="text-sm text-bc-text-muted leading-relaxed">Conseil patrimonial, assurance et stratégie de protection.</p>
       </div>
       <div>
         <h3 class="text-bc-text-primary font-medium mb-6 uppercase tracking-widest text-xs">Navigation</h3>
         <ul class="space-y-3 text-sm text-bc-text-muted">
-          <li><a href="/expertises" class="hover:text-bc-accent-champagne transition-colors">Expertises</a></li>
-          <li><a href="/a-propos" class="hover:text-bc-accent-champagne transition-colors">À propos</a></li>
-          <li><a href="/cadre-reglementaire" class="hover:text-bc-accent-champagne transition-colors">Cadre réglementaire</a></li>
+          <li><a href={withBase('/expertises')} class="hover:text-bc-accent-champagne transition-colors">Expertises</a></li>
+          <li><a href={withBase('/a-propos')} class="hover:text-bc-accent-champagne transition-colors">À propos</a></li>
+          <li><a href={withBase('/cadre-reglementaire')} class="hover:text-bc-accent-champagne transition-colors">Cadre réglementaire</a></li>
         </ul>
       </div>
       <div>
         <h3 class="text-bc-text-primary font-medium mb-6 uppercase tracking-widest text-xs">Légal</h3>
         <ul class="space-y-3 text-sm text-bc-text-muted">
-          <li><a href="/mentions-legales" class="hover:text-bc-accent-champagne transition-colors">Mentions légales</a></li>
-          <li><a href="/confidentialite" class="hover:text-bc-accent-champagne transition-colors">Confidentialité</a></li>
+          <li><a href={withBase('/mentions-legales')} class="hover:text-bc-accent-champagne transition-colors">Mentions légales</a></li>
+          <li><a href={withBase('/confidentialite')} class="hover:text-bc-accent-champagne transition-colors">Confidentialité</a></li>
         </ul>
       </div>
     </div>
     
-    <div class="border-t border-bc-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-bc-text-muted uppercase tracking-widest">
+    <div class="border-t border-bc-border/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-bc-text-muted/50 tracking-wider">
       <p>&copy; {currentYear} Berlioz Conseil. Tous droits réservés.</p>
-      <p>ORIAS : 19004281 [À VALIDER] | CNCGP [À VALIDER]</p>
+      <p>Cabinet de gestion de patrimoine en Rhône-Alpes.</p>
     </div>
   </Container>
 </footer>

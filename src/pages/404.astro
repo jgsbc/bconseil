@@ -5,6 +5,9 @@ import Footer from '../components/Footer.astro';
 import Section from '../components/Section.astro';
 import Container from '../components/Container.astro';
 import Button from '../components/Button.astro';
+
+const base = import.meta.env.BASE_URL;
+const withBase = (path: string) => `${base}${path.startsWith('/') ? path.slice(1) : path}`;
 ---
 
 <BaseLayout 
@@ -20,7 +23,7 @@ import Button from '../components/Button.astro';
         <p class="text-bc-text-secondary mb-12">
           La page que vous recherchez semble ne plus exister ou l'URL saisie est incorrecte.
         </p>
-        <Button href="/" variant="primary">
+        <Button href={withBase('/')} variant="primary">
           Retour à l'accueil
         </Button>
       </Container>

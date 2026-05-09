@@ -1,5 +1,8 @@
 ---
 import Button from './Button.astro';
+
+const base = import.meta.env.BASE_URL;
+const withBase = (path: string) => `${base}${path.startsWith('/') ? path.slice(1) : path}`;
 ---
 
 <form action="https://formspree.io/f/xgorjwkw" method="POST" class="space-y-6">
@@ -101,7 +104,7 @@ import Button from './Button.astro';
   </div>
   
   <!-- Redirection page de confirmation -->
-  <input type="hidden" name="_next" value="/merci" />
+  <input type="hidden" name="_next" value={withBase('/merci')} />
 
   <div class="pt-6">
     <Button variant="primary" class="w-full md:w-auto" type="submit">

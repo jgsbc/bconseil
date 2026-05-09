@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
+
+const base = import.meta.env.BASE_URL;
+const withBase = (path: string) => `${base}${path.startsWith('/') ? path.slice(1) : path}`;
 ---
 
 <BaseLayout title="Accueil" description="Conseil patrimonial privé en Rhône-Alpes. Une approche confidentielle pour structurer, protéger et transmettre ce qui engage l'avenir.">
@@ -21,10 +24,10 @@ import Button from '../components/Button.astro';
       </p>
 
       <div class="flex flex-col sm:flex-row gap-6 justify-center w-full max-w-md entrance-up entrance-delay-2">
-        <Button href="/accueil" variant="primary" class="w-full">
+        <Button href={withBase('/accueil')} variant="primary" class="w-full">
           Découvrir le cabinet
         </Button>
-        <Button href="/acces-client" variant="outline" class="w-full">
+        <Button href={withBase('/acces-client')} variant="outline" class="w-full">
           Espace client
         </Button>
       </div>

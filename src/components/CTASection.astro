@@ -2,6 +2,9 @@
 import Section from './Section.astro';
 import Container from './Container.astro';
 import Button from './Button.astro';
+
+const base = import.meta.env.BASE_URL;
+const withBase = (path: string) => `${base}${path.startsWith('/') ? path.slice(1) : path}`;
 ---
 <Section bg="secondary" class="border-t border-b border-bc-border text-center">
   <Container class="max-w-3xl">
@@ -9,7 +12,7 @@ import Button from './Button.astro';
     <p class="mb-10 text-bc-text-secondary">
       Berlioz Conseil privilégie les demandes nécessitant un accompagnement structuré, confidentiel et inscrit dans la durée.
     </p>
-    <Button href="/contact" variant="primary">
+    <Button href={withBase('/contact')} variant="primary">
       Demander un rendez-vous
     </Button>
   </Container>

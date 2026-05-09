@@ -2,12 +2,16 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import PageHero from '../components/PageHero.astro';
 import Section from '../components/Section.astro';
 import Container from '../components/Container.astro';
+import Card from '../components/Card.astro';
 import Eyebrow from '../components/Eyebrow.astro';
 import Button from '../components/Button.astro';
-import Card from '../components/Card.astro';
 import CTASection from '../components/CTASection.astro';
+
+const base = import.meta.env.BASE_URL;
+const withBase = (path: string) => `${base}${path.startsWith('/') ? path.slice(1) : path}`;
 ---
 
 <BaseLayout title="Accueil">
@@ -23,8 +27,8 @@ import CTASection from '../components/CTASection.astro';
           À Collonges-au-Mont-d'Or, Lyon et dans toute la région Rhône-Alpes, Aurélien Picard accompagne les décideurs et les familles avec une approche confidentielle, indépendante et inscrite dans la durée.
         </p>
         <div class="flex flex-wrap gap-6">
-          <Button href="/expertises" variant="primary">Découvrir nos expertises</Button>
-          <Button href="/contact" variant="outline">Prendre contact</Button>
+          <Button href={withBase('/expertises')} variant="primary">Découvrir nos expertises</Button>
+          <Button href={withBase('/contact')} variant="outline">Prendre contact</Button>
         </div>
       </Container>
     </Section>
