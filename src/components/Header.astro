@@ -1,9 +1,5 @@
 ---
-const base = import.meta.env.BASE_URL.endsWith('/')
-  ? import.meta.env.BASE_URL
-  : `${import.meta.env.BASE_URL}/`;
-
-const withBase = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
+import { withBase } from '../lib/paths';
 
 const navItems = [
   { name: 'Accueil', href: withBase('/accueil') },

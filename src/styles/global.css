@@ -151,11 +151,12 @@
   .bg-visual {
     position: relative;
     overflow: hidden;
+    isolation: isolate;
   }
 
   .bg-visual>* {
     position: relative;
-    z-index: 10;
+    z-index: 3;
   }
 
   .bg-visual::before {
@@ -166,65 +167,66 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    pointer-events: none;
   }
 
   .bg-visual::after {
     content: "";
     position: absolute;
     inset: 0;
-    z-index: -1;
+    z-index: 1;
     pointer-events: none;
     background: linear-gradient(to bottom, rgba(8, 10, 15, 0.18), rgba(8, 10, 15, 0.72));
   }
 
   /* Specific backgrounds */
   .bg-hero-landing-a::before {
-    background-image: var(--bg-hero-landing-a, url('/assets/backgrounds/bg-hero-landing-a.webp'));
+    background-image: var(--bg-hero-landing-a);
     opacity: 0.90;
   }
 
   .bg-hero-landing-b::before {
-    background-image: var(--bg-hero-landing-b, url('/assets/backgrounds/bg-hero-landing-b.webp'));
+    background-image: var(--bg-hero-landing-b);
     opacity: 0.85;
   }
 
   .bg-inner-a::before {
-    background-image: var(--bg-inner-a, url('/assets/backgrounds/bg-inner-a.webp'));
+    background-image: var(--bg-inner-a);
     opacity: 0.65;
   }
 
   .bg-inner-b::before {
-    background-image: var(--bg-inner-b, url('/assets/backgrounds/bg-inner-b.webp'));
+    background-image: var(--bg-inner-b);
     opacity: 0.60;
   }
 
   .bg-structured-a::before {
-    background-image: var(--bg-structured-a, url('/assets/backgrounds/bg-structured-a.webp'));
+    background-image: var(--bg-structured-a);
     opacity: 0.68;
   }
 
   .bg-structured-b::before {
-    background-image: var(--bg-structured-b, url('/assets/backgrounds/bg-structured-b.webp'));
+    background-image: var(--bg-structured-b);
     opacity: 0.62;
   }
 
   .bg-about-a::before {
-    background-image: var(--bg-about-a, url('/assets/backgrounds/bg-about-a.webp'));
+    background-image: var(--bg-about-a);
     opacity: 0.78;
   }
 
   .bg-about-b::before {
-    background-image: var(--bg-about-b, url('/assets/backgrounds/bg-about-b.webp'));
+    background-image: var(--bg-about-b);
     opacity: 0.72;
   }
 
   .bg-legal-a::before {
-    background-image: var(--bg-legal-a, url('/assets/backgrounds/bg-legal-a.webp'));
+    background-image: var(--bg-legal-a);
     opacity: 0.45;
   }
 
   .bg-legal-b::before {
-    background-image: var(--bg-legal-b, url('/assets/backgrounds/bg-legal-b.webp'));
+    background-image: var(--bg-legal-b);
     opacity: 0.40;
   }
 
