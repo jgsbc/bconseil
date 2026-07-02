@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-07-02",
+  "files": [
+    "README_PACK_DOCUMENTAIRE.md",
+    "docs/00_governance/SOURCE_OF_TRUTH.md",
+    "docs/01_compliance/REGULATORY_SOURCE_OF_TRUTH.md",
+    "docs/01_compliance/RGPD_AND_RETENTION.md",
+    "docs/02_strategy/POSITIONING_FINAL.md",
+    "docs/02_strategy/SEO_GEO_CONTENT_MAP.md",
+    "docs/03_content/PAGE_COPY_V2.md",
+    "docs/03_design/LOGO_USAGE.md",
+    "docs/04_technical/GITHUB_PAGES_BASEPATH_AUDIT.md",
+    "docs/06_delivery/CLIENT_RESOLVED_POINTS.md",
+    "docs/06_delivery/CLIENT_OPEN_POINTS.md",
+    "docs/06_delivery/VALIDATION_CHECKLIST.md"
+  ],
+  "source_files_not_included": [
+    "Document d'entrée en relation - Aurelien Picard.docx",
+    "B Conseil — Questionnaire de cadrage site web (réponses) (1).xlsx",
+    "Logo rond - Berlioz Conseil - Aurelien Picard.png"
+  ],
+  "note": "Pack documentaire uniquement. Les sources originales ne sont pas incluses dans le zip pour éviter exposition involontaire. CLIENT_OPEN_POINTS a été resserré aux seuls points non tranchés par la réponse récente ou le DER.",
+  "updated_at": "2026-07-02"
+}

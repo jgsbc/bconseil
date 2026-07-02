@@ -1,29 +1,156 @@
-# Validation Checklist
+# Berlioz Conseil — Checklist de validation finale
 
-Cette checklist regroupe les éléments juridiques, réglementaires et éditoriaux qui nécessitent une validation finale par le client avant tout passage en production, afin d'assurer la stricte conformité du cabinet.
+## Mode d’emploi v2
 
-## Cadre Réglementaire & Statuts
-- [ ] Confirmer l'exactitude du numéro ORIAS (actuellement : 19004281).
-- [ ] Confirmer les catégories d'enregistrement (CIF, COA, COBSP, MOBSP).
-- [ ] Valider le numéro d'adhérent CNCGP (à fournir) ou l'association professionnelle exacte.
-- [ ] Confirmer les autorités de contrôle compétentes (ACPR, AMF).
+Cette checklist sert à la validation finale avant publication. Certains points sont déjà tranchés par les sources et ne doivent plus être redemandés à Aurélien. Pour distinguer les points déjà résolus des vrais points ouverts, consulter :
 
-## Dispositifs de Médiation
-- [ ] Valider l'adresse et les coordonnées exactes du Médiateur de l'AMF.
-- [ ] Valider les coordonnées du médiateur compétent pour l'assurance et l'IOBSP (CMAP via CNCGP ou autre).
+- `docs/06_delivery/CLIENT_RESOLVED_POINTS.md` ;
+- `docs/06_delivery/CLIENT_OPEN_POINTS.md`.
 
-## Informations Éditeur & Hébergement
-- [ ] Fournir et valider le numéro de téléphone public officiel du cabinet.
-- [ ] Valider l'adresse email de contact (contact@berliozconseil.fr).
-- [ ] Confirmer l'offre d'hébergement souscrite chez OVH pour les mentions légales.
+Les cases ci-dessous restent utiles comme contrôle final de publication, pas comme liste de questions client.
 
-## Propriété Intellectuelle & RGPD
-- [ ] Valider les textes relatifs à la propriété intellectuelle (Mentions Légales).
-- [ ] Confirmer la durée de conservation des données issues du formulaire (actuellement : 3 ans pour les prospects).
-- [ ] Confirmer la base légale RGPD (Article 6.1.a - consentement).
-- [ ] Valider le texte sur la limitation de responsabilité de la "vitrine" web.
 
-## Terminologie Éditoriale
-- [ ] Valider l'usage du terme "indépendante" pour la gestion de patrimoine (assurances/CIF).
-- [ ] Valider la formulation prudente autour de l'"optimisation fiscale" et de l'"allocation".
-- [ ] Valider le discours sur la "protection" pour s'assurer qu'aucune promesse de rendement ou de sécurité absolue n'est formulée à tort.
+## Identité
+
+- [ ] Nom commercial validé : Berlioz Conseil
+- [ ] Forme juridique validée : SARL
+- [ ] Capital validé : 1 500 €
+- [ ] Dirigeant validé : Aurélien PICARD
+- [ ] Adresse validée
+- [ ] Orthographe exacte de la rue validée : Pelonniere / Pelonnière / Pellonnière
+- [ ] Téléphone validé : 06 03 07 10 11
+- [ ] Email public validé : contact@berliozconseil.fr
+- [ ] Décision prise sur l’affichage de aurelien.picard@berliozconseil.fr
+- [ ] Domaine validé : berliozconseil.fr
+- [ ] Hébergement final validé
+
+## Réglementaire
+
+- [ ] SIREN validé : 850 683 228 RCS Lyon
+- [ ] SIRET validé : 850 683 228 00025
+- [ ] TVA validée : FR 66 850683228
+- [ ] RC Pro MMA Entreprise n°112786342/231538 validée
+- [ ] ORIAS n°19004281 validé
+- [ ] CNCGP validé
+- [ ] Carte CPI 6901 2019 000 041 348 validée
+- [ ] Décision prise sur l’affichage de l’activité transaction immobilière
+- [ ] Absence de réception de fonds, effets ou valeurs validée
+- [ ] Médiateur AMF pour CIF validé
+- [ ] Médiateur CMAP pour autres activités validé
+- [ ] Autorités AMF / ACPR validées
+- [ ] Formulation “CIF non-indépendant” / absence de “CIF indépendant” validée
+- [ ] Mentions légales finales relues par Aurélien
+- [ ] Cadre réglementaire final relu par Aurélien
+
+## RGPD
+
+- [ ] Politique de confidentialité existante récupérée
+- [ ] Distinction prospects / clients validée
+- [ ] Durée prospect 3 ans validée
+- [ ] Durée client relation contractuelle + archivage 5 ans validée
+- [ ] Contact RGPD validé
+- [ ] Mention CNIL validée
+- [ ] Mention Formspree validée
+- [ ] Aucun champ patrimonial sensible dans le formulaire V1
+
+## Positionnement
+
+- [ ] Cible validée : particuliers, dirigeants, professions libérales, familles, retraités, cadres supérieurs, entrepreneurs
+- [ ] Formulation “enjeux patrimoniaux significatifs” validée
+- [ ] Mise en avant épargne validée
+- [ ] Mise en avant gestion de patrimoine validée
+- [ ] Mise en avant conseil patrimonial validée
+- [ ] Mise en avant investissements financiers validée
+- [ ] Assurance formulée comme assurance de personnes / prévoyance
+- [ ] Fiscalité formulée prudemment
+- [ ] Aucune promesse de rendement
+- [ ] Aucune promesse de protection totale
+- [ ] Aucune promesse d’optimisation fiscale garantie
+
+## Pages
+
+- [ ] Landing validée
+- [ ] Accueil validé
+- [ ] Expertises validées
+- [ ] À propos validé
+- [ ] Contact validé
+- [ ] Accès client validé
+- [ ] Cadre réglementaire validé
+- [ ] Mentions légales validées
+- [ ] Confidentialité validée
+- [ ] Merci validée
+- [ ] 404 validée
+
+## Design
+
+- [ ] Univers sombre/confidentiel validé
+- [ ] Usage du bleu nuit / or validé
+- [ ] Backgrounds visibles sur GitHub Pages
+- [ ] Lisibilité mobile validée
+- [ ] Header validé
+- [ ] Footer validé
+- [ ] Aucun logo institutionnel non autorisé
+
+## Logo
+
+- [ ] Logo rond officiel validé
+- [ ] Usage landing validé
+- [ ] Usage header validé ou écarté
+- [ ] Version favicon simplifiée validée
+- [ ] Icônes PWA validées
+- [ ] Icônes maskable vérifiées
+- [ ] Logo SVG ou PNG final décidé
+
+## Technique
+
+- [ ] GitHub Pages Source = GitHub Actions
+- [ ] Pas de Jekyll
+- [ ] Build Astro OK
+- [ ] `/bconseil/` OK en preview
+- [ ] Pas de `/bconseilaccueil`
+- [ ] Pas de `/bconseilassets`
+- [ ] Backgrounds sous `/bconseil/assets/backgrounds`
+- [ ] CSS chargé sans 404
+- [ ] Manifest chargé sans 404
+- [ ] Icons chargées sans 404
+- [ ] robots.txt correct
+- [ ] sitemap correct
+
+## Formulaire
+
+- [ ] Endpoint Formspree validé
+- [ ] Email destinataire validé
+- [ ] `_next` vers `/merci` compatible GitHub Pages
+- [ ] Mention “Aucun conseil personnalisé via le formulaire” validée
+- [ ] Consentement RGPD validé
+- [ ] Notification automatique validée
+
+## Accès client
+
+- [ ] URL exacte Harvest / O2S / MoneyPitch validée
+- [ ] Redirection externe validée
+- [ ] Pas d’API
+- [ ] Pas de SSO
+- [ ] Pas d’iframe
+- [ ] Texte d’avertissement environnement externe validé
+
+## SEO
+
+- [ ] Title accueil validé
+- [ ] Meta description accueil validée
+- [ ] H1 accueil validé
+- [ ] Expertises structurées par situations
+- [ ] Lyon / Rhône-Alpes / Collonges intégrés naturellement
+- [ ] Pas de bourrage de mots-clés
+- [ ] Pas de pages locales artificielles en V1
+- [ ] llms.txt vérifié si présent
+
+## Livraison
+
+- [ ] Repo propre
+- [ ] Build OK
+- [ ] Preview GitHub Pages OK
+- [ ] Tests mobile OK
+- [ ] Tests desktop OK
+- [ ] Relecture finale Aurélien
+- [ ] Validation écrite avant mise en ligne domaine final

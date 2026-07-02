@@ -11,48 +11,66 @@ import LegalNoticeBlock from '../components/LegalNoticeBlock.astro';
 <BaseLayout title="Mentions légales">
   <Header />
   <main class="flex-grow">
-    <PageHero 
-      title="Mentions légales" 
-      description="Informations légales et obligatoires." 
+    <PageHero
+      title="Mentions légales"
+      description="Informations légales et obligatoires."
       bgClass="bg-visual bg-legal-b bg-visual-legal"
     />
-    
+
     <Section>
       <Container class="max-w-3xl">
         <div class="space-y-8">
           <LegalNoticeBlock title="Éditeur du site">
             <p>Dénomination : Berlioz Conseil</p>
-            <p>Forme juridique : EURL</p>
-            <p>SIRET : 85068322800025</p>
-            <p>Adresse : 6 rue de la Pelonnière, 69660 Collonges-au-Mont-d'Or</p>
-            <p>Dirigeant : Aurélien Picard</p>
+            <p>Forme juridique : SARL</p>
+            <p>Capital social : 1 500 €</p>
+            <p>Siège social : 6 rue de la Pelonniere, 69660 Collonges-au-Mont-d’Or</p>
+            <p>Dirigeant : Aurélien PICARD</p>
             <p>Email : contact@berliozconseil.fr</p>
-            <p>Téléphone : +33603071011</p>
+            <p>Téléphone : 06 03 07 10 11</p>
           </LegalNoticeBlock>
 
-          <LegalNoticeBlock title="Direction de la publication">
-            <p>Directeur de la publication : Aurélien Picard</p>
+          <LegalNoticeBlock title="Identifiants">
+            <p>SIREN : 850 683 228 RCS Lyon</p>
+            <p>SIRET : 850 683 228 00025</p>
+            <p>TVA intracommunautaire : FR 66 850683228</p>
+            <p>ORIAS : 19004281</p>
           </LegalNoticeBlock>
 
-          <LegalNoticeBlock title="Activité réglementée">
-            <p>ORIAS : 19004281 [À VALIDER - attestation et liste des statuts exacts]</p>
-            <p>Association professionnelle : Membre de la CNCGP [À VALIDER - numéro d'adhérent à fournir]</p>
-            <p>Autorités de contrôle : Activité placée sous le contrôle de l'ACPR et de l'AMF </p>
-            <p>Médiation : Pour les litiges relevant du conseil en investissements financiers, le Médiateur de l'AMF peut être compétent. Pour les autres activités, notamment assurance, IOBSP ou immobilier le cas échéant, les dispositifs applicables doivent être confirmés par Berlioz Conseil. La CNCGP mentionne un dispositif avec le CMAP pour certains adhérents IAS/IOBSP. </p>
+          <LegalNoticeBlock title="Activités réglementées">
+            <ul class="list-disc pl-5 mt-2 space-y-1 text-sm text-bc-text-secondary">
+              <li>Conseiller en investissements financiers</li>
+              <li>Courtier en assurance</li>
+              <li>Intermédiaire en opérations de banque et en services de paiement en qualité de courtier</li>
+              <li>Mandataire non exclusif en opérations de banque et en services de paiement</li>
+              <li>Activité de démarchage bancaire et financier</li>
+              <li>Transaction sur immeubles et fonds de commerce</li>
+            </ul>
+          </LegalNoticeBlock>
+
+          <LegalNoticeBlock title="Cadre professionnel">
+            <p>Berlioz Conseil est adhérent de la CNCGP, Chambre Nationale des Conseils en Gestion de Patrimoine, association agréée par l'AMF.</p>
+            <p>Autorités de tutelle : AMF pour le conseil en investissements financiers, ACPR pour l'intermédiation en assurance et en opérations de banque et de services de paiement.</p>
+            <p>RC Pro : MMA Entreprise n°112786342/231538.</p>
+            <p>Assurance responsabilité civile professionnelle : MMA IARD, 160 rue Henri Champion, 72030 Le Mans cedex 9.</p>
+            <p>Garantie financière : MMA IARD Assurances Mutuelles / MMA IARD, 160 rue Henri Champion, 72030 Le Mans cedex 9.</p>
+          </LegalNoticeBlock>
+
+          <LegalNoticeBlock title="Transaction et fonds">
+            <p>Carte professionnelle transaction sur immeubles et fonds de commerce : CPI 6901 2019 000 041 348.</p>
+            <p>Cette activité est exercée sans maniement et sans détention de fonds pour compte de tiers.</p>
+            <p>Berlioz Conseil ne peut recevoir aucun fonds, effet ou valeur.</p>
+          </LegalNoticeBlock>
+
+          <LegalNoticeBlock title="Réclamation et médiation">
+            <p>Les parties recherchent d'abord un arrangement amiable. Le client peut adresser sa réclamation à son conseiller habituel. Berlioz Conseil en accuse réception sous 10 jours ouvrables et y répond sous 2 mois à compter de l'envoi.</p>
+            <p>La médiation est possible deux mois après une première réclamation écrite et au plus tard dans un délai d'un an.</p>
+            <p>Pour le conseil en investissements financiers : Médiateur de l'AMF, 17 place de la Bourse, 75082 Paris Cedex 02, https://www.amf-france.org/fr/le-mediateur.</p>
+            <p>Pour les autres activités : Centre de Médiation et d'Arbitrage de Paris (CMAP), Service médiation de la consommation, 39 avenue Franklin D. Roosevelt, 75008 Paris, https://www.cmap.fr/offre/un-consommateur/.</p>
           </LegalNoticeBlock>
 
           <LegalNoticeBlock title="Hébergement">
-            <p>Hébergeur : OVH SAS</p>
-            <p>Adresse : 2 rue Kellermann - 59100 Roubaix, France</p>
-            <p>Offre souscrite : [À FOURNIR - offre exacte OVH]</p>
-          </LegalNoticeBlock>
-
-          <LegalNoticeBlock title="Propriété intellectuelle">
-            <p>La structure générale du site, ainsi que les textes, images et tous les éléments le composant sont la propriété exclusive de Berlioz Conseil. Toute reproduction est interdite sans autorisation. </p>
-          </LegalNoticeBlock>
-
-          <LegalNoticeBlock title="Limitation de responsabilité">
-            <p>Ce site est une vitrine de présentation du cabinet Berlioz Conseil. Il ne constitue en aucun cas un conseil personnalisé en investissement ou une recommandation de stratégie patrimoniale. </p>
+            <p>Information à compléter avant publication définitive.</p>
           </LegalNoticeBlock>
         </div>
       </Container>

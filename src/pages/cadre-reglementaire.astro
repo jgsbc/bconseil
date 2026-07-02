@@ -11,49 +11,64 @@ import LegalNoticeBlock from '../components/LegalNoticeBlock.astro';
 <BaseLayout title="Cadre réglementaire">
   <Header />
   <main class="flex-grow">
-    <PageHero 
-      title="Cadre réglementaire" 
-      description="Berlioz Conseil exerce une activité réglementée." 
+    <PageHero
+      title="Cadre réglementaire"
+      description="Berlioz Conseil exerce une activité réglementée."
       bgClass="bg-visual bg-legal-a bg-visual-legal"
     />
-    
+
     <Section>
       <Container class="max-w-3xl">
         <div class="space-y-6 mb-16">
           <LegalNoticeBlock title="Immatriculation ORIAS">
-            <p><strong>Numéro ORIAS : 19004281</strong> [attestation à jour]</p>
-            <p>SIREN : 850 683 228</p>
-            <p>Téléphone public : 06 03 07 10 11</p>
-            <p>Email public : contact@berliozconseil.fr</p>
-          </LegalNoticeBlock>
-          
-          <LegalNoticeBlock title="Association professionnelle">
-            <p>Membre de la CNCGP [numéro d'adhérent :]</p>
+            <p><strong>Numéro ORIAS : 19004281</strong></p>
+            <p>Le registre des intermédiaires d'assurance, banque et finance est consultable sur orias.fr.</p>
           </LegalNoticeBlock>
 
-          <LegalNoticeBlock title="Autorités de contrôle">
-            <p>Activité placée sous le contrôle de l'ACPR et de l'AMF </p>
+          <LegalNoticeBlock title="Conseil en investissements financiers">
+            <p>Berlioz Conseil exerce l'activité de conseil en investissements financiers en qualité de CIF.</p>
+            <p>Le cabinet est adhérent de la CNCGP, Chambre Nationale des Conseils en Gestion de Patrimoine, association agréée par l'AMF.</p>
+            <p>Le conseil est fourni de manière non-indépendante, sur une analyse restreinte des différents types d'instruments financiers.</p>
+            <p>La rémunération peut prendre la forme d'honoraires ou de commissions selon la mission et le support retenu.</p>
           </LegalNoticeBlock>
 
-          <LegalNoticeBlock title="Statuts réglementaires">
-            <p class="mb-2">Berlioz Conseil est enregistré sous les catégories suivantes  :</p>
-            <ul class="list-disc pl-5 mt-2 space-y-1 text-sm text-bc-text-secondary">
-              <li>Conseiller en Investissements Financiers (CIF)</li>
-              <li>Courtier en Assurance (COA)</li>
-              <li>Courtier en Opérations de Banque et en Services de Paiement (COBSP)</li>
-              <li>Mandataire en Opérations de Banque et en Services de Paiement (MOBSP)</li>
-            </ul>
-            <p class="text-sm mt-4 italic text-bc-text-muted">Le cabinet ne peut recevoir aucun fonds, effet ou valeur autre que ceux destinés à la rémunération de ses prestations.</p>
+          <LegalNoticeBlock title="Courtage en assurance">
+            <p>Berlioz Conseil exerce une activité de courtage en assurance, notamment en assurance de personnes et en prévoyance.</p>
+            <p>Selon la situation, la recommandation peut être personnalisée afin d'adapter les solutions proposées au besoin du client.</p>
           </LegalNoticeBlock>
 
-          <LegalNoticeBlock title="Médiation">
-            <p>Pour les litiges relevant du conseil en investissements financiers, le Médiateur de l'AMF peut être compétent. Pour les autres activités, notamment assurance, IOBSP ou immobilier le cas échéant, les dispositifs applicables doivent être confirmés par Berlioz Conseil. La CNCGP mentionne un dispositif avec le CMAP pour certains adhérents IAS/IOBSP. </p>
+          <LegalNoticeBlock title="Intermédiation bancaire et services de paiement">
+            <p>Berlioz Conseil exerce l'activité d'intermédiaire en opérations de banque et en services de paiement en qualité de courtier.</p>
+            <p>Le cabinet exerce également l'activité de mandataire non exclusif en opérations de banque et en services de paiement.</p>
+            <p>Lorsque la rémunération perçue d'un établissement de crédit, de financement ou de paiement doit être communiquée avant souscription, elle l'est avant la conclusion de l'opération.</p>
+          </LegalNoticeBlock>
+
+          <LegalNoticeBlock title="Transaction sur immeubles et fonds de commerce">
+            <p>Carte professionnelle : CPI 6901 2019 000 041 348, délivrée par la CCI / Préfecture de Lyon.</p>
+            <p>Garantie financière : MMA IARD Assurances Mutuelles / MMA IARD, 160 rue Henri Champion, 72030 Le Mans cedex 9.</p>
+            <p>Cette activité est exercée sans maniement et sans détention de fonds pour compte de tiers.</p>
+          </LegalNoticeBlock>
+
+          <LegalNoticeBlock title="Absence de réception de fonds">
+            <p>Berlioz Conseil ne peut recevoir aucun fonds, effet ou valeur.</p>
+          </LegalNoticeBlock>
+
+          <LegalNoticeBlock title="Réclamation et médiation">
+            <p>Les parties recherchent d'abord un arrangement amiable. Le client peut adresser sa réclamation à son conseiller habituel. Berlioz Conseil en accuse réception sous 10 jours ouvrables et y répond sous 2 mois à compter de l'envoi.</p>
+            <p>La médiation est possible deux mois après une première réclamation écrite et au plus tard dans un délai d'un an.</p>
+            <p>Pour le conseil en investissements financiers : Médiateur de l'AMF, 17 place de la Bourse, 75082 Paris Cedex 02, https://www.amf-france.org/fr/le-mediateur.</p>
+            <p>Pour les autres activités : Centre de Médiation et d'Arbitrage de Paris (CMAP), Service médiation de la consommation, 39 avenue Franklin D. Roosevelt, 75008 Paris, https://www.cmap.fr/offre/un-consommateur/.</p>
+          </LegalNoticeBlock>
+
+          <LegalNoticeBlock title="Autorités de tutelle">
+            <p>AMF : pour le conseil en investissements financiers.</p>
+            <p>ACPR : pour l'intermédiation en assurance et en opérations de banque et services de paiement.</p>
           </LegalNoticeBlock>
         </div>
 
         <div class="border border-bc-border bg-bc-bg-secondary p-8">
           <p class="text-bc-text-muted text-sm italic mb-0">
-            Avertissement : Ce site est une présentation du cabinet et ne constitue en aucun cas un conseil personnalisé en investissement ou une recommandation de stratégie patrimoniale. 
+            Ce site présente le cabinet et son cadre réglementaire. Il ne constitue pas un conseil personnalisé en investissement ni une recommandation patrimoniale.
           </p>
         </div>
       </Container>

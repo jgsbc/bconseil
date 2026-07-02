@@ -11,50 +11,47 @@ import LegalNoticeBlock from '../components/LegalNoticeBlock.astro';
 <BaseLayout title="Confidentialité">
   <Header />
   <main class="flex-grow">
-    <PageHero 
-      title="Politique de confidentialité" 
-      description="Protection de vos données personnelles." 
+    <PageHero
+      title="Politique de confidentialité"
+      description="Protection de vos données personnelles."
       bgClass="bg-visual bg-legal-b bg-visual-legal"
     />
-    
+
     <Section>
       <Container class="max-w-3xl">
         <div class="space-y-8">
           <div class="max-w-none text-bc-text-secondary space-y-4 mb-12">
             <p>Le site Berlioz Conseil s'engage à protéger vos données personnelles.</p>
-            <p>Le site agit comme une vitrine et ne collecte aucune donnée patrimoniale détaillée. Les demandes de contact sont traitées avec la plus stricte confidentialité.</p>
-            <p><strong>Aucun outil de suivi (Analytics) n'est actif sur le site, et aucun cookie non essentiel n'est déposé sur votre navigateur.</strong> </p>
+            <p>Le site agit comme une vitrine et ne collecte aucune donnée patrimoniale détaillée. Les demandes de contact sont transmises via un prestataire technique de formulaire et traitées avec la plus stricte confidentialité.</p>
+            <p><strong>Aucun outil de suivi n'est actif sur le site et aucun cookie non essentiel n'est déposé sur votre navigateur.</strong></p>
           </div>
 
           <LegalNoticeBlock title="Responsable du traitement">
-            <p>Berlioz Conseil EURL, représentée par Aurélien Picard.</p>
+            <p>Les données collectées via le site sont traitées par Berlioz Conseil, représentée par Aurélien Picard, en qualité de responsable de traitement.</p>
           </LegalNoticeBlock>
 
           <LegalNoticeBlock title="Données collectées via le formulaire">
-            <p>Lors d'une demande de contact, nous collectons : votre prénom, nom, adresse email, téléphone (optionnel), ville (optionnelle), situation professionnelle, objet de la demande et message.</p>
-            <p><strong>Absence de collecte sensible :</strong> Le formulaire ne permet pas la collecte de données patrimoniales exactes ni le dépôt de documents confidentiels.</p>
+            <p>Lors d'une demande de contact, nous pouvons collecter : prénom, nom, adresse email, téléphone, ville, situation professionnelle, objet de la demande, message libre, préférence de contact, créneau préféré et consentement RGPD.</p>
+            <p>Le formulaire ne permet pas la collecte de données patrimoniales détaillées ni le dépôt de documents confidentiels.</p>
           </LegalNoticeBlock>
 
-          <LegalNoticeBlock title="Finalité et base légale">
-            <p>Finalité : Traitement exclusif de vos demandes de contact et qualification de votre besoin d'accompagnement.</p>
-            <p>Base légale : Votre consentement explicite (Article 6.1.a du RGPD). </p>
-          </LegalNoticeBlock>
-
-          <LegalNoticeBlock title="Destinataires des données">
-            <p>Les données sont destinées uniquement à Aurélien Picard, dirigeant de Berlioz Conseil.</p>
-            <p>Sous-traitants techniques impliqués :</p>
-            <ul class="list-disc pl-5 mt-2">
-              <li><strong>Formspree</strong> : Service de routage sécurisé du formulaire de contact.</li>
-              <li><strong>OVH SAS</strong> : Hébergement du site web.</li>
-            </ul>
+          <LegalNoticeBlock title="Finalités">
+            <p>Les données transmises via le formulaire servent à répondre à une demande de contact, à organiser un premier échange patrimonial et, le cas échéant, à traiter une demande d'audit patrimonial.</p>
           </LegalNoticeBlock>
 
           <LegalNoticeBlock title="Durée de conservation">
-            <p>Les données relatives à une demande de contact émanant d'un prospect non client sont conservées pendant une durée maximale de 3 ans à compter de leur collecte ou du dernier contact émanant du prospect. Lorsqu'une relation contractuelle est engagée, les données nécessaires au suivi de la relation sont conservées selon les durées applicables aux obligations professionnelles, contractuelles, comptables, fiscales et réglementaires du cabinet. </p>
+            <p>Pour les prospects et demandes de contact, les données sont conservées pendant 3 ans à compter du dernier contact actif, sauf demande de suppression, obligation légale contraire ou litige.</p>
+            <p>Pour les clients, les données collectées dans le cadre de la relation professionnelle sont conservées pendant la relation contractuelle puis archivées 5 ans selon le document d'entrée en relation, sauf délai plus court ou plus long notamment en cas de litige.</p>
           </LegalNoticeBlock>
 
-          <LegalNoticeBlock title="Exercice de vos droits">
-            <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement et de portabilité de vos données. Pour l'exercer, contactez-nous par email à : contact@berliozconseil.fr </p>
+          <LegalNoticeBlock title="Prestataire technique">
+            <p>Le formulaire utilise Formspree pour transmettre les demandes de contact. Ce prestataire intervient uniquement comme outil technique de routage du formulaire.</p>
+          </LegalNoticeBlock>
+
+          <LegalNoticeBlock title="Droits et contact">
+            <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, de limitation, d'opposition et de portabilité de vos données.</p>
+            <p>Pour exercer vos droits, contactez Berlioz Conseil à l'adresse contact@berliozconseil.fr.</p>
+            <p>Si, après nous avoir contactés, vous estimez que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL.</p>
           </LegalNoticeBlock>
         </div>
       </Container>
