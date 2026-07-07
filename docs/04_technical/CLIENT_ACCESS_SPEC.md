@@ -84,7 +84,7 @@ Créer une page de transition premium entre le site Berlioz Conseil et l'espace 
 > Accéder à mon espace client (Lien : `https://connect.harvest.fr/accueil` cible `_blank`)
 
 **Mention sous le bouton :**
-> Vous allez être redirigé vers l'environnement sécurisé Harvest, utilisé pour l'accès aux services clients O2S / MoneyPitch. Berlioz Conseil ne vous demandera jamais de transmettre vos identifiants, documents confidentiels ou informations patrimoniales détaillées via ce site public.
+> Vous allez être redirigé vers un environnement externe sécurisé. Berlioz Conseil ne vous demandera jamais de transmettre vos identifiants, documents confidentiels ou informations patrimoniales détaillées via ce site public.
 
 ---
 

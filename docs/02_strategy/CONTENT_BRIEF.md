@@ -29,7 +29,7 @@
 | Méthode | Ce qui distingue l'approche de Berlioz Conseil | [À VALIDER] |
 | Pour qui | Cœur de cible (sans formulation méprisante) | [À VALIDER] |
 | Réglementaire | Encart court : ORIAS, CNCGP, ACPR, AMF | [À VALIDER] |
-| Accès client | Encart de redirection vers O2S / MoneyPitch | [À VALIDER] |
+| Accès client | Encart de redirection vers un environnement externe sécurisé | Formulation retenue |
 | Contact | CTA sobre vers le formulaire | [À VALIDER] |
 
 ---
@@ -57,17 +57,17 @@ Expertises à prévoir :
 
 ## Page À propos — `/a-propos`
 
-**Objectif :** Présenter Aurélien Picard, son parcours, sa posture, ses certifications.
+**Objectif :** Présenter Aurélien Picard et la posture du cabinet, sans transformer la page en CV.
 
 | Information | Valeur connue | Statut |
 |---|---|---|
 | Nom | Aurélien Picard | ✅ |
 | LinkedIn | https://fr.linkedin.com/in/aur%C3%A9lien-picard-08230986 | ✅ — source non publiable directement |
-| Texte de parcours | — | [À FOURNIR] |
-| Certifications exactes | — | [À FOURNIR] |
-| Photo professionnelle | — | [À FOURNIR] ou décision d'afficher sans photo |
-| Références clients affichables | — | [À FOURNIR] |
-| Philosophie / posture | — | [À FOURNIR] |
+| Texte de parcours | Ne pas publier de CV en V1 | Décision retenue |
+| Certifications exactes | AMF Finance Durable confirmée, non affichée publiquement dans ce lot | Décision retenue |
+| Photo professionnelle | Pas de photo en V1 | Décision retenue |
+| Références clients affichables | Ne pas afficher | Décision retenue |
+| Philosophie / posture | Relation directe, confidentialité, pédagogie, accompagnement dans la durée | Décision retenue |
 
 ---
 
@@ -89,7 +89,7 @@ Expertises à prévoir :
 
 ## Page Accès client — `/acces-client`
 
-**Objectif :** Orienter les clients vers leur espace O2S / MoneyPitch avec une transition premium.
+**Objectif :** Orienter les clients vers leur espace externe sécurisé avec une transition premium.
 
 > **Rappel absolu :** cette page ne contient aucun login, aucun mot de passe, aucune iframe, aucune API, aucun identifiant. Elle redirige uniquement vers l'URL externe officielle.
 
@@ -97,7 +97,7 @@ Expertises à prévoir :
 |---|---|---|
 | Texte d'introduction | Explication sobre de l'accès sécurisé | [À VALIDER] |
 | Bouton principal | "Accéder à mon espace client" | [À VALIDER] |
-| URL de redirection | — | [À FOURNIR] |
+| URL de redirection | `https://connect.harvest.fr/accueil` | URL V1 retenue |
 | Mention de sécurité | "Vous allez être redirigé vers l'environnement sécurisé…" | [À VALIDER] |
 | Rappel confidentialité | Court paragraphe rassurant | [À VALIDER] |
 

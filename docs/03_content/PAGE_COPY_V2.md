@@ -21,7 +21,7 @@ Créer une première impression premium, sobre et confidentielle.
 
 ### Message appliqué
 
-> Conseil patrimonial privé en Rhône-Alpes. Une approche confidentielle pour structurer, protéger et transmettre ce qui engage l'avenir.
+> Conseil patrimonial privé en Rhône-Alpes. Une approche confidentielle pour structurer, protéger et transmettre ce qui engage l'avenir familial, professionnel et patrimonial.
 
 ### CTA
 
@@ -44,7 +44,7 @@ Présenter le cabinet, les cibles, les situations traitées et la méthode.
 
 ### Message appliqué
 
-> Berlioz Conseil accompagne des clients dont les décisions patrimoniales engagent des enjeux financiers, familiaux, professionnels ou successoraux significatifs.
+> Berlioz Conseil accompagne des particuliers, dirigeants et professions libérales dans l'organisation, le développement et la transmission de leur patrimoine. Basé à Collonges-au-Mont-d'Or, près de Lyon, le cabinet intervient lorsque les décisions patrimoniales engagent des enjeux financiers, familiaux, professionnels ou successoraux significatifs.
 
 ### Structure appliquée
 
@@ -98,6 +98,11 @@ Structurer l'offre par situations client plutôt que par catalogue produit.
 5. Accompagner le dirigeant et la profession libérale ;
 6. Immobilier et financement dans une logique patrimoniale ;
 7. Fiscalité patrimoniale.
+
+### Précision appliquée
+
+- la page ancre naturellement les expertises en Rhône-Alpes ;
+- l'immobilier reste formulé dans une logique patrimoniale, sans mise en avant commerciale de la transaction.
 
 ### À éviter
 

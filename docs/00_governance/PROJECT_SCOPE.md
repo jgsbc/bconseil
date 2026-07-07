@@ -111,7 +111,7 @@ Créer une présence web professionnelle, crédible et haut de gamme permettant 
 - d'expliquer les domaines d'accompagnement ;
 - de rassurer sur le cadre réglementaire ;
 - de qualifier les demandes entrantes ;
-- d'orienter les clients existants vers leur espace O2S / MoneyPitch ;
+- d'orienter les clients existants vers un environnement externe sécurisé ;
 - de ne pas manipuler directement de données patrimoniales sensibles.
 
 ---
@@ -122,9 +122,9 @@ Créer une présence web professionnelle, crédible et haut de gamme permettant 
 |---|---|
 | `/` | Accueil — hero, positionnement, piliers, CTA |
 | `/expertises` | Domaines d'accompagnement |
-| `/a-propos` | Parcours, certifications, posture |
+| `/a-propos` | Présentation courte, posture, relation directe |
 | `/cadre-reglementaire` | ORIAS, CNCGP, ACPR, AMF, médiateur |
-| `/acces-client` | Redirection externe O2S / MoneyPitch |
+| `/acces-client` | Redirection externe vers un environnement sécurisé |
 | `/contact` | Formulaire qualifié |
 | `/mentions-legales` | Mentions légales obligatoires |
 | `/confidentialite` | Politique de confidentialité RGPD |
@@ -146,8 +146,8 @@ Créer une présence web professionnelle, crédible et haut de gamme permettant 
 
 > **La V1 est un site vitrine. Il n'y a aucune API, aucun SSO, aucun espace client maison.**
 
-- L'accès client V1 se fait uniquement par redirection externe vers O2S / MoneyPitch.
+- L'accès client V1 se fait uniquement par redirection externe vers l'URL V1 retenue.
 - Le site ne doit pas collecter de données patrimoniales détaillées.
 - Les identifiants, documents confidentiels et données Harvest sont hors périmètre.
-- Aucune intégration Harvest, O2S ou MoneyPitch n'est autorisée en V1.
+- Aucune intégration API, SSO ou iframe avec l'environnement externe n'est autorisée en V1.
 - Aucun contenu réglementaire ne peut être publié sans validation explicite de Berlioz Conseil.

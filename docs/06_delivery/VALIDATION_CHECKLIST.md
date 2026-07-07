@@ -128,7 +128,7 @@ Les cases ci-dessous restent utiles comme contrôle final de publication, pas co
 
 ## Accès client
 
-- [ ] URL exacte Harvest / O2S / MoneyPitch validée
+- [ ] URL V1 retenue `https://connect.harvest.fr/accueil` validée
 - [ ] Redirection externe validée
 - [ ] Pas d’API
 - [ ] Pas de SSO
