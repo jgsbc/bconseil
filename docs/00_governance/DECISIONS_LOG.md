@@ -77,13 +77,13 @@ Toute décision structurante doit être enregistrée ici avec sa date, sa justif
 
 ---
 
-## D007 — 2026-04-27 — Email de contact à confirmer
+## D007 — 2026-04-27 — Email de contact public
 
-**Décision :** L'email de réception des demandes de contact sera `contact@berliozconseil.fr` sauf instruction contraire.
+**Décision :** L'email public principal du site et du formulaire est `contact@berliozconseil.fr`.
 
-**Détail :** Le questionnaire mentionne `contact@berliozconseil.com`, mais le domaine principal est `berliozconseil.fr`. Une confirmation est nécessaire.
+**Détail :** L'adresse `aurelien.picard@berliozconseil.fr` reste une donnée issue du document d'entrée en relation, mais elle n'est pas l'email public principal du site.
 
-**Statut :** [À VALIDER] par Berlioz Conseil
+**Statut :** ✅ Validé pour V1
 
 ---
 

@@ -108,7 +108,7 @@
 ## 7. Pages Légales
 
 ### Mentions légales (`/mentions-legales`)
-- **Éditeur :** Berlioz Conseil EURL, SIRET 85068322800025. Dirigeant : Aurélien Picard.
+- **Éditeur :** Berlioz Conseil SARL, SIRET 85068322800025. Dirigeant : Aurélien Picard.
 - **Hébergement :** [À FOURNIR]
 - **Directeur de la publication :** Aurélien Picard
 - **Propriété intellectuelle & Responsabilité :** [À VALIDER / À FOURNIR]

@@ -17,12 +17,12 @@ Ce document regroupe les points qui ne doivent plus être traités comme des que
 | Élément | Valeur retenue | Source | Décision d’usage web |
 |---|---|---|---|
 | Nom commercial | Berlioz Conseil | Questionnaire récent + DER | Afficher tel quel |
-| Forme juridique | SARL | Questionnaire récent + DER | Corriger partout si EURL apparaît |
+| Forme juridique | SARL | Questionnaire récent + DER | Corriger partout si une ancienne forme juridique apparaît |
 | Capital | 1 500 € | DER | Mentions légales / cadre réglementaire |
 | Adresse | 6 rue de la Pelonniere, 69660 Collonges-au-Mont-d’Or | Questionnaire récent + DER | Contact + mentions légales |
 | Téléphone | 06 03 07 10 11 | Questionnaire récent + DER | Contact + mentions légales |
-| Email public | contact@berliozconseil.fr | Questionnaire récent | Contact + formulaire + RGPD |
-| Email DER | aurelien.picard@berliozconseil.fr | DER | Ne pas afficher comme email principal sans demande explicite |
+| Email public | contact@berliozconseil.fr | Questionnaire récent | Email public principal confirmé pour le site, le contact, le formulaire et le RGPD |
+| Email DER | aurelien.picard@berliozconseil.fr | DER | Source documentaire uniquement ; ne pas afficher comme email public principal |
 | SIREN | 850 683 228 RCS Lyon | DER | Mentions légales |
 | SIRET | 850 683 228 00025 | Questionnaire récent | Mentions légales |
 | TVA | FR 66 850683228 | DER | Mentions légales |
@@ -41,7 +41,7 @@ Ce document regroupe les points qui ne doivent plus être traités comme des que
 | Client idéal | Revenus élevés, patrimoine significatif financier/immobilier | Questionnaire récent | Ne pas écrire brutalement ; utiliser “enjeux patrimoniaux significatifs” |
 | Ton | Premium, confidentiel, sobre, intimiste, moderne, patrimonial, familial, technique | Questionnaire récent | Direction éditoriale |
 | Ambiance visuelle | Sombre / confidentiel | Questionnaire récent | Direction design déjà cohérente |
-| Présentation personnelle | Courte et sobre | Questionnaire récent | Page À propos concise |
+| Présentation personnelle | Courte et sobre | Questionnaire récent | Page À propos concise, sans transformation en CV |
 
 ---
 
@@ -75,10 +75,10 @@ Ce document regroupe les points qui ne doivent plus être traités comme des que
 
 | Élément | Valeur retenue | Source | Décision d’usage web |
 |---|---|---|---|
-| Outils | O2S, MoneyPitch, Big Expert, Fidroit | Questionnaire récent | Documenter en interne ; ne pas forcément afficher |
+| Outils | O2S, MoneyPitch, Big Expert, Fidroit | Questionnaire récent | Documenter en interne ; ne pas les mettre en avant publiquement |
 | Bouton accès client | Oui | Questionnaire récent | Conserver `/acces-client` |
-| URL accès client | https://connect.harvest.fr/accueil | Client access spec | Lien validé pour la redirection externe |
-| API / SSO | Documentation inconnue | Questionnaire récent | Pas d’API, pas de SSO, pas d’iframe en V1 |
+| URL accès client | https://connect.harvest.fr/accueil | Client access spec + réponse client | URL V1 retenue pour une redirection externe simple |
+| API / SSO / iframe | Non en V1 | Questionnaire récent + arbitrage technique | Pas d’API, pas de SSO, pas d’iframe |
 
 ---
 
@@ -89,6 +89,7 @@ Ce document regroupe les points qui ne doivent plus être traités comme des que
 | ORIAS | 19004281 | Questionnaire récent + DER | Afficher et permettre vérification |
 | CNCGP | Oui | Questionnaire récent + DER | Mention texte, pas logo |
 | Autorités | ACPR et AMF | Questionnaire récent + DER | Cadre réglementaire |
+| AMF Finance Durable | Certification confirmée | Réponse client récente | Affichage public non prioritaire en V1 ; ne pas afficher dans ce lot |
 | CIF | Oui | DER | Cadre réglementaire |
 | Courtier en assurance | Oui | DER | Cadre réglementaire |
 | IOBSP courtier | Oui | DER | Cadre réglementaire |
@@ -104,7 +105,20 @@ Ce document regroupe les points qui ne doivent plus être traités comme des que
 
 ---
 
-## 7. À ne pas publier / ne pas créer
+## 7. Documents publics et identité visuelle
+
+| Sujet | Valeur retenue | Source | Décision d’usage web |
+|---|---|---|---|
+| Politique de confidentialité website existante | Non fournie | Réponse client récente | Garder et adapter la version actuelle du site |
+| Mentions légales website existantes | Non fournies | Réponse client récente | Garder et adapter depuis le document d’entrée en relation |
+| Photo professionnelle | Pas de photo | Réponse client récente | Ne pas afficher de photo sur la page À propos en V1 |
+| Relecture conformité externe | Non demandée à ce stade | Réponse client récente | Maintenir une rédaction prudente et vérifiable |
+| Header | Approche typographique sobre | Réponse client récente | Conserver le header texte |
+| Favicon futur | Extraire uniquement la bulle avec le chat issue du logo | Réponse client récente | À traiter dans un lot logo / PWA dédié |
+
+---
+
+## 8. À ne pas publier / ne pas créer
 
 | Sujet | Décision | Source |
 |---|---|---|

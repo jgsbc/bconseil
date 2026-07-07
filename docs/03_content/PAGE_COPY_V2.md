@@ -117,12 +117,11 @@ Créer de la confiance sans inventer de parcours.
 
 ### Message appliqué
 
-> Berlioz Conseil est porté par Aurélien Picard, diplômé d'un Master 2 en gestion de patrimoine à l'IAE Lyon 3. Le cabinet privilégie une relation directe, confidentielle et pédagogique, centrée sur la compréhension des décisions patrimoniales avant la mise en place de solutions.
+> Berlioz Conseil est porté par Aurélien Picard. Le cabinet privilégie une relation directe, confidentielle et pédagogique, centrée sur la compréhension des décisions patrimoniales avant la mise en place de solutions.
 
 ### Repères appliqués
 
 - Aurélien PICARD ;
-- Master 2 en gestion de patrimoine à l'IAE Lyon 3 ;
 - relation directe ;
 - approche confidentielle ;
 - pédagogie ;
@@ -131,7 +130,8 @@ Créer de la confiance sans inventer de parcours.
 
 ### Point non affiché
 
-- l'intitulé exact de la formation finance durable reste à confirmer avant tout affichage public.
+- la certification AMF Finance Durable est confirmée, mais n'est pas affichée publiquement dans ce lot ;
+- le parcours académique n'est pas ajouté à la page publique dans ce lot.
 
 ---
 
@@ -219,5 +219,5 @@ Rediriger proprement.
 ## Hors périmètre public
 
 - pages réglementaires laissées en place sans refonte éditoriale ;
-- `AMF Finance Durable` non affiché dans le public tant que l'intitulé exact n'est pas confirmé ;
+- `AMF Finance Durable` confirmé, mais non affiché dans le public dans ce lot ;
 - aucun partenaire, cas client ou témoignage n'est ajouté.

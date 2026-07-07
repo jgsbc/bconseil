@@ -227,10 +227,10 @@ Donc ne pas créer :
 Éléments fournis :
 
 - présentation courte et sobre ;
-- Master 2 en gestion de patrimoine à l’IAE Lyon 3 ;
-- “ami finance durable” à clarifier ;
+- parcours académique non affiché publiquement dans ce lot ;
+- certification AMF Finance Durable confirmée, non affichée publiquement dans ce lot ;
 - éléments personnels : indépendance, vision du conseil ;
-- photo professionnelle : décision non prise.
+- photo professionnelle : pas de photo en V1.
 
 Point de vigilance :
 Ne pas inventer le parcours professionnel détaillé.

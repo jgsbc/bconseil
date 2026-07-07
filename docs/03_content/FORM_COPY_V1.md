@@ -34,7 +34,7 @@
 
 **Objet de la demande :**
 - Conseil patrimonial global
-- Assurance et prévoyance
+- Assurance de personnes / prévoyance
 - Retraite
 - Épargne et investissement
 - Transmission

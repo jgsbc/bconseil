@@ -33,7 +33,7 @@ Créer une base propre pour l'indexation du site Berlioz Conseil sans viser une 
 | conseil patrimonial | Informationnelle / commerciale | Forte |
 | conseiller en gestion de patrimoine | Informationnelle | Forte |
 | gestion de patrimoine | Générique | Moyenne |
-| conseiller financier indépendant | [À VALIDER] — formulation réglementaire | À valider |
+| conseiller en gestion de patrimoine | Formulation métier non ambiguë | À travailler sans promesse |
 | conseil en investissement | [À VALIDER] | À valider |
 | protection du dirigeant | Commerciale | Forte |
 | transmission patrimoine | Informationnelle | Forte |
@@ -49,7 +49,7 @@ Créer une base propre pour l'indexation du site Berlioz Conseil sans viser une 
 | conseiller patrimonial Rhône | Forte |
 | gestion de patrimoine Lyon | Forte |
 | Collonges-au-Mont-d'Or conseiller | Faible (niche) |
-| conseil patrimonial France entière | Moyenne |
+| conseil patrimonial Rhône-Alpes | Moyenne |
 
 ---
 
@@ -123,7 +123,7 @@ Type `LocalBusiness` / `FinancialService` — champs à remplir :
 {
   "@type": "FinancialService",
   "name": "Berlioz Conseil",
-  "legalName": "Berlioz Conseil EURL",
+  "legalName": "Berlioz Conseil SARL",
   "url": "https://www.berliozconseil.fr",
   "address": {
     "streetAddress": "6 rue de la Pelonnière",

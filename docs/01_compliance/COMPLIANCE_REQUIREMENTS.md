@@ -18,7 +18,7 @@ Berlioz Conseil exerce dans un environnement strictement réglementé, sous cont
 | Champ | Valeur | Statut |
 |---|---|---|
 | Dénomination sociale | Berlioz Conseil | ✅ Connu |
-| Forme juridique | EURL | ✅ Connu |
+| Forme juridique | SARL | ✅ Connu |
 | SIRET | 85068322800025 | ✅ Connu |
 | ORIAS | 19004281 | ✅ Connu — [À VALIDER] Attestation à demander |
 | Association professionnelle | CNCGP | ✅ Connu — [À VALIDER] N° d'adhérent |
@@ -137,7 +137,7 @@ Les pages suivantes nécessitent des mentions réglementaires spécifiques :
 
 ### Page `/confidentialite`
 
-- Responsable du traitement : Berlioz Conseil, EURL
+- Responsable du traitement : Berlioz Conseil, SARL
 - Données collectées : prénom, nom, email, téléphone, ville, message
 - Finalité : traitement des demandes de contact
 - Base légale : consentement (article 6.1.a RGPD)

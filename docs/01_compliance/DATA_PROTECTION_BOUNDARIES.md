@@ -81,9 +81,9 @@ Visiteur → Formulaire HTML → Endpoint Formspree sécurisé → Email vers co
 
 | Rôle | Entité |
 |---|---|
-| Responsable du traitement | Berlioz Conseil (EURL) — Aurélien Picard |
+| Responsable du traitement | Berlioz Conseil (SARL) — Aurélien Picard |
 | Sous-traitant formulaire | Formspree |
-| Hébergement | OVH SAS (offre exacte à fournir) |
+| Hébergement | À confirmer avant publication définitive, probablement OVH selon réponse client récente |
 | Sous-traitant analytics | Aucun en V1 |
 
 ---

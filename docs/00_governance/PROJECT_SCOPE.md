@@ -11,7 +11,7 @@
 |---|---|
 | Nom du projet | Berlioz Conseil — Site vitrine premium |
 | Client | Berlioz Conseil |
-| Forme juridique | EURL |
+| Forme juridique | SARL |
 | Dirigeant | Aurélien Picard |
 | Adresse | 6 rue de la Pelonnière, 69660 Collonges-au-Mont-d'Or |
 | SIRET | 85068322800025 |
@@ -20,8 +20,8 @@
 | Autorités de contrôle | ACPR, AMF |
 | Nom de domaine | www.berliozconseil.fr |
 | Email principal | contact@berliozconseil.fr |
-| Email formulaire (questionnaire) | contact@berliozconseil.com |
-| Zone d'intervention | France entière |
+| Email formulaire / site | contact@berliozconseil.fr |
+| Zone d'intervention prioritaire | Rhône-Alpes |
 | LinkedIn dirigeant | https://fr.linkedin.com/in/aur%C3%A9lien-picard-08230986 |
 
 ---
@@ -31,7 +31,7 @@
 Deux adresses email ont été mentionnées :
 
 - `contact@berliozconseil.fr` — email principal
-- `contact@berliozconseil.com` — indiqué dans le questionnaire pour le formulaire
+- `contact@berliozconseil.fr` — email public principal confirmé pour le site et le formulaire
 
 **[À VALIDER]** Quelle adresse doit recevoir les demandes de contact ?  
 **Recommandation V1 :** utiliser `contact@berliozconseil.fr` si le domaine principal est `berliozconseil.fr`.
@@ -74,7 +74,7 @@ Les statuts suivants ont été mentionnés dans le questionnaire :
 | Références clients affichables | [À FOURNIR] |
 | Téléphone professionnel | [À FOURNIR] |
 | Hébergeur retenu | [À FOURNIR] |
-| URL exacte espace client O2S / MoneyPitch | [À FOURNIR] |
+| URL V1 espace client | `https://connect.harvest.fr/accueil` — redirection externe simple, sans API, SSO ni iframe |
 | Contraintes CNCGP sur la communication | [À VALIDER] |
 | Termes autorisés / interdits par la réglementation | [À VALIDER] |
 | Email de réception des formulaires | [À VALIDER] |

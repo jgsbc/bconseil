@@ -16,15 +16,15 @@
 | Champ | Valeur | Statut |
 |---|---|---|
 | Dénomination sociale | Berlioz Conseil | ✅ Intégré |
-| Forme juridique | EURL | ✅ Intégré |
+| Forme juridique | SARL | ✅ Intégré |
 | Adresse du siège | 6 rue de la Pelonnière, 69660 Collonges-au-Mont-d'Or | ✅ Intégré |
 | SIRET | 85068322800025 | ✅ Intégré |
 | Représentant légal | Aurélien Picard | ✅ Intégré |
 | Email | contact@berliozconseil.fr | ✅ Intégré |
 | Téléphone | +33603071011 | ✅ Intégré |
 | Directeur de publication | Aurélien Picard | ✅ Intégré |
-| Hébergeur | OVH SAS, 2 rue Kellermann - 59100 Roubaix | ✅ Intégré |
-| Offre d'hébergement exacte | — | [À FOURNIR] |
+| Hébergeur | À confirmer avant publication définitive | À compléter |
+| Offre d'hébergement exacte | Probablement OVH, à confirmer sur place | À confirmer |
 | Numéro ORIAS | 19004281 | ✅ Intégré |
 | Statuts réglementaires | — | [À VALIDER] |
 | Association professionnelle | CNCGP | ✅ Intégré |
@@ -42,13 +42,13 @@
 
 | Champ | Valeur | Statut |
 |---|---|---|
-| Responsable du traitement | Berlioz Conseil EURL, Aurélien Picard | ✅ Intégré |
+| Responsable du traitement | Berlioz Conseil SARL, Aurélien Picard | ✅ Intégré |
 | Données collectées | Prénom, nom, email, téléphone, ville, message, situation, motif | ✅ Intégré |
 | Finalité | Traitement des demandes de contact | ✅ Intégré |
 | Base légale | Consentement (Art. 6.1.a RGPD) | [À VALIDER] |
 | Durée de conservation | 3 ans maximum pour les prospects | [À VALIDER] |
 | Destinataires internes | Aurélien Picard | ✅ Intégré |
-| Sous-traitants (formulaire, hébergeur) | Formspree, OVH SAS | ✅ Intégré |
+| Sous-traitants (formulaire, hébergeur) | Formspree ; hébergeur final à confirmer | Formspree intégré, hébergement à confirmer |
 | Droits RGPD | Droit d'accès, rectification, effacement, portabilité | ✅ Intégré |
 | Email d'exercice des droits | contact@berliozconseil.fr | [À VALIDER] |
 | Absence de collecte sensible | Confirmé | ✅ Intégré |
@@ -80,7 +80,7 @@
 ## Informations restantes à traiter
 
 **À FOURNIR :**
-1. L'offre exacte souscrite chez OVH pour l'hébergement.
+1. Le prestataire et l'offre exacte d'hébergement à afficher avant publication définitive.
 2. Le numéro d'adhérent CNCGP exact.
 
 **À VALIDER :**

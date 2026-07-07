@@ -43,7 +43,7 @@ Expertises à prévoir :
 | Expertise | Statut |
 |---|---|
 | Conseil patrimonial global | [À VALIDER] |
-| Assurance et prévoyance | [À VALIDER] |
+| Assurance de personnes / prévoyance | Formulation retenue |
 | Retraite | [À VALIDER] |
 | Épargne | [À VALIDER] |
 | Investissements financiers | [À VALIDER] |
