@@ -5,76 +5,110 @@ import Footer from '../components/Footer.astro';
 import PageHero from '../components/PageHero.astro';
 import Section from '../components/Section.astro';
 import Container from '../components/Container.astro';
-import ExpertiseCard from '../components/ExpertiseCard.astro';
+import Card from '../components/Card.astro';
 import CTASection from '../components/CTASection.astro';
+
+const expertises = [
+  {
+    title: "Structurer l'épargne et les investissements",
+    bullets: [
+      "Assurance-vie",
+      "Allocation patrimoniale",
+      "Investissements financiers",
+      "Cohérence globale",
+      "Diversification sans promesse",
+    ],
+  },
+  {
+    title: "Préparer la retraite",
+    bullets: [
+      "Revenus futurs",
+      "Équilibre entre capital, revenus et protection",
+      "Anticipation des étapes de vie",
+    ],
+  },
+  {
+    title: "Protéger la famille et le dirigeant",
+    bullets: [
+      "Prévoyance",
+      "Assurance de personnes",
+      "Conjoint",
+      "Enfants",
+      "Continuité de l'activité",
+    ],
+  },
+  {
+    title: "Organiser la transmission",
+    bullets: [
+      "Transmission familiale",
+      "Anticipation successorale",
+      "Fiscalité patrimoniale",
+      "Articulation possible avec notaire ou avocat",
+    ],
+  },
+  {
+    title: "Accompagner le dirigeant et la profession libérale",
+    bullets: [
+      "Rémunération",
+      "Patrimoine privé et professionnel",
+      "Trésorerie",
+      "Protection",
+      "Cession ou transmission",
+    ],
+  },
+  {
+    title: "Immobilier et financement dans une logique patrimoniale",
+    bullets: [
+      "Cohérence de l'immobilier dans le patrimoine",
+      "Arbitrage",
+      "Financement",
+      "Vision de long terme",
+    ],
+  },
+  {
+    title: "Fiscalité patrimoniale",
+    bullets: [
+      "Lecture fiscale",
+      "Anticipation",
+      "Cohérence",
+      "Aucune promesse de réduction fiscale garantie",
+    ],
+  },
+];
 ---
 
-<BaseLayout title="Nos Expertises">
+<BaseLayout
+  title="Expertises"
+  metaTitle="Expertises — Gestion de patrimoine, épargne et transmission"
+  description="Découvrez les expertises de Berlioz Conseil : épargne, investissements financiers, retraite, prévoyance, transmission et accompagnement patrimonial du dirigeant."
+>
   <Header />
   <main class="flex-grow">
-    <PageHero 
-      title="Nos Expertises" 
-      description="Domaines d'accompagnement patrimonial et stratégique. " 
+    <PageHero
+      title="Expertises patrimoniales"
+      description="Épargne, investissements financiers, retraite, prévoyance, transmission : Berlioz Conseil aide à mettre en cohérence les décisions qui engagent le patrimoine familial et professionnel."
       bgClass="bg-visual bg-structured-a bg-visual-readable"
     />
-    
+
     <Section>
       <Container>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          
-          <!-- 1. Protéger -->
-          <div class="bg-bc-bg-primary border border-bc-border p-8 hover:border-bc-accent-champagne transition-colors duration-300">
-            <h3 class="text-bc-accent-champagne text-2xl font-serif mb-6">Protéger</h3>
-            <ul class="space-y-3 text-bc-text-secondary">
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Protection de la famille et du conjoint</li>
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Maintien des revenus</li>
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Prévoyance</li>
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Assurances</li>
-            </ul>
-          </div>
-
-          <!-- 2. Préparer -->
-          <div class="bg-bc-bg-primary border border-bc-border p-8 hover:border-bc-accent-champagne transition-colors duration-300">
-            <h3 class="text-bc-accent-champagne text-2xl font-serif mb-6">Préparer</h3>
-            <ul class="space-y-3 text-bc-text-secondary">
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Anticipation de la retraite</li>
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Arbitrages patrimoniaux</li>
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Organisation progressive du patrimoine</li>
-            </ul>
-          </div>
-
-          <!-- 3. Transmettre -->
-          <div class="bg-bc-bg-primary border border-bc-border p-8 hover:border-bc-accent-champagne transition-colors duration-300">
-            <h3 class="text-bc-accent-champagne text-2xl font-serif mb-6">Transmettre</h3>
-            <ul class="space-y-3 text-bc-text-secondary">
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Transmission du patrimoine</li>
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Transmission d'entreprise</li>
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Droit successoral</li>
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Régimes matrimoniaux</li>
-            </ul>
-          </div>
-
-          <!-- 4. Structurer -->
-          <div class="bg-bc-bg-primary border border-bc-border p-8 hover:border-bc-accent-champagne transition-colors duration-300">
-            <h3 class="text-bc-accent-champagne text-2xl font-serif mb-6">Structurer</h3>
-            <ul class="space-y-3 text-bc-text-secondary">
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Patrimoine privé et professionnel</li>
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Allocation et gestion d'actifs</li>
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Analyse financière et économie</li>
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Conseil fiscal</li>
-            </ul>
-          </div>
-
-          <!-- 5. Accompagner le dirigeant -->
-          <div class="bg-bc-bg-primary border border-bc-border p-8 hover:border-bc-accent-champagne transition-colors duration-300 lg:col-span-2">
-            <h3 class="text-bc-accent-champagne text-2xl font-serif mb-6">Accompagner le dirigeant</h3>
-            <ul class="space-y-3 text-bc-text-secondary grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-8">
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Protection du dirigeant</li>
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Articulation patrimoine professionnel / personnel</li>
-              <li class="flex items-start gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Cession et transmission d'entreprise</li>
-            </ul>
-          </div>
-
+        <p class="max-w-3xl text-bc-text-secondary mb-12">
+          Le cabinet accompagne des clients qui souhaitent structurer un patrimoine déjà constitué ou en phase de développement, avec une attention particulière portée à la cohérence d'ensemble, à la protection et à la transmission.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          {expertises.map((item) => (
+            <Card class="premium-card-motion h-full">
+              <h3 class="text-bc-accent-champagne text-2xl font-serif mb-6">{item.title}</h3>
+              <ul class="space-y-3 text-bc-text-secondary text-sm">
+                {item.bullets.map((bullet) => (
+                  <li class="flex gap-3">
+                    <span class="text-bc-accent-bronze mt-1">▪</span>
+                    <span>{bullet}</span>
+                  </li>
+                ))}
+              </ul>
+            </Card>
+          ))}
         </div>
       </Container>
     </Section>

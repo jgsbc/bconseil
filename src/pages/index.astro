@@ -4,7 +4,11 @@ import Button from '../components/Button.astro';
 import { withBase } from '../lib/paths';
 ---
 
-<BaseLayout title="Accueil" description="Conseil patrimonial privé en Rhône-Alpes. Une approche confidentielle pour structurer, protéger et transmettre ce qui engage l'avenir.">
+<BaseLayout
+  title="Accueil"
+  metaTitle="Berlioz Conseil — Conseil patrimonial privé"
+  description="Conseil patrimonial privé en Rhône-Alpes. Une approche confidentielle pour structurer, protéger et transmettre ce qui engage l'avenir."
+>
   <main class="min-h-screen flex items-center justify-center premium-gradient bg-visual bg-hero-landing-a bg-visual-entry relative px-6">
     <!-- Abstract background effect -->
     <div class="absolute inset-0 pointer-events-none ambient-halo" style="background: radial-gradient(circle at 50% 50%, var(--color-bc-accent-bronze) 0%, transparent 60%); z-index: 1;"></div>
@@ -26,7 +30,7 @@ import { withBase } from '../lib/paths';
           Découvrir le cabinet
         </Button>
         <Button href={withBase('/acces-client')} variant="outline" class="w-full">
-          Espace client
+          Accès client
         </Button>
       </div>
     </div>

@@ -9,43 +9,44 @@ import LegalNoticeBlock from '../components/LegalNoticeBlock.astro';
 import ContactForm from '../components/ContactForm.astro';
 ---
 
-<BaseLayout title="Contact">
+<BaseLayout
+  title="Contact"
+  metaTitle="Contact — Demander un premier échange patrimonial"
+  description="Contactez Berlioz Conseil pour organiser un premier échange patrimonial confidentiel en Rhône-Alpes."
+>
   <Header />
   <main class="flex-grow">
-    <PageHero 
-      title="Prendre Contact" 
-      description="Pour toute demande d'accompagnement patrimonial, merci d'utiliser le formulaire ou les coordonnées ci-dessous." 
+    <PageHero
+      title="Demander un premier échange patrimonial"
+      description="Le formulaire permet de qualifier votre demande et d'organiser un premier échange. Aucun conseil personnalisé n'est délivré via ce formulaire."
       bgClass="bg-visual bg-inner-b bg-visual-readable"
     />
-    
+
     <Section>
       <Container class="max-w-5xl">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          
-          <!-- Informations de contact (colonne de gauche) -->
           <div class="lg:col-span-1 space-y-12">
             <div>
               <LegalNoticeBlock title="Coordonnées">
-                <p>Email : contact@berliozconseil.fr </p>
-                <p>Téléphone : +33603071011</p>
+                <p>Email : contact@berliozconseil.fr</p>
+                <p>Téléphone : 06 03 07 10 11</p>
               </LegalNoticeBlock>
             </div>
-            
+
             <div>
               <LegalNoticeBlock title="Adresse">
-                <p>6 rue de la Pelonnière<br/>69660 Collonges-au-Mont-d'Or</p>
+                <p>6 rue de la Pelonniere<br />69660 Collonges-au-Mont-d'Or</p>
               </LegalNoticeBlock>
             </div>
-            
+
             <div class="border-l-4 border-bc-accent-bronze bg-bc-bg-secondary p-6">
               <h3 class="text-bc-text-primary text-base font-serif mb-2">Sécurité et confidentialité</h3>
               <p class="text-bc-text-muted text-sm mb-0">
-                Pour votre sécurité, merci de ne transmettre aucun identifiant, document confidentiel ou information patrimoniale détaillée via ce formulaire. 
+                Pour votre sécurité, merci de ne transmettre aucun identifiant, document confidentiel ou information patrimoniale détaillée via ce formulaire.
               </p>
             </div>
           </div>
-          
-          <!-- Formulaire (colonne de droite) -->
+
           <div class="lg:col-span-2 bg-bc-bg-secondary border border-bc-border p-8 md:p-12">
             <h2 class="text-2xl font-serif text-bc-text-primary mb-6">Formulaire de contact</h2>
             <p class="text-bc-text-secondary mb-8 text-sm md:text-base leading-relaxed">
@@ -53,7 +54,6 @@ import ContactForm from '../components/ContactForm.astro';
             </p>
             <ContactForm />
           </div>
-
         </div>
       </Container>
     </Section>

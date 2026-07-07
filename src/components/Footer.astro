@@ -10,13 +10,20 @@ const currentYear = new Date().getFullYear();
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
       <div>
         <h3 class="text-bc-text-primary font-medium mb-6 uppercase tracking-widest text-xs">Berlioz Conseil</h3>
-        <p class="text-sm text-bc-text-muted leading-relaxed">Conseil patrimonial, assurance et stratégie de protection.</p>
+        <p class="text-sm text-bc-text-muted leading-relaxed">Conseil patrimonial, épargne et transmission.</p>
+        <p class="mt-4 text-sm text-bc-text-muted leading-relaxed">
+          contact@berliozconseil.fr<br />
+          06 03 07 10 11
+        </p>
       </div>
       <div>
         <h3 class="text-bc-text-primary font-medium mb-6 uppercase tracking-widest text-xs">Navigation</h3>
         <ul class="space-y-3 text-sm text-bc-text-muted">
+          <li><a href={withBase('/accueil')} class="hover:text-bc-accent-champagne transition-colors">Accueil</a></li>
           <li><a href={withBase('/expertises')} class="hover:text-bc-accent-champagne transition-colors">Expertises</a></li>
           <li><a href={withBase('/a-propos')} class="hover:text-bc-accent-champagne transition-colors">À propos</a></li>
+          <li><a href={withBase('/contact')} class="hover:text-bc-accent-champagne transition-colors">Contact</a></li>
+          <li><a href={withBase('/acces-client')} class="hover:text-bc-accent-champagne transition-colors">Accès client</a></li>
           <li><a href={withBase('/cadre-reglementaire')} class="hover:text-bc-accent-champagne transition-colors">Cadre réglementaire</a></li>
         </ul>
       </div>

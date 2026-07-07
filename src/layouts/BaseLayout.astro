@@ -4,13 +4,18 @@ import { withBase } from '../lib/paths';
 
 interface Props {
 	title: string;
+	metaTitle?: string;
 	description?: string;
 }
 
-const { title, description = "Berlioz Conseil — Accompagnement patrimonial confidentiel" } = Astro.props;
+const {
+	title,
+	metaTitle,
+	description = "Berlioz Conseil — Accompagnement patrimonial confidentiel",
+} = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const fullTitle = title === "Accueil" ? "Berlioz Conseil — Conseil patrimonial premium" : `${title} | Berlioz Conseil`;
+const fullTitle = metaTitle ?? (title.includes("Berlioz Conseil") ? title : title === "Accueil" ? "Berlioz Conseil — Conseil patrimonial premium" : `${title} | Berlioz Conseil`);
 ---
 
 <!doctype html>

@@ -9,20 +9,27 @@ import Button from '../components/Button.astro';
 import { withBase } from '../lib/paths';
 ---
 
-<BaseLayout title="Demande envoyée">
+<BaseLayout
+  title="Merci"
+  metaTitle="Merci — Berlioz Conseil"
+  description="Votre demande a bien été transmise à Berlioz Conseil."
+>
   <Header />
   <main class="flex-grow premium-gradient flex flex-col justify-center min-h-[60vh]">
     <Section class="text-center">
       <Container class="max-w-2xl">
         <h1 class="mb-6 font-serif">Merci pour votre message</h1>
         <p class="mb-12 text-bc-text-secondary text-lg">Votre demande a bien été transmise à Berlioz Conseil.</p>
-        
+
         <Card class="inline-block p-12 max-w-xl mx-auto">
           <p class="text-bc-text-secondary mb-8">
-            Nous avons bien reçu votre demande de contact et nous vous répondrons dans les meilleurs délais selon votre préférence de communication.
+            Nous avons bien reçu votre demande de contact. Le cabinet reprendra contact après lecture de votre message afin d'organiser un premier échange adapté à votre situation.
           </p>
-          <div class="pt-4">
-            <Button href={withBase('/')} variant="primary">
+          <p class="text-bc-text-secondary mb-0">
+            Aucun conseil personnalisé n'est délivré automatiquement via ce formulaire.
+          </p>
+          <div class="pt-8">
+            <Button href={withBase('/accueil')} variant="primary">
               Retour à l'accueil
             </Button>
           </div>

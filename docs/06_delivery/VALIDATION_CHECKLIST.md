@@ -63,6 +63,7 @@ Les cases ci-dessous restent utiles comme contrôle final de publication, pas co
 - [ ] Mise en avant investissements financiers validée
 - [ ] Assurance formulée comme assurance de personnes / prévoyance
 - [ ] Fiscalité formulée prudemment
+- [ ] Intitulé exact de la formation finance durable confirmé avant affichage public
 - [ ] Aucune promesse de rendement
 - [ ] Aucune promesse de protection totale
 - [ ] Aucune promesse d’optimisation fiscale garantie

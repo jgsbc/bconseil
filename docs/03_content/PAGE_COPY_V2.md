@@ -1,10 +1,17 @@
-# Berlioz Conseil — Préparation des contenus V2
+# Berlioz Conseil - Préparation des contenus V2
 
-## Rôle
+## Statut
 
-Ce document prépare la future réécriture des pages visibles du site.
+Ce document reflète la direction éditoriale réellement appliquée dans le lot 14D.
 
-Il ne remplace pas les pages Astro, mais sert de guide pour le lot d’implémentation éditoriale.
+Le site conserve :
+
+- le positionnement premium, sobre et confidentiel ;
+- la distinction entre la landing d'entrée et la page principale `Accueil` ;
+- les CTA orientés vers un premier échange patrimonial ;
+- la prudence réglementaire issue du lot 14C.
+
+---
 
 ## Landing `/`
 
@@ -12,148 +19,121 @@ Il ne remplace pas les pages Astro, mais sert de guide pour le lot d’implémen
 
 Créer une première impression premium, sobre et confidentielle.
 
-### Message central
+### Message appliqué
 
-Berlioz Conseil accompagne les décisions patrimoniales importantes avec une approche confidentielle et structurée.
-
-### Sections recommandées
-
-- Logo / nom ;
-- phrase courte ;
-- deux CTA.
+> Conseil patrimonial privé en Rhône-Alpes. Une approche confidentielle pour structurer, protéger et transmettre ce qui engage l'avenir.
 
 ### CTA
 
 - Découvrir le cabinet ;
-- Espace client.
+- Accès client.
 
-### Formulation recommandée
+### Notes
 
-> Conseil patrimonial privé en Rhône-Alpes. Une approche confidentielle pour structurer, protéger et transmettre ce qui engage l’avenir.
+- page courte ;
+- pas de surcharge SEO ;
+- pas de discours réglementaire lourd.
 
-### À éviter
-
-- discours trop long ;
-- mentions réglementaires trop visibles en landing ;
-- logo trop petit si illisible ;
-- promesses de performance.
+---
 
 ## Accueil `/accueil`
 
 ### Objectif
 
-Présenter clairement le cabinet, sa cible, ses domaines d’intervention et sa méthode.
+Présenter le cabinet, les cibles, les situations traitées et la méthode.
 
-### Message central
+### Message appliqué
 
-Berlioz Conseil accompagne particuliers, dirigeants et professions libérales dans les décisions patrimoniales significatives.
+> Berlioz Conseil accompagne des clients dont les décisions patrimoniales engagent des enjeux financiers, familiaux, professionnels ou successoraux significatifs.
 
-### Sections recommandées
+### Structure appliquée
 
 1. Hero territorial et métier ;
 2. Situations accompagnées ;
-3. Services prioritaires ;
+3. Approche globale ;
 4. Méthode en 5 étapes ;
-5. Cadre professionnel vérifiable ;
-6. CTA contact.
+5. Cabinet à taille humaine ;
+6. CTA final.
 
-### H1 recommandé
+### Situations mises en avant
 
-> Conseil patrimonial pour les décisions qui engagent l’avenir
+- structurer une épargne devenue dispersée ;
+- arbitrer entre immobilier, assurance-vie et investissements financiers ;
+- préparer la retraite et les revenus futurs ;
+- protéger le conjoint, les enfants ou le dirigeant ;
+- organiser la transmission ;
+- clarifier la fiscalité patrimoniale.
 
-### Services à intégrer
+### Méthode appliquée
 
-- épargne ;
-- gestion de patrimoine ;
-- conseil patrimonial ;
-- investissements financiers.
-
-### Méthode en 5 étapes
-
-1. Premier rendez-vous : comprendre les enjeux ;
-2. Audit patrimonial : analyser l’existant ;
+1. Premier rendez-vous ;
+2. Audit patrimonial ;
 3. Diagnostic et stratégie patrimoniale ;
 4. Mise en place des solutions ;
 5. Suivi annuel et ajustements.
 
-### Formulation cible
+### CTA appliqué
 
-> Berlioz Conseil accompagne des clients dont les décisions patrimoniales engagent des enjeux financiers, familiaux, professionnels ou successoraux significatifs.
+- Demander un premier échange patrimonial ;
+- Explorer les expertises.
 
-### À éviter
-
-- “CIF indépendant” ;
-- promesse de rendement ;
-- promesse de fiscalité optimisée garantie ;
-- langage trop “banque privée” arrogant.
+---
 
 ## Expertises `/expertises`
 
 ### Objectif
 
-Structurer l’offre par situations client, pas par jargon technique.
+Structurer l'offre par situations client plutôt que par catalogue produit.
 
-### H1 recommandé
+### Message appliqué
 
-> Expertises patrimoniales
+> Épargne, investissements financiers, retraite, prévoyance, transmission : Berlioz Conseil aide à mettre en cohérence les décisions qui engagent le patrimoine familial et professionnel.
 
-### Sections recommandées
+### Blocs appliqués
 
-1. Structurer l’épargne et les investissements ;
+1. Structurer l'épargne et les investissements ;
 2. Préparer la retraite ;
 3. Protéger la famille et le dirigeant ;
 4. Organiser la transmission ;
-5. Accompagner le dirigeant ;
-6. Fiscalité patrimoniale ;
-7. Cadre de conseil.
-
-### Formulations clés
-
-> Chaque recommandation doit être mise en cohérence avec votre situation, votre horizon, vos objectifs et votre niveau de risque.
-
-> L’assurance est abordée sous l’angle de l’assurance de personnes, de la prévoyance et de la protection familiale ou professionnelle.
+5. Accompagner le dirigeant et la profession libérale ;
+6. Immobilier et financement dans une logique patrimoniale ;
+7. Fiscalité patrimoniale.
 
 ### À éviter
 
-- assurance de biens ;
-- assurance générale ;
-- “meilleur placement” ;
-- “optimisation fiscale” en titre principal.
+- rendement garanti ;
+- meilleur placement ;
+- optimisation fiscale garantie ;
+- défiscalisation miracle ;
+- assurance de biens.
+
+---
 
 ## À propos `/a-propos`
 
 ### Objectif
 
-Créer confiance sans inventer de parcours.
+Créer de la confiance sans inventer de parcours.
 
-### H1 recommandé
+### Message appliqué
 
-> Une vision globale du conseil patrimonial
+> Berlioz Conseil est porté par Aurélien Picard, diplômé d'un Master 2 en gestion de patrimoine à l'IAE Lyon 3. Le cabinet privilégie une relation directe, confidentielle et pédagogique, centrée sur la compréhension des décisions patrimoniales avant la mise en place de solutions.
 
-### Sections recommandées
-
-1. Présentation d’Aurélien Picard ;
-2. Posture de conseil ;
-3. Formation ;
-4. Accompagnement dans la durée ;
-5. CTA.
-
-### Éléments validés
+### Repères appliqués
 
 - Aurélien PICARD ;
-- Master 2 gestion de patrimoine à l’IAE Lyon 3 ;
-- présentation courte et sobre ;
-- indépendance / vision du conseil à formuler avec prudence.
+- Master 2 en gestion de patrimoine à l'IAE Lyon 3 ;
+- relation directe ;
+- approche confidentielle ;
+- pédagogie ;
+- accompagnement dans la durée ;
+- cabinet à taille humaine.
 
-### Formulation possible
+### Point non affiché
 
-> Aurélien Picard accompagne ses clients avec une conviction simple : une décision patrimoniale ne se limite jamais à un produit. Elle doit être replacée dans une situation familiale, professionnelle, fiscale et successorale.
+- l'intitulé exact de la formation finance durable reste à confirmer avant tout affichage public.
 
-### Point à confirmer
-
-- Intitulé exact de “ami finance durable” ;
-- photo professionnelle oui/non ;
-- usage du mot “indépendance”.
+---
 
 ## Contact `/contact`
 
@@ -161,29 +141,16 @@ Créer confiance sans inventer de parcours.
 
 Qualifier les demandes et orienter vers un premier échange patrimonial.
 
-### H1 recommandé
+### Message appliqué
 
-> Demander un premier échange patrimonial
+> Le formulaire permet de qualifier votre demande et d'organiser un premier échange. Aucun conseil personnalisé n'est délivré via ce formulaire.
 
-### Message central
+### CTA appliqué
 
-Le formulaire permet de transmettre une demande de contact et d’organiser un premier échange, mais ne délivre pas de conseil personnalisé.
+- Demander un premier échange patrimonial.
 
-### Mention à intégrer
+### Champs conservés
 
-> Aucun conseil personnalisé n’est délivré via ce formulaire.
-
-### CTA
-
-> Envoyer la demande
-
-ou
-
-> Demander un premier échange patrimonial
-
-### Formulaire
-
-Conserver les champs :
 - nom ;
 - prénom ;
 - email ;
@@ -196,12 +163,7 @@ Conserver les champs :
 - créneau ;
 - consentement RGPD.
 
-### À éviter
-
-- demander montant de patrimoine ;
-- demander revenus précis ;
-- demander documents ;
-- promettre audit immédiat gratuit sans validation.
+---
 
 ## Accès client `/acces-client`
 
@@ -209,119 +171,34 @@ Conserver les champs :
 
 Rediriger vers un outil externe sans complexité technique.
 
-### H1 recommandé
+### Message appliqué
 
-> Accès client
-
-### Formulation recommandée
-
-> L’espace client est opéré via les outils professionnels utilisés par Berlioz Conseil. Vous serez redirigé vers un environnement sécurisé externe.
+> L'espace client est opéré via les outils professionnels utilisés par Berlioz Conseil. Vous serez redirigé vers un environnement externe sécurisé.
 
 ### Contraintes
 
-- pas d’API ;
+- pas d'API ;
 - pas de SSO ;
-- pas d’iframe ;
-- pas de stockage d’identifiants ;
-- pas de promesse technique excessive.
+- pas d'iframe ;
+- pas de stockage d'identifiants.
 
-## Cadre réglementaire `/cadre-reglementaire`
-
-### Objectif
-
-Permettre au visiteur de vérifier le cadre professionnel.
-
-### H1 recommandé
-
-> Cadre réglementaire
-
-### Sections recommandées
-
-1. Immatriculation ORIAS ;
-2. Conseil en investissements financiers ;
-3. Courtage en assurance ;
-4. Intermédiation bancaire et services de paiement ;
-5. Transaction sur immeubles et fonds de commerce ;
-6. Absence de réception de fonds ;
-7. Réclamation et médiation ;
-8. Autorités de tutelle.
-
-### Ton
-
-Factuel, sobre, non commercial.
-
-### À éviter
-
-- logos institutionnels ;
-- badges de caution ;
-- formulations promotionnelles.
-
-## Mentions légales `/mentions-legales`
-
-### Objectif
-
-Publier les informations légales exactes.
-
-### Contenus à intégrer
-
-- SARL au capital de 1 500 € ;
-- adresse ;
-- dirigeant ;
-- SIREN ;
-- SIRET ;
-- TVA ;
-- email ;
-- téléphone ;
-- RCP ;
-- ORIAS ;
-- CNCGP ;
-- carte CPI ;
-- hébergement à confirmer si non connu.
-
-### À éviter
-
-- EURL ;
-- ancienne adresse ou ancien email ;
-- hébergeur inventé.
-
-## Confidentialité `/confidentialite`
-
-### Objectif
-
-Informer sur la gestion des données du site et distinguer prospects/clients.
-
-### Sections recommandées
-
-1. Responsable de traitement ;
-2. Données collectées ;
-3. Finalité ;
-4. Base légale ;
-5. Durées de conservation ;
-6. Formspree ;
-7. Droits ;
-8. CNIL ;
-9. Contact.
-
-### Point clé
-
-Distinguer :
-- prospects formulaire : 3 ans après dernier contact actif ;
-- clients : durée contractuelle puis archivage 5 ans selon DER.
+---
 
 ## Merci `/merci`
 
 ### Objectif
 
-Confirmer la réception d’une demande.
+Confirmer la réception d'une demande.
 
-### Message recommandé
+### Message appliqué
 
-> Votre demande a bien été transmise. Berlioz Conseil reviendra vers vous dans les meilleurs délais.
+> Nous avons bien reçu votre demande de contact. Le cabinet reprendra contact après lecture de votre message afin d'organiser un premier échange adapté à votre situation.
 
-### À éviter
+### Mention appliquée
 
-- promesse de réponse immédiate ;
-- promesse de conseil donné sans analyse.
+- aucun conseil personnalisé n'est délivré automatiquement via ce formulaire.
+
+---
 
 ## 404 `/404`
 
@@ -329,12 +206,18 @@ Confirmer la réception d’une demande.
 
 Rediriger proprement.
 
-### Message recommandé
+### Message appliqué
 
-> La page demandée est introuvable.
+> La page que vous recherchez semble ne plus exister ou l'URL saisie est incorrecte.
 
-CTA :
+### CTA appliqué
 
-> Revenir à l’accueil
+- Retour à l'accueil.
 
-Le lien doit utiliser `withBase('/accueil')` ou `withBase('/')` selon décision UX.
+---
+
+## Hors périmètre public
+
+- pages réglementaires laissées en place sans refonte éditoriale ;
+- `AMF Finance Durable` non affiché dans le public tant que l'intitulé exact n'est pas confirmé ;
+- aucun partenaire, cas client ou témoignage n'est ajouté.

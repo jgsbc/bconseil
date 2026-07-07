@@ -10,6 +10,7 @@ import { withBase } from '../lib/paths';
 
 <BaseLayout 
   title="Page introuvable" 
+  metaTitle="Page introuvable — Berlioz Conseil"
   description="La page que vous recherchez n'existe pas ou a été déplacée."
 >
   <Header />
@@ -21,7 +22,7 @@ import { withBase } from '../lib/paths';
         <p class="text-bc-text-secondary mb-12">
           La page que vous recherchez semble ne plus exister ou l'URL saisie est incorrecte.
         </p>
-        <Button href={withBase('/')} variant="primary">
+        <Button href={withBase('/accueil')} variant="primary">
           Retour à l'accueil
         </Button>
       </Container>

@@ -4,100 +4,67 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Section from '../components/Section.astro';
 import Container from '../components/Container.astro';
+import Card from '../components/Card.astro';
 import CTASection from '../components/CTASection.astro';
 import Eyebrow from '../components/Eyebrow.astro';
+
+const repères = [
+  "Aurélien PICARD",
+  "Expert en gestion de patrimoine",
+  "Relation directe",
+  "Approche confidentielle",
+  "Pédagogie",
+  "Accompagnement dans la durée",
+  "Cabinet à taille humaine",
+];
 ---
 
-<BaseLayout title="À propos">
+<BaseLayout
+  title="À propos"
+  metaTitle="À propos — Berlioz Conseil"
+  description="Découvrez Berlioz Conseil, cabinet patrimonial à taille humaine porté par Aurélien Picard, à Collonges-au-Mont-d’Or."
+>
   <Header />
   <main class="flex-grow">
-    
     <Section class="bg-visual bg-about-a bg-visual-readable premium-gradient border-b border-bc-border min-h-[50vh] flex items-center">
       <Container class="max-w-4xl">
-        <Eyebrow>Le Fondateur</Eyebrow>
+        <Eyebrow>Le fondateur</Eyebrow>
         <h1 class="text-3xl md:text-5xl lg:text-6xl leading-tight mb-8 font-light">
           Aurélien Picard
         </h1>
         <p class="text-xl md:text-2xl text-bc-text-secondary font-light max-w-3xl leading-relaxed">
-          Construire une stratégie patrimoniale commence rarement par un produit. Cela commence par une lecture juste de la situation.
+          Berlioz Conseil est porté par Aurélien Picard, expert en gestion de patrimoine. Le cabinet privilégie une relation directe, confidentielle et pédagogique, centrée sur la compréhension des décisions patrimoniales avant la mise en place de solutions.
         </p>
       </Container>
     </Section>
-    
+
     <Section>
-      <Container class="max-w-3xl">
-        <div class="space-y-16">
-          
-          <div class="space-y-6 text-bc-text-secondary text-lg leading-relaxed">
-            <h2 class="text-bc-text-primary mb-8 text-2xl font-serif">Une trajectoire construite dans la durée</h2>
-            <p>
-              Avant de fonder Berlioz Conseil, Aurélien Picard a construit son parcours au contact de maisons reconnues de la banque, de l'assurance et de la gestion de patrimoine. Ces années lui ont donné une connaissance concrète des outils, des cadres réglementaires, des produits financiers, mais surtout des situations humaines qui se cachent derrière chaque décision patrimoniale.
-            </p>
-            <p>
-              Chez Allianz, au GAN puis dans ses premières expériences bancaires, il a accompagné des clients aux enjeux variés : protéger une famille, préparer une retraite, organiser une transmission, structurer un patrimoine professionnel ou privé. Cette expérience a progressivement fait émerger une conviction simple : le bon conseil ne se limite pas à proposer une solution. Il commence par une écoute précise, une lecture globale et une hiérarchisation lucide des priorités.
-            </p>
-            <p>
-              Berlioz Conseil est né de cette exigence : proposer un accompagnement plus direct, plus confidentiel, plus personnel, sans perdre la rigueur acquise auprès des grands acteurs du secteur.
-            </p>
-          </div>
-
-          <div class="space-y-6 text-bc-text-secondary text-lg leading-relaxed pt-8 border-t border-bc-border">
-            <h2 class="text-bc-text-primary mb-8 text-2xl font-serif">Une culture financière et patrimoniale</h2>
-            <p>
-              Sa formation en finance et services de gestion financière à iaelyon, complétée par un parcours en école de commerce et une expérience internationale, a nourri une approche à la fois technique et transversale du patrimoine.
-            </p>
-            <p>
-              Cette culture financière s'enrichit d'une attention particulière aux dimensions familiales, successorales, fiscales et professionnelles des décisions patrimoniales. Dans un domaine où chaque situation engage plusieurs temporalités — le présent, la retraite, la transmission, la protection des proches — la technique n'a de valeur que si elle reste lisible et utile pour la personne accompagnée.
-            </p>
-            <p>
-              Aurélien Picard a également validé une formation JurisCampus en finance durable liée au cadre AMF.
-            </p>
-          </div>
-
-          <div class="space-y-6 text-bc-text-secondary text-lg leading-relaxed pt-8 border-t border-bc-border">
-            <h2 class="text-bc-text-primary mb-8 text-2xl font-serif">Ce que cela change dans la relation</h2>
-            <p>
-              Cette trajectoire donne à Berlioz Conseil une posture volontairement sobre : peu d'effets d'annonce, pas de promesse facile, pas de discours standardisé. Le cabinet privilégie les échanges sérieux, les décisions construites, et une relation suivie dans le temps.
-            </p>
-            <p>
-              L'objectif n'est pas de multiplier les produits ou les scénarios, mais d'aider le client à comprendre ce qui compte réellement, à sécuriser ce qui doit l'être, et à avancer avec une stratégie patrimoniale cohérente.
-            </p>
-          </div>
-
-        </div>
-      </Container>
-    </Section>
-
-    <Section bg="secondary" class="border-y border-bc-border">
       <Container class="max-w-5xl">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-          
-          <!-- Repères -->
-          <div>
-            <h2 class="text-bc-text-primary mb-8 text-2xl font-serif">Quelques repères</h2>
-            <ul class="space-y-4 text-bc-text-secondary text-sm md:text-base">
-              <li class="flex gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Berlioz Conseil, depuis 2019</li>
-              <li class="flex gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Expérience en gestion de patrimoine chez Allianz</li>
-              <li class="flex gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Expérience en patrimoine et prévoyance chez GAN</li>
-              <li class="flex gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Premières expériences bancaires et patrimoniales au CIC</li>
-              <li class="flex gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Master 2 Finance et services de gestion financière — iaelyon</li>
-              <li class="flex gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Parcours finance et international business — IDRAC / University of Huddersfield</li>
-              <li class="flex gap-3"><span class="text-bc-accent-bronze mt-1">▪</span> Formation AMF Finance Durable — JurisCampus</li>
-            </ul>
+        <div class="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
+          <div class="space-y-6 text-bc-text-secondary text-lg leading-relaxed">
+            <h2 class="text-bc-text-primary mb-8 text-2xl font-serif">Une vision globale du conseil</h2>
+            <p>
+              Une décision patrimoniale ne se limite pas à un produit ou à un support. Elle doit être replacée dans une situation familiale, professionnelle, successorale et fiscale cohérente.
+            </p>
+            <p>
+              C'est dans cet esprit que Berlioz Conseil accompagne ses clients : avec une lecture d'ensemble, une méthode claire et un souci constant de confidentialité.
+            </p>
+            <p>
+              Le cabinet vise un accompagnement lisible, posé et durable, adapté aux situations où les enjeux patrimoniaux comptent vraiment.
+            </p>
           </div>
 
-          <!-- Domaines de compétence -->
-          <div>
-            <h2 class="text-bc-text-primary mb-8 text-2xl font-serif">Domaines de compétence</h2>
+          <Card class="premium-card-motion">
+            <h2 class="text-bc-text-primary mb-8 text-2xl font-serif">Repères</h2>
             <ul class="space-y-4 text-bc-text-secondary text-sm md:text-base">
-              <li class="flex gap-3"><span class="text-bc-accent-champagne mt-1">▪</span> Stratégie patrimoniale</li>
-              <li class="flex gap-3"><span class="text-bc-accent-champagne mt-1">▪</span> Protection familiale et professionnelle</li>
-              <li class="flex gap-3"><span class="text-bc-accent-champagne mt-1">▪</span> Transmission</li>
-              <li class="flex gap-3"><span class="text-bc-accent-champagne mt-1">▪</span> Fiscalité patrimoniale</li>
-              <li class="flex gap-3"><span class="text-bc-accent-champagne mt-1">▪</span> Allocation et analyse financière</li>
+              {repères.map((item) => (
+                <li class="flex gap-3">
+                  <span class="text-bc-accent-bronze mt-1">▪</span>
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
-          </div>
-
+          </Card>
         </div>
       </Container>
     </Section>
