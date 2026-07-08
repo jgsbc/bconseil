@@ -7,6 +7,7 @@ import Container from '../components/Container.astro';
 import Card from '../components/Card.astro';
 import CTASection from '../components/CTASection.astro';
 import Eyebrow from '../components/Eyebrow.astro';
+import { withBase } from '../lib/paths';
 
 const repères = [
   "Aurélien PICARD",
@@ -55,6 +56,19 @@ const repères = [
           </div>
 
           <Card class="premium-card-motion">
+            <div class="flex items-center gap-4 mb-8">
+              <img
+                src={withBase('/logo/berlioz-logo-round.webp')}
+                alt="Berlioz Conseil"
+                class="h-20 w-20 rounded-full"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <p class="text-xs uppercase tracking-[0.24em] text-bc-accent-champagne/80 mb-2">Berlioz Conseil</p>
+                <p class="text-sm text-bc-text-muted mb-0">Cabinet patrimonial à taille humaine</p>
+              </div>
+            </div>
             <h2 class="text-bc-text-primary mb-8 text-2xl font-serif">Repères</h2>
             <ul class="space-y-4 text-bc-text-secondary text-sm md:text-base">
               {repères.map((item) => (

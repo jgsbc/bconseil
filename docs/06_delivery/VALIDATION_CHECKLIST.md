@@ -98,8 +98,27 @@ Les cases ci-dessous restent utiles comme contrôle final de publication, pas co
 - [ ] Usage landing validé
 - [ ] Usage header validé ou écarté
 - [ ] Version favicon simplifiée validée
+- [ ] Favicon SVG / ICO vérifié
+- [ ] Favicons PNG 16 px et 32 px vérifiés
+- [ ] Apple touch icon vérifié
+- [ ] Manifest PWA vérifié
 - [ ] Icônes PWA validées
-- [ ] Icônes maskable vérifiées
+- [ ] Icônes maskable 192 px et 512 px vérifiées
+- [ ] Contraste palette logo vérifié
+- [ ] Palette finale `#091B33` / `#D3A253` validée
+- [ ] Logo fondu dans le décor, sans effet sticker
+- [ ] Overlays basés sur `rgba(9, 27, 51, ...)`
+- [ ] Absence d'overlay noir dominant validée
+- [ ] Landing logo plus grand mais non envahissant
+- [ ] Landing logo sans contour parasite
+- [ ] Landing logo fondu dans le fond
+- [ ] Header logo mobile OK
+- [ ] Footer logo non envahissant
+- [ ] À propos logo subtil
+- [ ] Overlays allégés avec textures visibles
+- [ ] Lisibilité hero OK
+- [ ] Pas de rupture bleu logo / fond
+- [ ] Pas de 404 assets logo
 - [ ] Logo SVG ou PNG final décidé
 
 ## Technique

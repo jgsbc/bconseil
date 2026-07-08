@@ -1,122 +1,120 @@
 # Berlioz Conseil — Usage du logo
 
-## Source visuelle
+## Décision V1
 
-Logo PNG fourni :
+Le site utilise l'identité officielle Berlioz Conseil sans transformer le logo en élément décoratif répété.
 
-- format : PNG ;
-- dimensions : 1024 × 1024 px ;
-- mode : RGBA ;
-- forme : logo rond ;
-- couleurs dominantes : bleu nuit et or ;
-- contenu : chat, barres financières, pièces, texte “Berlioz Conseil”.
+- Header : typographique sobre, sans logo rond complet.
+- Header V1 : mark compact chat-bubble + texte, sans gros logo rond.
+- Landing : logo rond complet affiché une seule fois, plus assumé, sans contour fort.
+- Footer : logo rond complet en taille contenue.
+- Page À propos : intégration subtile dans la carte Repères, sans assimiler le logo à une photo.
+- Favicon et icônes PWA : marque simplifiée avec la bulle et le chat.
+- Documents : logo rond complet autorisé lorsque le format permet une bonne lisibilité.
+- Source de génération du pack 14E corrigé : `public/assets/Logo rond - Berlioz Conseil - Aurelien Picard.png`.
+- Règle de génération : conserver les couleurs source, éviter les recadrages agressifs et garder une marge de sécurité sur les petites tailles.
 
-## Lecture stratégique
-
-Le logo est cohérent avec l’univers sombre/or du site.
-Il installe une identité patrimoniale distinctive, moins générique qu’un monogramme financier classique.
-
-## Usages recommandés
-
-### Landing page
-
-Le logo rond peut être utilisé sur la page d’entrée, à condition de rester élégant et de ne pas écraser le texte.
-
-Recommandation :
-- taille desktop : modérée ;
-- taille mobile : éviter qu’il prenne tout l’écran ;
-- fond sombre cohérent ;
-- animation douce possible, mais non nécessaire.
-
-### PWA / icônes grandes tailles
-
-Le logo complet peut convenir pour :
-
-- icône PWA 512 px ;
-- écran d’installation ;
-- document interne ;
-- visuel de présentation.
-
-Attention aux icônes maskable : prévoir une marge interne suffisante pour éviter que le cercle ou le texte ne soit coupé.
-
-### Documents
-
-Le logo rond est adapté aux documents PDF ou documents de relation client.
-
-## Usages déconseillés
-
-### Favicon 16×16 / 32×32
-
-Le logo complet est trop détaillé pour un favicon très petit.
-Le texte “Berlioz Conseil” et le chat peuvent devenir illisibles.
-
-Recommandation :
-Créer une version simplifiée.
-
-Options :
-1. symbole chat + barres uniquement ;
-2. monogramme “BC” ;
-3. cercle bleu nuit + signe or simplifié.
-
-### Header desktop
-
-Le logo rond complet peut alourdir le header.
-Le header actuel typographique peut rester plus élégant.
-
-Options :
-- garder un wordmark texte “Berlioz Conseil” ;
-- utiliser une petite marque simplifiée ;
-- utiliser le logo rond seulement sur landing et footer discret.
-
-## Déclinaisons futures recommandées
-
-Créer ou maintenir :
+## Fichiers installés
 
 ```text
 public/logo/berlioz-logo-round.png
-public/logo/berlioz-mark.png
-public/logo/berlioz-wordmark.svg
+public/logo/berlioz-logo-round.webp
+public/logo/berlioz-mark-chat-bubble.png
+public/logo/berlioz-mark-chat-bubble.webp
 public/favicon.svg
 public/favicon.ico
+public/favicon-16x16.png
+public/favicon-32x32.png
+public/icons/apple-touch-icon.png
 public/icons/icon-192.png
 public/icons/icon-512.png
 public/icons/icon-maskable-192.png
 public/icons/icon-maskable-512.png
-public/icons/apple-touch-icon.png
+public/manifest.webmanifest
 ```
 
-## Règles visuelles
+## Couleurs de référence
 
-- fond bleu nuit ;
-- accent or/champagne ;
-- éviter les effets 3D excessifs ;
-- éviter les reflets trop “banque privée cliché” ;
-- conserver une marge de sécurité sur les icônes ;
-- pas d’usage sur fond chargé sans contraste ;
-- pas de déformation ;
-- pas d’étirement horizontal ou vertical.
+- Bleu fond/logo : `#091B33`
+- Bleu profond secondaire : `#0B213B`
+- Surface : `#0E2948`
+- Or principal : `#D3A253`
+- Or bronze : `#A97836`
+- Ivoire clair : `#F5F2EA`
 
-## Logo et conformité
+## Intégration visuelle
 
-Ne pas associer visuellement le logo Berlioz Conseil avec les logos :
+Le logo ne doit pas paraître posé comme un sticker sur un décor concurrent.
 
-- AMF ;
-- ACPR ;
-- ORIAS ;
-- CNCGP ;
-- Harvest ;
-- O2S ;
-- MoneyPitch ;
-- partenaires ou compagnies.
+Principes appliqués :
 
-Si des références réglementaires sont affichées, elles doivent l’être en texte, avec liens ou coordonnées, pas sous forme de badge publicitaire.
+- fond principal aligné sur le bleu du logo ;
+- surfaces légèrement plus claires, sans bleu électrique ;
+- overlays de backgrounds basés sur `rgba(9, 27, 51, ...)` ;
+- overlays allégés pour laisser réapparaître textures et profondeurs ;
+- halos dorés très doux, jamais dominants ;
+- or utilisé comme accent, pas comme couleur majoritaire ;
+- pas d'overlay noir massif autour du logo.
+- pas de contour fort, de glow appuyé ou d'effet sticker autour du logo.
 
-## Décision à valider
+## Règles d'usage
 
-Questions à poser à Aurélien :
+### Logo rond complet
 
-1. Le logo rond doit-il devenir le logo principal du site ?
-2. Souhaite-t-il un header avec le logo rond, ou un header typographique plus sobre ?
-3. Accepte-t-il une version simplifiée pour favicon ?
-4. Le chat doit-il rester le symbole principal ?
-5. Faut-il produire un logo SVG propre à partir du PNG ?
+Usage recommandé :
+
+- landing page ;
+- footer en taille contenue ;
+- intégration discrète sur la page À propos ;
+- documents de présentation ;
+- supports grands formats où le texte reste lisible.
+
+Usage PWA grande taille : possible uniquement sur décision ultérieure dédiée. Dans la V1, les icônes PWA installées utilisent la bulle avec le chat pour préserver la lisibilité.
+
+Usage interdit :
+
+- favicon ;
+- petits pictogrammes ;
+- répétition en motif décoratif ;
+- insertion systématique dans toutes les pages.
+
+### Bulle avec le chat
+
+Usage recommandé :
+
+- favicon ;
+- icônes PWA ;
+- petites tailles ;
+- icônes maskable avec marge de sécurité.
+
+La bulle chat ne doit pas reprendre de fragment du logo rond complet, ni l'arc extérieur du grand disque, ni le texte "Berlioz Conseil".
+
+### Header
+
+Le header reste typographique pour préserver la sobriété du site.
+
+```text
+mark chat-bubble + Berlioz Conseil
+```
+
+Ne pas remplacer le header par le logo rond complet sans décision de design dédiée.
+
+## Interdits
+
+- Ne pas déformer le logo.
+- Ne pas étirer horizontalement ou verticalement.
+- Ne pas utiliser le logo rond complet en favicon.
+- Ne pas répéter le logo comme décor de fond.
+- Ne pas placer le logo sur un fond chargé sans contraste.
+- Ne pas associer le logo à des logos AMF, ACPR, ORIAS, CNCGP, Harvest ou partenaires.
+- Ne pas utiliser les marques institutionnelles comme badges marketing.
+
+## Manifest et PWA
+
+Le manifest utilise des chemins relatifs pour rester compatible GitHub Pages sous `/bconseil/`.
+
+```json
+"src": "icons/icon-192.png"
+```
+
+Les chemins absolus du type `/icons/icon-192.png` sont à éviter dans le manifest.

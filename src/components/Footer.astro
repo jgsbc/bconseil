@@ -9,7 +9,19 @@ const currentYear = new Date().getFullYear();
   <Container>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
       <div>
-        <h3 class="text-bc-text-primary font-medium mb-6 uppercase tracking-widest text-xs">Berlioz Conseil</h3>
+        <div class="flex items-center gap-4 mb-6">
+          <img
+            src={withBase('/logo/berlioz-logo-round.webp')}
+            alt="Berlioz Conseil"
+            class="h-14 w-14 md:h-16 md:w-16 rounded-full"
+            loading="lazy"
+            decoding="async"
+          />
+          <div>
+            <h3 class="text-bc-text-primary font-serif text-lg mb-1">Berlioz Conseil</h3>
+            <p class="text-xs uppercase tracking-[0.22em] text-bc-accent-champagne/80 mb-0">Conseil patrimonial</p>
+          </div>
+        </div>
         <p class="text-sm text-bc-text-muted leading-relaxed">Conseil patrimonial, épargne et transmission.</p>
         <p class="mt-4 text-sm text-bc-text-muted leading-relaxed">
           contact@berliozconseil.fr<br />
