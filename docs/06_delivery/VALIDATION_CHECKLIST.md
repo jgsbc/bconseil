@@ -87,6 +87,14 @@ Les cases ci-dessous restent utiles comme contrôle final de publication, pas co
 - [ ] Univers sombre/confidentiel validé
 - [ ] Usage du bleu nuit / or validé
 - [ ] Backgrounds visibles sur GitHub Pages
+- [ ] Profondeur visuelle validée sans surcharge
+- [ ] Textures légères visibles mais discrètes
+- [ ] Lignes patrimoniales abstraites validées
+- [ ] Relief des cartes validé
+- [ ] CTA final moins plat mais non agressif
+- [ ] Aucune photo stock ou image finance cliché ajoutée
+- [ ] Aucun pictogramme générique ajouté
+- [ ] Performance visuelle validée sans ressource externe
 - [ ] Lisibilité mobile validée
 - [ ] Header validé
 - [ ] Footer validé

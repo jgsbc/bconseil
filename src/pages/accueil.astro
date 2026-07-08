@@ -119,7 +119,7 @@ const methodSteps = [
       </Container>
     </Section>
 
-    <Section>
+    <Section class="visual-depth trust-texture">
       <Container>
         <Eyebrow>Pour quels enjeux ?</Eyebrow>
         <h2 class="mb-6">Structurer, protéger et transmettre</h2>
@@ -155,11 +155,11 @@ const methodSteps = [
       </Container>
     </Section>
 
-    <Section>
+    <Section class="visual-depth heritage-lines">
       <Container>
         <Eyebrow>Méthode</Eyebrow>
         <h2 class="mb-6">Méthode en 5 étapes</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-6 method-path">
           {methodSteps.map((step) => (
             <Card class="premium-card-motion h-full">
               <p class="text-bc-accent-bronze text-sm tracking-[0.3em] uppercase mb-4">Étape {step.number}</p>
@@ -171,7 +171,7 @@ const methodSteps = [
       </Container>
     </Section>
 
-    <Section bg="secondary" class="border-y border-bc-border">
+    <Section bg="secondary" class="border-y border-bc-border visual-depth trust-texture">
       <Container>
         <div class="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
           <div>

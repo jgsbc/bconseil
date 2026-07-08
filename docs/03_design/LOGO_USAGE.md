@@ -57,6 +57,27 @@ Principes appliqués :
 - pas d'overlay noir massif autour du logo.
 - pas de contour fort, de glow appuyé ou d'effet sticker autour du logo.
 
+## Profondeur visuelle
+
+Le lot 14F ajoute de la matière sans nouvelle image ni dépendance.
+
+Principes appliqués :
+
+- textures légères en CSS uniquement ;
+- trames fines et lignes patrimoniales abstraites ;
+- relief discret sur les cartes via surfaces translucides, bordures faibles et ombres bleues profondes ;
+- fil conducteur très sobre sur la méthode en desktop ;
+- CTA final traité comme un bloc institutionnel, avec cadre et halo discrets ;
+- logo conservé comme élément de marque, jamais comme watermark global.
+
+Interdits associés :
+
+- pas de photos stock ;
+- pas de photos de famille, d'immeubles génériques ou de poignée de main ;
+- pas d'icônes finance génériques ;
+- pas de texture dominante ;
+- pas de multiplication du logo comme décor.
+
 ## Règles d'usage
 
 ### Logo rond complet
