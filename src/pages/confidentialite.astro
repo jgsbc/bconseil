@@ -26,7 +26,7 @@ import LegalNoticeBlock from '../components/LegalNoticeBlock.astro';
         <div class="space-y-8">
           <div class="max-w-none text-bc-text-secondary space-y-4 mb-12">
             <p>Le site Berlioz Conseil s'engage à protéger vos données personnelles.</p>
-            <p>Le site agit comme une vitrine et ne collecte aucune donnée patrimoniale détaillée. Les demandes de contact sont transmises via un prestataire technique de formulaire et traitées avec la plus stricte confidentialité.</p>
+            <p>Le site agit comme une vitrine et ne demande aucune donnée patrimoniale détaillée. Les demandes de contact sont transmises via un prestataire technique de formulaire et traitées avec la plus stricte confidentialité.</p>
             <p><strong>Aucun outil de suivi n'est actif sur le site et aucun cookie non essentiel n'est déposé sur votre navigateur.</strong></p>
           </div>
 
@@ -36,11 +36,16 @@ import LegalNoticeBlock from '../components/LegalNoticeBlock.astro';
 
           <LegalNoticeBlock title="Données collectées via le formulaire">
             <p>Lors d'une demande de contact, nous pouvons collecter : prénom, nom, adresse email, téléphone, ville, situation professionnelle, objet de la demande, message libre, préférence de contact, créneau préféré et consentement RGPD.</p>
-            <p>Le formulaire ne permet pas la collecte de données patrimoniales détaillées ni le dépôt de documents confidentiels.</p>
+            <p>Le formulaire ne propose aucun dépôt de document. Le champ libre doit uniquement décrire votre besoin : ne transmettez aucune donnée patrimoniale détaillée, information sensible ou identifiant.</p>
           </LegalNoticeBlock>
 
           <LegalNoticeBlock title="Finalités">
             <p>Les données transmises via le formulaire servent à répondre à une demande de contact, à organiser un premier échange patrimonial et, le cas échéant, à traiter une demande d'audit patrimonial.</p>
+          </LegalNoticeBlock>
+
+          <LegalNoticeBlock title="Base légale et destinataires">
+            <p>La demande de contact est traitée sur la base du consentement exprimé dans le formulaire. Vous pouvez le retirer à tout moment en contactant le cabinet, sans remettre en cause les traitements effectués avant ce retrait.</p>
+            <p>Les données sont destinées aux personnes habilitées de Berlioz Conseil et au prestataire technique chargé de leur transmission. Elles ne servent pas à délivrer un conseil personnalisé via le site.</p>
           </LegalNoticeBlock>
 
           <LegalNoticeBlock title="Durée de conservation">
@@ -49,13 +54,13 @@ import LegalNoticeBlock from '../components/LegalNoticeBlock.astro';
           </LegalNoticeBlock>
 
           <LegalNoticeBlock title="Prestataire technique">
-            <p>Le formulaire utilise Formspree pour transmettre les demandes de contact. Ce prestataire intervient uniquement comme outil technique de routage du formulaire.</p>
+            <p>Le formulaire utilise Formspree pour transmettre les demandes de contact. Formspree traite et peut conserver les données nécessaires à ce service, ainsi que des données techniques de sécurité. Sa politique prévoit des traitements aux États-Unis et dans les pays où il opère. Consultez la <a href="https://formspree.io/legal/privacy-policy/" class="underline underline-offset-4">politique de confidentialité de Formspree</a>.</p>
           </LegalNoticeBlock>
 
           <LegalNoticeBlock title="Droits et contact">
-            <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, de limitation, d'opposition et de portabilité de vos données.</p>
-            <p>Pour exercer vos droits, contactez Berlioz Conseil à l'adresse contact@berliozconseil.fr.</p>
-            <p>Si, après nous avoir contactés, vous estimez que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL.</p>
+            <p>Conformément au RGPD, vous pouvez exercer, dans les conditions prévues par la réglementation, vos droits d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité, ainsi que retirer votre consentement.</p>
+            <p>Pour exercer vos droits, contactez Berlioz Conseil à l'adresse <a href="mailto:contact@berliozconseil.fr" class="underline underline-offset-4">contact@berliozconseil.fr</a>.</p>
+            <p>Si, après nous avoir contactés, vous estimez que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la <a href="https://www.cnil.fr/fr/adresser-une-plainte" class="underline underline-offset-4">CNIL</a>.</p>
           </LegalNoticeBlock>
         </div>
       </Container>

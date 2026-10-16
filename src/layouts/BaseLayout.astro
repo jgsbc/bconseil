@@ -6,15 +6,17 @@ interface Props {
 	title: string;
 	metaTitle?: string;
 	description?: string;
+	noindex?: boolean;
 }
 
 const {
 	title,
 	metaTitle,
 	description = "Berlioz Conseil — Accompagnement patrimonial confidentiel",
+	noindex = false,
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const canonicalURL = new URL(Astro.url.pathname.replace(/\/404\/?$/, '/404.html'), Astro.site);
 const fullTitle = metaTitle ?? (title.includes("Berlioz Conseil") ? title : title === "Accueil" ? "Berlioz Conseil — Conseil patrimonial premium" : `${title} | Berlioz Conseil`);
 ---
 
@@ -41,6 +43,7 @@ const fullTitle = metaTitle ?? (title.includes("Berlioz Conseil") ? title : titl
 		<title>{fullTitle}</title>
 		<meta name="title" content={fullTitle} />
 		<meta name="description" content={description} />
+		{noindex && <meta name="robots" content="noindex, follow" />}
 
 		<style is:inline set:html={`
 			:root {
@@ -65,12 +68,15 @@ const fullTitle = metaTitle ?? (title.includes("Berlioz Conseil") ? title : titl
 		<meta property="og:url" content={canonicalURL} />
 		<meta property="og:title" content={fullTitle} />
 		<meta property="og:description" content={description} />
+		<meta property="og:image" content={new URL(withBase('/assets/backgrounds/bg-hero-landing-a.webp'), Astro.site)} />
+		<meta property="og:image:alt" content="Berlioz Conseil — conseil patrimonial" />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content={canonicalURL} />
 		<meta property="twitter:title" content={fullTitle} />
 		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content={new URL(withBase('/assets/backgrounds/bg-hero-landing-a.webp'), Astro.site)} />
 	</head>
 	<body class="premium-gradient">
 		<slot />

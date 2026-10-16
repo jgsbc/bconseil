@@ -12,18 +12,19 @@ import { withBase } from '../lib/paths';
 <BaseLayout
   title="Merci"
   metaTitle="Merci — Berlioz Conseil"
-  description="Votre demande a bien été transmise à Berlioz Conseil."
+  description="Confirmation de transmission du formulaire de contact."
+  noindex
 >
   <Header />
   <main class="flex-grow premium-gradient flex flex-col justify-center min-h-[60vh]">
     <Section class="text-center">
       <Container class="max-w-2xl">
-        <h1 class="mb-6 font-serif">Merci pour votre message</h1>
-        <p class="mb-12 text-bc-text-secondary text-lg">Votre demande a bien été transmise à Berlioz Conseil.</p>
+        <h1 id="confirmation-title" class="mb-6 font-serif">Confirmation de transmission</h1>
+        <p id="confirmation-status" class="mb-8 text-bc-text-secondary text-lg">Pour organiser un premier échange, adressez votre demande au cabinet depuis le formulaire de contact.</p>
 
-        <Card class="inline-block p-12 max-w-xl mx-auto">
+        <Card class="inline-block max-w-xl mx-auto">
           <p class="text-bc-text-secondary mb-8">
-            Nous avons bien reçu votre demande de contact. Le cabinet reprendra contact après lecture de votre message afin d'organiser un premier échange adapté à votre situation.
+            Vous pouvez utiliser le <a href={withBase('/contact')} class="underline underline-offset-4">formulaire de contact</a> ou joindre directement le cabinet par <a href="mailto:contact@berliozconseil.fr" class="underline underline-offset-4">email</a> ou au <a href="tel:+33603071011" class="underline underline-offset-4">06 03 07 10 11</a>.
           </p>
           <p class="text-bc-text-secondary mb-0">
             Aucun conseil personnalisé n'est délivré automatiquement via ce formulaire.
@@ -39,3 +40,15 @@ import { withBase } from '../lib/paths';
   </main>
   <Footer />
 </BaseLayout>
+
+<script>
+  try {
+    if (sessionStorage.getItem('berlioz-contact-accepted') === 'true') {
+      sessionStorage.removeItem('berlioz-contact-accepted');
+      const title = document.getElementById('confirmation-title');
+      const status = document.getElementById('confirmation-status');
+      if (title) title.textContent = 'Merci pour votre message';
+      if (status) status.textContent = 'Votre demande a été envoyée. Le cabinet pourra en prendre connaissance afin d’organiser un premier échange.';
+    }
+  } catch { /* Keep the neutral message when session storage is unavailable. */ }
+</script>

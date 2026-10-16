@@ -9,7 +9,7 @@ interface Props {
 
 const { href, variant = 'primary', class: className = '', disabled = false, ...rest } = Astro.props;
 
-const baseStyles = "inline-flex items-center justify-center px-6 py-3 text-sm tracking-wider uppercase transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(211,162,83,0.35)] focus-visible:ring-offset-2 focus-visible:ring-offset-bc-bg-primary";
+const baseStyles = "inline-flex items-center justify-center px-6 py-3 text-sm tracking-wider uppercase transition-all duration-200 disabled:opacity-60 disabled:cursor-wait focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(211,162,83,0.35)] focus-visible:ring-offset-2 focus-visible:ring-offset-bc-bg-primary";
 
 const variants = {
   primary: "bg-bc-accent-champagne text-bc-bg-primary hover:bg-[#E0B668] hover:shadow-[0_18px_40px_rgba(0,0,0,0.22)]",

@@ -6,7 +6,7 @@ Le site utilise l'identité officielle Berlioz Conseil sans transformer le logo 
 
 - Header : typographique sobre, sans logo rond complet.
 - Header V1 : mark compact chat-bubble + texte, sans gros logo rond.
-- Landing : logo rond complet affiché une seule fois, plus assumé, sans contour fort.
+- Landing : logo rond complet affiché une seule fois, sans titre visible répétant son nom. Un H1 masqué visuellement identifie la marque pour les lecteurs d’écran ; l’image a un attribut alt vide pour éviter une répétition vocale.
 - Footer : logo rond complet en taille contenue.
 - Page À propos : intégration subtile dans la carte Repères, sans assimiler le logo à une photo.
 - Favicon et icônes PWA : marque simplifiée avec la bulle et le chat.
@@ -66,7 +66,7 @@ Principes appliqués :
 - textures légères en CSS uniquement ;
 - trames fines et lignes patrimoniales abstraites ;
 - relief discret sur les cartes via surfaces translucides, bordures faibles et ombres bleues profondes ;
-- fil conducteur très sobre sur la méthode en desktop ;
+- méthode en cartes numérotées ; la ligne décorative du lot 14F a été retirée lors du passage à trois colonnes ;
 - CTA final traité comme un bloc institutionnel, avec cadre et halo discrets ;
 - logo conservé comme élément de marque, jamais comme watermark global.
 
@@ -139,3 +139,14 @@ Le manifest utilise des chemins relatifs pour rester compatible GitHub Pages sou
 ```
 
 Les chemins absolus du type `/icons/icon-192.png` sont à éviter dans le manifest.
+
+## Correction vérifiée le 15 octobre 2026
+
+Le WebP et le PNG ronds contiennent le même liseré clair opaque. Changer de format ne résout donc pas le défaut.
+
+- Le fichier officiel reste intact.
+- La classe `berlioz-round-logo` masque uniquement la frange périphérique du disque, centrée au pixel (512,497) de l’image 1024 × 1024.
+- Le mélange CSS `lighten` permet au bleu du disque de se fondre dans le décor. Sur l’entrée, les calques de fond restent derrière le contenu, sans groupe intermédiaire qui isolerait le logo de ce décor.
+- L’ombre du logo et les deux calques décoratifs supplémentaires de l’entrée ont été retirés.
+- Le fond reste texturé, avec un voile bleu ; les couleurs du bitmap ne sont pas réécrites. Le mélange peut modifier légèrement la couleur perçue selon le fond.
+- Contrôle effectué sur le build statique à 390 × 844 et 1440 × 900. Pas de certification de rendu Safari ni de test sur appareils physiques.
