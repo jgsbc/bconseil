@@ -11,7 +11,7 @@ const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
 export default defineConfig({
   site: isGitHubActions ? 'https://jgsbc.github.io' : 'https://www.berliozconseil.fr',
   base: isGitHubActions ? '/bconseil/' : '/',
-  integrations: [sitemap()],
+  integrations: [sitemap({ filter: (page) => !/\/(merci\/?|404(?:\.html|\/)?)$/.test(new URL(page).pathname) })],
   vite: {
     plugins: [tailwindcss()]
   }

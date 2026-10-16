@@ -17,19 +17,27 @@ import ContactForm from '../components/ContactForm.astro';
   <Header />
   <main class="flex-grow">
     <PageHero
-      title="Demander un premier échange patrimonial"
-      description="Le formulaire permet de qualifier votre demande et d'organiser un premier échange. Aucun conseil personnalisé n'est délivré via ce formulaire."
+      title="Parlons de votre projet patrimonial"
+      description="Présentez votre besoin pour organiser un premier échange avec Aurélien Picard."
       bgClass="bg-visual bg-inner-b bg-visual-readable"
     />
 
     <Section>
       <Container class="max-w-5xl">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          <div class="lg:col-span-1 space-y-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div class="order-1 lg:order-2 lg:col-span-2 surface-depth p-5 md:p-6">
+            <h2 class="text-2xl font-serif text-bc-text-primary mb-3">Formulaire de contact</h2>
+            <p class="text-bc-text-muted mb-5 text-sm leading-relaxed">
+              Ne transmettez aucun identifiant, document confidentiel ou détail de votre patrimoine. Aucun conseil personnalisé n'est délivré via ce formulaire. Les champs marqués * sont obligatoires.
+            </p>
+            <ContactForm />
+          </div>
+
+          <div class="order-2 lg:order-1 lg:col-span-1 space-y-6">
             <div>
               <LegalNoticeBlock title="Coordonnées">
-                <p>Email : contact@berliozconseil.fr</p>
-                <p>Téléphone : 06 03 07 10 11</p>
+                <p>Email : <a href="mailto:contact@berliozconseil.fr" class="underline underline-offset-4">contact@berliozconseil.fr</a></p>
+                <p>Téléphone : <a href="tel:+33603071011" class="underline underline-offset-4">06 03 07 10 11</a></p>
               </LegalNoticeBlock>
             </div>
 
@@ -39,21 +47,8 @@ import ContactForm from '../components/ContactForm.astro';
               </LegalNoticeBlock>
             </div>
 
-            <div class="border-l-4 border-bc-accent-bronze bg-bc-bg-secondary p-6">
-              <h3 class="text-bc-text-primary text-base font-serif mb-2">Sécurité et confidentialité</h3>
-              <p class="text-bc-text-muted text-sm mb-0">
-                Pour votre sécurité, merci de ne transmettre aucun identifiant, document confidentiel ou information patrimoniale détaillée via ce formulaire.
-              </p>
-            </div>
           </div>
 
-          <div class="lg:col-span-2 surface-depth p-8 md:p-12">
-            <h2 class="text-2xl font-serif text-bc-text-primary mb-6">Formulaire de contact</h2>
-            <p class="text-bc-text-secondary mb-8 text-sm md:text-base leading-relaxed">
-              Le premier échange permet de comprendre votre situation, vos priorités et le niveau d'accompagnement attendu. Aucun conseil personnalisé n'est délivré via ce formulaire ; les informations transmises permettent uniquement de qualifier votre demande et d'organiser un premier échange.
-            </p>
-            <ContactForm />
-          </div>
         </div>
       </Container>
     </Section>

@@ -3,40 +3,40 @@ import Button from './Button.astro';
 import { withBase } from '../lib/paths';
 ---
 
-<form action="https://formspree.io/f/xgorjwkw" method="POST" class="space-y-6">
+<form aria-label="Demande de contact" id="contact-form" data-success-url={withBase('/merci')} action="https://formspree.io/f/xgorjwkw" method="POST" class="space-y-5">
   <!-- Honeypot anti-spam Formspree -->
   <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" />
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div>
       <label for="prenom" class="block text-sm font-medium text-bc-text-primary mb-2">Prénom *</label>
-      <input type="text" id="prenom" name="prenom" required class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors" />
+      <input type="text" id="prenom" name="prenom" autocomplete="given-name" required class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors" />
     </div>
     <div>
       <label for="nom" class="block text-sm font-medium text-bc-text-primary mb-2">Nom *</label>
-      <input type="text" id="nom" name="nom" required class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors" />
+      <input type="text" id="nom" name="nom" autocomplete="family-name" required class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors" />
     </div>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div>
       <label for="email" class="block text-sm font-medium text-bc-text-primary mb-2">Email *</label>
-      <input type="email" id="email" name="email" required class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors" />
+      <input type="email" id="email" name="email" autocomplete="email" required class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors" />
     </div>
     <div>
       <label for="telephone" class="block text-sm font-medium text-bc-text-primary mb-2">Téléphone</label>
-      <input type="tel" id="telephone" name="telephone" class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors" />
+      <input type="tel" id="telephone" name="telephone" autocomplete="tel" class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors" />
     </div>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div>
       <label for="ville" class="block text-sm font-medium text-bc-text-primary mb-2">Ville</label>
-      <input type="text" id="ville" name="ville" class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors" />
+      <input type="text" id="ville" name="ville" autocomplete="address-level2" class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors" />
     </div>
     <div>
       <label for="situation" class="block text-sm font-medium text-bc-text-primary mb-2">Situation professionnelle</label>
-      <select id="situation" name="situation" class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors appearance-none">
+      <select id="situation" name="situation" class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors">
         <option value="">Sélectionnez...</option>
         <option value="dirigeant">Dirigeant d'entreprise</option>
         <option value="independant">Indépendant / Profession libérale</option>
@@ -49,7 +49,7 @@ import { withBase } from '../lib/paths';
 
   <div>
     <label for="objet" class="block text-sm font-medium text-bc-text-primary mb-2">Objet de la demande *</label>
-    <select id="objet" name="objet" required class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors appearance-none">
+    <select id="objet" name="objet" required class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors">
       <option value="">Sélectionnez un motif...</option>
       <option value="conseil">Conseil patrimonial global</option>
       <option value="assurance">Assurance de personnes / prévoyance</option>
@@ -65,13 +65,15 @@ import { withBase } from '../lib/paths';
 
   <div>
     <label for="message" class="block text-sm font-medium text-bc-text-primary mb-2">Message</label>
-    <textarea id="message" name="message" rows="4" class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors"></textarea>
+    <textarea id="message" name="message" rows="4" maxlength="2000" aria-describedby="message-help" class="w-full bg-bc-bg-primary border border-bc-border p-3 text-bc-text-primary focus:border-bc-accent-champagne focus:ring-1 focus:ring-bc-accent-champagne outline-none transition-colors"></textarea>
+    <p id="message-help" class="mt-2 mb-0 text-sm text-bc-text-muted">2 000 caractères maximum. Décrivez seulement votre besoin, sans données sensibles.</p>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 border-t border-bc-border pt-6 mt-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 border-t border-bc-border pt-6 mt-6">
     <div>
-      <span class="block text-sm font-medium text-bc-text-primary mb-3">Préférence de contact</span>
-      <div class="flex gap-4">
+      <fieldset>
+      <legend class="block text-sm font-medium text-bc-text-primary mb-3">Préférence de contact</legend>
+      <div class="flex flex-wrap gap-4">
         <label class="flex items-center gap-2 text-sm text-bc-text-secondary cursor-pointer">
           <input type="radio" name="preference_contact" value="email" class="accent-bc-accent-champagne" />
           Email
@@ -85,6 +87,7 @@ import { withBase } from '../lib/paths';
           Indifférent
         </label>
       </div>
+      </fieldset>
     </div>
     <div>
       <label for="creneau" class="block text-sm font-medium text-bc-text-primary mb-2">Créneau préféré (si téléphone)</label>
@@ -96,13 +99,13 @@ import { withBase } from '../lib/paths';
     <label for="rgpd" class="flex items-start gap-3 cursor-pointer">
       <input type="checkbox" id="rgpd" name="rgpd" required class="mt-1 accent-bc-accent-champagne" />
       <span class="text-sm text-bc-text-secondary">
-        J'accepte que les informations transmises soient utilisées par Berlioz Conseil afin de répondre à ma demande de contact et d'organiser un premier échange. J'ai pris connaissance de la politique de confidentialité.
+        J'accepte que les informations transmises soient utilisées par Berlioz Conseil afin de répondre à ma demande de contact et d'organiser un premier échange. J'ai pris connaissance de la <a href={withBase('/confidentialite')} class="underline underline-offset-4">politique de confidentialité</a>.
       </span>
     </label>
   </div>
   
-  <!-- Redirection page de confirmation -->
-  <input type="hidden" name="_next" value={withBase('/merci')} />
+  <p id="form-status" role="status" aria-live="polite" tabindex="-1" class="mb-0 text-sm text-bc-text-primary"></p>
+  <noscript><p class="text-sm">Après envoi, la confirmation sera affichée par notre prestataire Formspree.</p></noscript>
 
   <div class="pt-6">
     <Button variant="primary" class="w-full md:w-auto" type="submit">
@@ -110,3 +113,62 @@ import { withBase } from '../lib/paths';
     </Button>
   </div>
 </form>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>('#contact-form');
+  const phone = form?.querySelector<HTMLInputElement>('#telephone');
+  const status = document.getElementById('form-status');
+  const submit = form?.querySelector<HTMLButtonElement>('button[type="submit"]');
+
+  const updatePhoneRequirement = () => {
+    const required = form?.querySelector<HTMLInputElement>('input[name="preference_contact"]:checked')?.value === 'telephone';
+    if (phone) phone.required = required;
+    const label = form?.querySelector('label[for="telephone"]');
+    if (label) label.textContent = required ? 'Téléphone *' : 'Téléphone';
+  };
+  form?.querySelectorAll('input[name="preference_contact"]').forEach(input => input.addEventListener('change', updatePhoneRequirement));
+  updatePhoneRequirement();
+
+  if (form && status && submit) {
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (submit.disabled) return;
+      const label = submit.textContent;
+      const data = new FormData(form);
+      submit.disabled = true;
+      submit.textContent = 'Envoi en cours…';
+      form.setAttribute('aria-busy', 'true');
+      status.textContent = 'Transmission de votre demande en cours…';
+      let accepted = false;
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST', body: data, headers: { Accept: 'application/json' },
+          signal: AbortSignal.timeout(20000),
+        });
+        if (!response.ok) throw new Error('Submission refused');
+        accepted = true;
+        // Confirmation means the provider accepted the request, not that an email was delivered.
+        status.textContent = 'Votre demande a été prise en charge par le service de formulaire.';
+        form.removeAttribute('aria-busy');
+        try {
+          sessionStorage.setItem('berlioz-contact-accepted', 'true');
+          window.location.assign(form.dataset.successUrl!);
+        } catch {
+          // With storage blocked, keep the verified confirmation on this page.
+          status.textContent = 'Votre demande a été envoyée. Le cabinet pourra en prendre connaissance afin d’organiser un premier échange.';
+          submit.textContent = 'Demande envoyée';
+          status.focus();
+        }
+      } catch {
+        status.textContent = 'La transmission n’a pas pu être confirmée. Vos informations restent dans le formulaire. Vous pouvez réessayer ou contacter le cabinet par téléphone ou par email.';
+        status.focus();
+      } finally {
+        if (!accepted) {
+          submit.disabled = false;
+          submit.textContent = label;
+          form.removeAttribute('aria-busy');
+        }
+      }
+    });
+  }
+</script>

@@ -1,6 +1,6 @@
 # Decisions Log — Berlioz Conseil
 
-**Dernière mise à jour :** 2026-04-27  
+**Dernière mise à jour :** 2026-10-15
 **Lot de référence :** LOT 0
 
 Toute décision structurante doit être enregistrée ici avec sa date, sa justification et son statut.
@@ -16,6 +16,7 @@ Toute décision structurante doit être enregistrée ici avec sa date, sa justif
 **Justification :** Cette approche préserve la sécurité, limite le périmètre RGPD, évite la gestion d'identifiants et empêche toute manipulation de données patrimoniales sensibles sur le site public.
 
 **Statut :** ✅ Validé pour V1
+
 
 ---
 
@@ -107,3 +108,15 @@ Toute décision structurante doit être enregistrée ici avec sa date, sa justif
 **Justification :** Évite les risques de sécurité liés à une mauvaise intégration de SSO ou OIDC sans documentation, tout en offrant le service de redirection demandé vers l'espace client.
 
 **Statut :** ✅ Validé pour V1
+
+---
+
+## D011 — 2026-10-15 — Corrections de l’audit responsive
+
+**Décision :** Sur instruction utilisateur, réaliser les corrections vérifiables de l’audit sur `codex/berlioz-audit-corrections`, sans publication automatique.
+
+**Détail :** Logo officiel conservé ; contour traité à l’affichage. Espacements et grands titres réduits ; navigation compacte sous 1 280 px ; largeurs locales restaurées ; formulaire prioritaire sur mobile. La méthode passe de cinq colonnes étroites à trois colonnes au maximum. Les états d’envoi, d’échec et de confirmation sont explicites ; le succès dépend d’une réponse HTTP positive du prestataire.
+
+**Limites :** Aucun tarif, diplôme, résultat client ou statut réglementaire inventé. Pas d’envoi réel à Formspree pendant la validation ; les réponses du prestataire sont simulées localement. La réception d’email, les réglages contractuels du prestataire et l’hébergement définitif restent à vérifier séparément.
+
+**Statut :** Implémenté et vérifié ; preuves consignées dans le rapport de livraison du 15 octobre 2026. Le 16 octobre 2026, l’utilisateur valide le rendu avec le logo agrandi et autorise la fusion sur `main`. Les réserves sur la réception réelle des messages, le prestataire et la conformité restent distinctes de cette validation visuelle.

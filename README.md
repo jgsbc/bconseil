@@ -22,7 +22,7 @@ Toute la gouvernance, le cadrage technique et les décisions de sécurité se tr
 - Aucune API, aucune base de données locale, aucun endpoint serveur Astro.
 - Aucun SSO, aucune iframe, aucun accès client maison.
 - Accès client redirigé vers l'URL externe stable Harvest (`connect.harvest.fr/accueil`).
-- Formulaire de contact sécurisé géré par Formspree (endpoint actif).
+- Formulaire de contact sécurisé géré par Formspree (endpoint configuré ; réception réelle à valider avec le cabinet).
 - **Aucun Analytics, aucun pixel marketing, aucun cookie non essentiel n'est déployé en V1.**
 
 ## PWA Installable
@@ -36,4 +36,5 @@ Le site est configuré comme une Progressive Web App (PWA) minimaliste.
 - `npm run dev` : Lancer le serveur de développement (http://localhost:4321)
 - `npm run build` : Générer le site statique (dossier `/dist`)
 - `npm run preview` : Prévisualiser le build localement
-- `npm run check` : Lancer la vérification des types TypeScript
+- `npm test` : Contrôler les routes, ressources, liens internes, formulaire, sitemap et manifest du dernier build. À exécuter après `npm run build`.
+- La vérification TypeScript dédiée n’est pas configurée ; `npm run build` ne constitue pas une vérification complète des types.

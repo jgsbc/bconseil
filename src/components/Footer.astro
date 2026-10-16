@@ -5,15 +5,15 @@ import { withBase } from '../lib/paths';
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="mt-auto border-t border-bc-border py-16 bg-bc-bg-secondary">
+<footer class="mt-auto border-t border-bc-border py-10 bg-bc-bg-secondary">
   <Container>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
-      <div>
-        <div class="flex items-center gap-4 mb-6">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-8 mb-8">
+      <div class="col-span-2 md:col-span-1">
+        <div class="flex items-center gap-4 mb-4">
           <img
             src={withBase('/logo/berlioz-logo-round.webp')}
             alt="Berlioz Conseil"
-            class="h-14 w-14 md:h-16 md:w-16 rounded-full"
+            class="h-14 w-14 md:h-16 md:w-16 berlioz-round-logo"
             loading="lazy"
             decoding="async"
           />
@@ -24,12 +24,12 @@ const currentYear = new Date().getFullYear();
         </div>
         <p class="text-sm text-bc-text-muted leading-relaxed">Conseil patrimonial, épargne et transmission.</p>
         <p class="mt-4 text-sm text-bc-text-muted leading-relaxed">
-          contact@berliozconseil.fr<br />
-          06 03 07 10 11
+          <a href="mailto:contact@berliozconseil.fr" class="hover:text-bc-accent-champagne">contact@berliozconseil.fr</a><br />
+          <a href="tel:+33603071011" class="hover:text-bc-accent-champagne">06 03 07 10 11</a>
         </p>
       </div>
       <div>
-        <h3 class="text-bc-text-primary font-medium mb-6 uppercase tracking-widest text-xs">Navigation</h3>
+        <h3 class="text-bc-text-primary font-medium mb-4 uppercase tracking-widest text-xs">Navigation</h3>
         <ul class="space-y-3 text-sm text-bc-text-muted">
           <li><a href={withBase('/accueil')} class="hover:text-bc-accent-champagne transition-colors">Accueil</a></li>
           <li><a href={withBase('/expertises')} class="hover:text-bc-accent-champagne transition-colors">Expertises</a></li>
@@ -40,7 +40,7 @@ const currentYear = new Date().getFullYear();
         </ul>
       </div>
       <div>
-        <h3 class="text-bc-text-primary font-medium mb-6 uppercase tracking-widest text-xs">Légal</h3>
+        <h3 class="text-bc-text-primary font-medium mb-4 uppercase tracking-widest text-xs">Légal</h3>
         <ul class="space-y-3 text-sm text-bc-text-muted">
           <li><a href={withBase('/mentions-legales')} class="hover:text-bc-accent-champagne transition-colors">Mentions légales</a></li>
           <li><a href={withBase('/confidentialite')} class="hover:text-bc-accent-champagne transition-colors">Confidentialité</a></li>
@@ -48,9 +48,9 @@ const currentYear = new Date().getFullYear();
       </div>
     </div>
     
-    <div class="border-t border-bc-border/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-bc-text-muted/50 tracking-wider">
-      <p>&copy; {currentYear} Berlioz Conseil. Tous droits réservés.</p>
-      <p>Cabinet de gestion de patrimoine en Rhône-Alpes.</p>
+    <div class="border-t border-bc-border/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-bc-text-muted tracking-wider">
+      <p class="mb-0 text-sm">&copy; {currentYear} Berlioz Conseil. Tous droits réservés.</p>
+      <p class="mb-0 text-sm">Cabinet de gestion de patrimoine en Rhône-Alpes.</p>
     </div>
   </Container>
 </footer>

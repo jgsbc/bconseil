@@ -1,6 +1,7 @@
 # Risk Register — Berlioz Conseil
 
-**Dernière mise à jour :** 2026-04-27  
+**Dernière mise à jour :** 2026-10-15
+
 **Lot de référence :** LOT 0
 
 Légende — Niveau : **Élevé** / **Moyen** / **Faible**  
@@ -28,19 +29,29 @@ Statut : Ouvert / En cours / Fermé
 | R14 | UX / Image | Email incohérent entre .fr et .com | Moyen | Erreur de contact / image non professionnelle | Email contact@berliozconseil.fr retenu | Fermé |
 | R15 | UX / Image | Confusion entre site vitrine et espace client | Moyen | Attentes client mal gérées | Page `/acces-client` claire avec redirection externe et message explicatif | Ouvert |
 | R16 | UX / Image | Site trop générique ou peu différenciant | Moyen | Faible impact — positionnement dilué | Direction premium / confidentielle / patrimoniale / sombre | Ouvert |
-| R17 | Technique | Hébergeur non choisi | Faible | Blocage au déploiement | Hébergeur OVH SAS défini | Fermé |
+| R17 | Technique | Hébergement définitif non confirmé | Moyen | Mentions légales du domaine définitif incomplètes | GitHub Pages vérifié pour la prévisualisation ; offre finale à confirmer selon CLIENT_OPEN_POINTS du 07/07/2026 | Ouvert |
 | R18 | Technique | URL O2S / MoneyPitch incorrecte | Faible | Page `/acces-client` renvoie une 404 | Utilisation de l'URL stable `connect.harvest.fr` — vérifier avec Berlioz | Fermé |
-| R19 | Contenu | Photo professionnelle non fournie | Faible | Page À propos incomplète | [À FOURNIR] ou décision d'afficher sans photo | Ouvert |
+| R19 | Contenu | Photo professionnelle non fournie | Faible | Aucun blocage : décision de ne pas afficher de photo en V1 | Décision client du 07/07/2026, ne pas redemander | Fermé |
 | R20 | Contenu | Texte "À propos" non validé | Moyen | Informations biographiques incorrectes ou non souhaitées | [À FOURNIR] texte validé par Aurélien Picard | Ouvert |
 
 ---
 
 ## Risques fermés
 
-Les risques R07, R09, R10, R12, R13, R14, R17 et R18 sont fermés suite aux implémentations techniques et aux arbitrages de contenu de la V1.
+Les risques R07, R09, R10, R12, R13, R14, R18 et R19 sont fermés suite aux implémentations techniques et aux arbitrages de contenu de la V1.
 
 ---
 
 ## Prochaine révision
 
 À reprendre au démarrage du LOT 1 après retour de Berlioz Conseil sur les points [À FOURNIR].
+## Révision audit du 15 octobre 2026
+
+Les anciennes lignes décrivent des risques historiques, pas toutes des demandes client encore ouvertes. `CLIENT_OPEN_POINTS.md` et `CLIENT_RESOLVED_POINTS.md` priment pour les décisions métier déjà prises. La clôture antérieure de R17 était contradictoire avec le point d’hébergement encore ouvert : elle est rectifiée ci-dessus.
+
+| ID | Risque restant | État / preuve requise |
+|---|---|---|
+| R21 | Le service accepte une soumission mais la notification n’arrive pas au cabinet | États UI testés avec un simulateur local ; réception réelle et paramètres de domaine/quota/anti-spam à vérifier sur le compte Formspree. |
+| R22 | Conservation et transferts chez Formspree insuffisamment qualifiés | La page de confidentialité mentionne le prestataire et ses traitements aux États-Unis. Contrat de sous-traitance, garanties de transfert et suppression effective à vérifier avec le responsable du traitement. La rédaction ne vaut pas certification RGPD. |
+| R23 | Documents de stratégie et conformité consultables dans le dépôt public | Dépôt confirmé public via GitHub. Aucune suppression ni réécriture d’historique ; une décision distincte est nécessaire sur les documents à garder publics. |
+| R24 | Écarts entre navigateurs / appareils | Rendu contrôlé dans le navigateur intégré sur dix viewports ; Safari, Firefox et appareils physiques non testés. |

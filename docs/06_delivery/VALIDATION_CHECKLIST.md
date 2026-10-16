@@ -148,7 +148,7 @@ Les cases ci-dessous restent utiles comme contrôle final de publication, pas co
 
 - [ ] Endpoint Formspree validé
 - [ ] Email destinataire validé
-- [ ] `_next` vers `/merci` compatible GitHub Pages
+- [ ] Confirmation après réponse positive, navigation vers `/merci` compatible GitHub Pages ; fallback natif Formspree sans JavaScript
 - [ ] Mention “Aucun conseil personnalisé via le formulaire” validée
 - [ ] Consentement RGPD validé
 - [ ] Notification automatique validée
@@ -182,3 +182,9 @@ Les cases ci-dessous restent utiles comme contrôle final de publication, pas co
 - [ ] Tests desktop OK
 - [ ] Relecture finale Aurélien
 - [ ] Validation écrite avant mise en ligne domaine final
+
+## Recette locale — 15 octobre 2026
+
+Le lot `codex/berlioz-audit-corrections` a été compilé et contrôlé à la racine et sous `/bconseil/`. Les contrôles du build, les mesures responsive et les scénarios UI simulés sont consignés dans [le rapport de corrections](AUDIT_CORRECTIONS_2026-10-15.md), avec captures avant/après.
+
+Les cases de validation client et de publication ci-dessus ne sont pas cochées par assimilation à ces contrôles locaux. La réception réelle d’email, le compte Formspree, les garanties contractuelles RGPD, les appareils physiques et le domaine définitif restent distincts.
